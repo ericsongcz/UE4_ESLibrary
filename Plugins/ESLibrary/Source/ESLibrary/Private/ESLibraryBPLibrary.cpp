@@ -50,6 +50,7 @@
 #include "Blueprint/WidgetLayoutLibrary.h"
 #include "Styling/SlateBrush.h"
 #include "UnrealTinyXmlPrivatePCH.h"
+#include "Runtime/Core/Public/GenericPlatform/GenericPlatformDriver.h"
 
 namespace
 {
@@ -5583,3 +5584,315 @@ bool UESLibraryBPLibrary::ReadCustomPathConfig(const FString&FilePath, const FSt
  FVector& UESLibraryBPLibrary::Divide_v(FVector& In, FVector Value) { BODY(/= ) }
  FVector& UESLibraryBPLibrary::Divide_vi(FVector& In, int32 Value) { BODY(/= ) }
  FVector& UESLibraryBPLibrary::Divide_vf(FVector& In, float Value) { BODY(/= ) }
+
+ void UESLibraryBPLibrary::Victory_GetGPUInfo(FString& DeviceDescription, FString& Provider, FString& DriverVersion, FString& DriverDate)
+ {
+	 FGPUDriverInfo GPUDriverInfo = FPlatformMisc::GetGPUDriverInfo(GRHIAdapterName);
+
+	 DeviceDescription = GPUDriverInfo.DeviceDescription;
+	 Provider = GPUDriverInfo.ProviderName;
+	 DriverVersion = GPUDriverInfo.UserDriverVersion;
+	 DriverDate = GPUDriverInfo.DriverDate;
+ }
+
+ bool UESLibraryBPLibrary::VictoryGetCustomConfigVar_Bool(FString SectionName, FString VariableName, bool& IsValid)
+ {
+	 if (!GConfig) return false;
+	 //~~~~~~~~~~~
+
+	 bool Value;
+	 IsValid = GConfig->GetBool(
+		 *SectionName,
+		 *VariableName,
+		 Value,
+		 GGameIni
+		 );
+	 return Value;
+ }
+ int32 UESLibraryBPLibrary::VictoryGetCustomConfigVar_Int(FString SectionName, FString VariableName, bool& IsValid)
+ {
+	 if (!GConfig) return 0;
+	 //~~~~~~~~~~~
+
+	 int32 Value;
+	 IsValid = GConfig->GetInt(
+		 *SectionName,
+		 *VariableName,
+		 Value,
+		 GGameIni
+		 );
+	 return Value;
+ }
+ float UESLibraryBPLibrary::VictoryGetCustomConfigVar_Float(FString SectionName, FString VariableName, bool& IsValid)
+ {
+	 if (!GConfig) return 0;
+	 //~~~~~~~~~~~
+
+	 float Value;
+	 IsValid = GConfig->GetFloat(
+		 *SectionName,
+		 *VariableName,
+		 Value,
+		 GGameIni
+		 );
+	 return Value;
+ }
+ FVector UESLibraryBPLibrary::VictoryGetCustomConfigVar_Vector(FString SectionName, FString VariableName, bool& IsValid)
+ {
+	 if (!GConfig) return FVector::ZeroVector;
+	 //~~~~~~~~~~~
+
+	 FVector Value;
+	 IsValid = GConfig->GetVector(
+		 *SectionName,
+		 *VariableName,
+		 Value,
+		 GGameIni
+		 );
+	 return Value;
+ }
+ FRotator UESLibraryBPLibrary::VictoryGetCustomConfigVar_Rotator(FString SectionName, FString VariableName, bool& IsValid)
+ {
+	 if (!GConfig) return FRotator::ZeroRotator;
+	 //~~~~~~~~~~~
+
+	 FRotator Value;
+	 IsValid = GConfig->GetRotator(
+		 *SectionName,
+		 *VariableName,
+		 Value,
+		 GGameIni
+		 );
+	 return Value;
+ }
+ FLinearColor UESLibraryBPLibrary::VictoryGetCustomConfigVar_Color(FString SectionName, FString VariableName, bool& IsValid)
+ {
+	 if (!GConfig) return FColor::Black;
+	 //~~~~~~~~~~~
+
+	 FColor Value;
+	 IsValid = GConfig->GetColor(
+		 *SectionName,
+		 *VariableName,
+		 Value,
+		 GGameIni
+		 );
+	 return FLinearColor(Value);
+ }
+ FString UESLibraryBPLibrary::VictoryGetCustomConfigVar_String(FString SectionName, FString VariableName, bool& IsValid)
+ {
+	 if (!GConfig) return "";
+	 //~~~~~~~~~~~
+
+	 FString Value;
+	 IsValid = GConfig->GetString(
+		 *SectionName,
+		 *VariableName,
+		 Value,
+		 GGameIni
+		 );
+	 return Value;
+ }
+
+ FVector2D UESLibraryBPLibrary::VictoryGetCustomConfigVar_Vector2D(FString SectionName, FString VariableName, bool& IsValid)
+ {
+	 if (!GConfig) return FVector2D::ZeroVector;
+	 //~~~~~~~~~~~
+
+	 FVector Value;
+	 IsValid = GConfig->GetVector(
+		 *SectionName,
+		 *VariableName,
+		 Value,
+		 GGameIni
+		 );
+	 return FVector2D(Value.X, Value.Y);
+ }
+
+ FVector2D UESLibraryBPLibrary::ProjectWorldToScreenPosition(const FVector& WorldLocation)
+ {
+	 TObjectIterator<APlayerController> ThePC;
+	 if (!ThePC) return FVector2D::ZeroVector;
+
+	 ULocalPlayer* LocalPlayer = Cast<ULocalPlayer>(ThePC->Player);
+	 if (LocalPlayer != NULL && LocalPlayer->ViewportClient != NULL && LocalPlayer->ViewportClient->Viewport != NULL)
+	 {
+		 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+		 // Create a view family for the game viewport
+		 FSceneViewFamilyContext ViewFamily(FSceneViewFamily::ConstructionValues(
+			 LocalPlayer->ViewportClient->Viewport,
+			 ThePC->GetWorld()->Scene,
+			 LocalPlayer->ViewportClient->EngineShowFlags)
+			 .SetRealtimeUpdate(true));
+
+		 // Calculate a view where the player is to update the streaming from the players start location
+		 FVector ViewLocation;
+		 FRotator ViewRotation;
+		 FSceneView* SceneView = LocalPlayer->CalcSceneView(&ViewFamily, /*out*/ ViewLocation, /*out*/ ViewRotation, LocalPlayer->ViewportClient->Viewport);
+
+		 //Valid Scene View?
+		 if (SceneView)
+		 {
+			 //Return
+			 FVector2D ScreenLocation;
+			 SceneView->WorldToPixel(WorldLocation, ScreenLocation);
+			 return ScreenLocation;
+		 }
+	 }
+
+	 return FVector2D::ZeroVector;
+ }
+
+
+ void UESLibraryBPLibrary::Selection_SelectionBox(UObject* WorldContextObject, TArray<AActor*>& SelectedActors, FVector2D AnchorPoint, FVector2D DraggedPoint, TSubclassOf<AActor> ClassFilter)
+ {
+	 if (!WorldContextObject) return;
+
+
+	 //using a context object to get the world!
+	 UWorld* const World = GEngine->GetWorldFromContextObject(WorldContextObject, EGetWorldErrorMode::ReturnNull);
+	 if (!World) return;
+	 //~~~~~~~~~~~
+
+	 SelectedActors.Empty();
+
+	 FBox2D Box;
+	 Box += DraggedPoint;
+	 Box += AnchorPoint;
+
+	 for (TActorIterator<AActor> Itr(World); Itr; ++Itr)
+	 {
+		 if (!Itr->IsA(ClassFilter)) continue;
+		 //~~~~~~~~~~~~~~~~~~
+
+		 if (Box.IsInside(UESLibraryBPLibrary::ProjectWorldToScreenPosition(Itr->GetActorLocation())))
+		 {
+			 SelectedActors.Add(*Itr);
+		 }
+	 }
+ }
+
+ bool UESLibraryBPLibrary::LoadStringArrayFromFile(TArray<FString>& StringArray, int32& ArraySize, FString FullFilePath, bool ExcludeEmptyLines)
+ {
+	 ArraySize = 0;
+
+	 if (FullFilePath == "" || FullFilePath == " ") return false;
+
+	 //Empty any previous contents!
+	 StringArray.Empty();
+
+	 TArray<FString> FileArray;
+
+	 if (!FFileHelper::LoadANSITextFileToStrings(*FullFilePath, NULL, FileArray))
+	 {
+		 return false;
+	 }
+
+	 if (ExcludeEmptyLines)
+	 {
+		 for (const FString& Each : FileArray)
+		 {
+			 if (Each == "") continue;
+			 //~~~~~~~~~~~~~
+
+			 //check for any non whitespace
+			 bool FoundNonWhiteSpace = false;
+			 for (int32 v = 0; v < Each.Len(); v++)
+			 {
+				 if (Each[v] != ' ' && Each[v] != '\n')
+				 {
+					 FoundNonWhiteSpace = true;
+					 break;
+				 }
+				 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			 }
+
+			 if (FoundNonWhiteSpace)
+			 {
+				 StringArray.Add(Each);
+			 }
+		 }
+	 }
+	 else
+	 {
+		 StringArray.Append(FileArray);
+	 }
+
+	 ArraySize = StringArray.Num();
+	 return true;
+ }
+
+ void UESLibraryBPLibrary::VictorySimulateMouseWheel(const float& Delta)
+ {
+	 FSlateApplication::Get().OnMouseWheel(int32(Delta));
+ }
+
+ bool UESLibraryBPLibrary::Animation__GetAimOffsets(AActor* AnimBPOwner, float& Pitch, float& Yaw)
+ {
+	 //Get Owning Character
+	 ACharacter* TheCharacter = Cast<ACharacter>(AnimBPOwner);
+
+	 if (!TheCharacter) return false;
+	 //~~~~~~~~~~~~~~~
+
+	 //Get Owning Controller Rotation
+	 const FRotator TheCtrlRotation = TheCharacter->GetControlRotation();
+
+	 const FVector RotationDir = TheCtrlRotation.Vector();
+
+	 //Inverse of ActorToWorld matrix is Actor to Local Space
+		 //so this takes the direction vector, the PC or AI rotation
+		 //and outputs what this dir is 
+		 //in local actor space &
+
+		 //local actor space is what we want for aiming offsets
+
+	 const FVector LocalDir = TheCharacter->ActorToWorld().InverseTransformVectorNoScale(RotationDir);
+	 const FRotator LocalRotation = LocalDir.Rotation();
+
+	 //Pass out Yaw and Pitch
+	 Yaw = LocalRotation.Yaw;
+	 Pitch = LocalRotation.Pitch;
+
+	 return true;
+ }
+ bool UESLibraryBPLibrary::Animation__GetAimOffsetsFromRotation(AActor* AnimBPOwner, const FRotator& TheRotation, float& Pitch, float& Yaw)
+ {
+	 //Get Owning Character
+	 ACharacter* TheCharacter = Cast<ACharacter>(AnimBPOwner);
+
+	 if (!TheCharacter) return false;
+	 //~~~~~~~~~~~~~~~
+
+	 //using supplied rotation
+	 const FVector RotationDir = TheRotation.Vector();
+
+	 //Inverse of ActorToWorld matrix is Actor to Local Space
+		 //so this takes the direction vector, the PC or AI rotation
+		 //and outputs what this dir is 
+		 //in local actor space &
+
+		 //local actor space is what we want for aiming offsets
+
+	 const FVector LocalDir = TheCharacter->ActorToWorld().InverseTransformVectorNoScale(RotationDir);
+	 const FRotator LocalRotation = LocalDir.Rotation();
+
+	 //Pass out Yaw and Pitch
+	 Yaw = LocalRotation.Yaw;
+	 Pitch = LocalRotation.Pitch;
+
+	 return true;
+ }
+
+ float UESLibraryBPLibrary::HorizontalFOV(float VerticalFOV, float AspectRatio)
+ {
+	 VerticalFOV = FMath::DegreesToRadians(VerticalFOV);
+	 return FMath::RadiansToDegrees(2 * FMath::Atan2(FMath::Tan(VerticalFOV * 0.5f) * AspectRatio, 1));
+ }
+
+ float UESLibraryBPLibrary::VerticalFOV(float HorizontalFOV, float AspectRatio)
+ {
+	 HorizontalFOV = FMath::DegreesToRadians(HorizontalFOV);
+	 return FMath::RadiansToDegrees(2 * FMath::Atan2(FMath::Tan(HorizontalFOV * 0.5f) * (1 / AspectRatio), 1));
+ }

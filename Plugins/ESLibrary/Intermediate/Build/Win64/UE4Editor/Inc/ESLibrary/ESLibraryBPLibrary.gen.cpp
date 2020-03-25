@@ -66,6 +66,8 @@ void EmptyLinkFunctionForGeneratedCodeESLibraryBPLibrary() {}
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_AngleBetweenDirectionVectorsRad();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_AngleBetweenQuatsDeg();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_AngleBetweenQuatsRad();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_AreObjectsSameClass();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_AreObjectsValid();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_AreQuatsEqual();
@@ -248,6 +250,7 @@ void EmptyLinkFunctionForGeneratedCodeESLibraryBPLibrary() {}
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_GetClassFromAssetPath();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_GetClosestActorToPoint();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_GetClosestComponentToPoint();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_GetCommandLine();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_GetConnectedClientIPs();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_GetCSVRowNames();
 	ENGINE_API UClass* Z_Construct_UClass_UDataTable_NoRegister();
@@ -321,6 +324,7 @@ void EmptyLinkFunctionForGeneratedCodeESLibraryBPLibrary() {}
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_HasUpperBound_Int();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_HideStreamingLevel();
 	ENGINE_API UClass* Z_Construct_UClass_ULevelStreamingDynamic_NoRegister();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_HorizontalFOV();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Hull_Date();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Hull_Float();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Hull_Int();
@@ -365,6 +369,8 @@ void EmptyLinkFunctionForGeneratedCodeESLibraryBPLibrary() {}
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_LoadObjectFromAssetPath();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_LoadOggDataFromFile();
 	ENGINE_API UClass* Z_Construct_UClass_USoundWave_NoRegister();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_LoadTexture2D_FromDDSFile();
 	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_LoadTexture2DFromFile();
@@ -405,6 +411,7 @@ void EmptyLinkFunctionForGeneratedCodeESLibraryBPLibrary() {}
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_PlayReplay();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_PointIsInsideBox();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_PrintStringWithCategory();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_ProjectWorldToScreenPosition();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Ps4Platform();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_QuatAxisAngleDeg();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_QuatAxisAngleRad();
@@ -438,6 +445,7 @@ void EmptyLinkFunctionForGeneratedCodeESLibraryBPLibrary() {}
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_RoundVector();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_SaveGameToSlotCompressed();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_SaveReplayCheckpoint();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_SetActorRelativeRotation();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_SetActorRotation();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_SetAngularVelocityInRadiansToComponentBody();
@@ -501,15 +509,25 @@ void EmptyLinkFunctionForGeneratedCodeESLibraryBPLibrary() {}
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VectorIsNearlyZero();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VectorToOrientationQuat();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VectorToOrientationRotator();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VerticalFOV();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Victory_AI_MoveToWithFilter();
 	AIMODULE_API UEnum* Z_Construct_UEnum_AIModule_EPathFollowingRequestResult();
 	NAVIGATIONSYSTEM_API UClass* Z_Construct_UClass_UNavigationQueryFilter_NoRegister();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Victory_Get_Pixel();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetPixelFromT2D();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetPixelsArrayFromT2D();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Victory_LoadTexture2D_FromFile();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Victory_LoadTexture2D_FromFile_Pixels();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Victory_SavePixels();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictoryPaths__ConfigDir();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictoryPaths__GameRootDirectory();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictoryPaths__LogsDir();
@@ -525,6 +543,7 @@ void EmptyLinkFunctionForGeneratedCodeESLibraryBPLibrary() {}
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictorySetCustomConfigVar_String();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictorySetCustomConfigVar_Vector();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictorySetCustomConfigVar_Vector2D();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictorySimulateMouseWheel();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_WasActorRenderedRecently();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Windows32Platform();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Windows64Platform();
@@ -1554,6 +1573,8 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 			{ "AngleBetweenDirectionVectorsRad", &UESLibraryBPLibrary::execAngleBetweenDirectionVectorsRad },
 			{ "AngleBetweenQuatsDeg", &UESLibraryBPLibrary::execAngleBetweenQuatsDeg },
 			{ "AngleBetweenQuatsRad", &UESLibraryBPLibrary::execAngleBetweenQuatsRad },
+			{ "Animation__GetAimOffsets", &UESLibraryBPLibrary::execAnimation__GetAimOffsets },
+			{ "Animation__GetAimOffsetsFromRotation", &UESLibraryBPLibrary::execAnimation__GetAimOffsetsFromRotation },
 			{ "AreObjectsSameClass", &UESLibraryBPLibrary::execAreObjectsSameClass },
 			{ "AreObjectsValid", &UESLibraryBPLibrary::execAreObjectsValid },
 			{ "AreQuatsEqual", &UESLibraryBPLibrary::execAreQuatsEqual },
@@ -1705,6 +1726,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 			{ "GetClassFromAssetPath", &UESLibraryBPLibrary::execGetClassFromAssetPath },
 			{ "GetClosestActorToPoint", &UESLibraryBPLibrary::execGetClosestActorToPoint },
 			{ "GetClosestComponentToPoint", &UESLibraryBPLibrary::execGetClosestComponentToPoint },
+			{ "GetCommandLine", &UESLibraryBPLibrary::execGetCommandLine },
 			{ "GetConnectedClientIPs", &UESLibraryBPLibrary::execGetConnectedClientIPs },
 			{ "GetCSVRowNames", &UESLibraryBPLibrary::execGetCSVRowNames },
 			{ "GetCSVTableString", &UESLibraryBPLibrary::execGetCSVTableString },
@@ -1770,6 +1792,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 			{ "HasUpperBound_Float", &UESLibraryBPLibrary::execHasUpperBound_Float },
 			{ "HasUpperBound_Int", &UESLibraryBPLibrary::execHasUpperBound_Int },
 			{ "HideStreamingLevel", &UESLibraryBPLibrary::execHideStreamingLevel },
+			{ "HorizontalFOV", &UESLibraryBPLibrary::execHorizontalFOV },
 			{ "Hull_Date", &UESLibraryBPLibrary::execHull_Date },
 			{ "Hull_Float", &UESLibraryBPLibrary::execHull_Float },
 			{ "Hull_Int", &UESLibraryBPLibrary::execHull_Int },
@@ -1812,6 +1835,8 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 			{ "LoadGameFromSlotCompressed", &UESLibraryBPLibrary::execLoadGameFromSlotCompressed },
 			{ "LoadObjectFromAssetPath", &UESLibraryBPLibrary::execLoadObjectFromAssetPath },
 			{ "LoadOggDataFromFile", &UESLibraryBPLibrary::execLoadOggDataFromFile },
+			{ "LoadStringArrayFromFile", &UESLibraryBPLibrary::execLoadStringArrayFromFile },
+			{ "LoadStringFromFile", &UESLibraryBPLibrary::execLoadStringFromFile },
 			{ "LoadTexture2D_FromDDSFile", &UESLibraryBPLibrary::execLoadTexture2D_FromDDSFile },
 			{ "LoadTexture2DFromFile", &UESLibraryBPLibrary::execLoadTexture2DFromFile },
 			{ "LoadWaveDataFromFile", &UESLibraryBPLibrary::execLoadWaveDataFromFile },
@@ -1849,6 +1874,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 			{ "PlayReplay", &UESLibraryBPLibrary::execPlayReplay },
 			{ "PointIsInsideBox", &UESLibraryBPLibrary::execPointIsInsideBox },
 			{ "PrintStringWithCategory", &UESLibraryBPLibrary::execPrintStringWithCategory },
+			{ "ProjectWorldToScreenPosition", &UESLibraryBPLibrary::execProjectWorldToScreenPosition },
 			{ "Ps4Platform", &UESLibraryBPLibrary::execPs4Platform },
 			{ "QuatAxisAngleDeg", &UESLibraryBPLibrary::execQuatAxisAngleDeg },
 			{ "QuatAxisAngleRad", &UESLibraryBPLibrary::execQuatAxisAngleRad },
@@ -1881,6 +1907,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 			{ "RoundVector", &UESLibraryBPLibrary::execRoundVector },
 			{ "SaveGameToSlotCompressed", &UESLibraryBPLibrary::execSaveGameToSlotCompressed },
 			{ "SaveReplayCheckpoint", &UESLibraryBPLibrary::execSaveReplayCheckpoint },
+			{ "Selection_SelectionBox", &UESLibraryBPLibrary::execSelection_SelectionBox },
 			{ "SetActorRelativeRotation", &UESLibraryBPLibrary::execSetActorRelativeRotation },
 			{ "SetActorRotation", &UESLibraryBPLibrary::execSetActorRotation },
 			{ "SetAngularVelocityInRadiansToComponentBody", &UESLibraryBPLibrary::execSetAngularVelocityInRadiansToComponentBody },
@@ -1938,13 +1965,23 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 			{ "VectorIsNearlyZero", &UESLibraryBPLibrary::execVectorIsNearlyZero },
 			{ "VectorToOrientationQuat", &UESLibraryBPLibrary::execVectorToOrientationQuat },
 			{ "VectorToOrientationRotator", &UESLibraryBPLibrary::execVectorToOrientationRotator },
+			{ "VerticalFOV", &UESLibraryBPLibrary::execVerticalFOV },
 			{ "Victory_AI_MoveToWithFilter", &UESLibraryBPLibrary::execVictory_AI_MoveToWithFilter },
 			{ "Victory_Get_Pixel", &UESLibraryBPLibrary::execVictory_Get_Pixel },
+			{ "Victory_GetGPUInfo", &UESLibraryBPLibrary::execVictory_GetGPUInfo },
 			{ "Victory_GetPixelFromT2D", &UESLibraryBPLibrary::execVictory_GetPixelFromT2D },
 			{ "Victory_GetPixelsArrayFromT2D", &UESLibraryBPLibrary::execVictory_GetPixelsArrayFromT2D },
 			{ "Victory_LoadTexture2D_FromFile", &UESLibraryBPLibrary::execVictory_LoadTexture2D_FromFile },
 			{ "Victory_LoadTexture2D_FromFile_Pixels", &UESLibraryBPLibrary::execVictory_LoadTexture2D_FromFile_Pixels },
 			{ "Victory_SavePixels", &UESLibraryBPLibrary::execVictory_SavePixels },
+			{ "VictoryGetCustomConfigVar_Bool", &UESLibraryBPLibrary::execVictoryGetCustomConfigVar_Bool },
+			{ "VictoryGetCustomConfigVar_Color", &UESLibraryBPLibrary::execVictoryGetCustomConfigVar_Color },
+			{ "VictoryGetCustomConfigVar_Float", &UESLibraryBPLibrary::execVictoryGetCustomConfigVar_Float },
+			{ "VictoryGetCustomConfigVar_Int", &UESLibraryBPLibrary::execVictoryGetCustomConfigVar_Int },
+			{ "VictoryGetCustomConfigVar_Rotator", &UESLibraryBPLibrary::execVictoryGetCustomConfigVar_Rotator },
+			{ "VictoryGetCustomConfigVar_String", &UESLibraryBPLibrary::execVictoryGetCustomConfigVar_String },
+			{ "VictoryGetCustomConfigVar_Vector", &UESLibraryBPLibrary::execVictoryGetCustomConfigVar_Vector },
+			{ "VictoryGetCustomConfigVar_Vector2D", &UESLibraryBPLibrary::execVictoryGetCustomConfigVar_Vector2D },
 			{ "VictoryPaths__ConfigDir", &UESLibraryBPLibrary::execVictoryPaths__ConfigDir },
 			{ "VictoryPaths__GameRootDirectory", &UESLibraryBPLibrary::execVictoryPaths__GameRootDirectory },
 			{ "VictoryPaths__LogsDir", &UESLibraryBPLibrary::execVictoryPaths__LogsDir },
@@ -1960,6 +1997,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 			{ "VictorySetCustomConfigVar_String", &UESLibraryBPLibrary::execVictorySetCustomConfigVar_String },
 			{ "VictorySetCustomConfigVar_Vector", &UESLibraryBPLibrary::execVictorySetCustomConfigVar_Vector },
 			{ "VictorySetCustomConfigVar_Vector2D", &UESLibraryBPLibrary::execVictorySetCustomConfigVar_Vector2D },
+			{ "VictorySimulateMouseWheel", &UESLibraryBPLibrary::execVictorySimulateMouseWheel },
 			{ "WasActorRenderedRecently", &UESLibraryBPLibrary::execWasActorRenderedRecently },
 			{ "Windows32Platform", &UESLibraryBPLibrary::execWindows32Platform },
 			{ "Windows64Platform", &UESLibraryBPLibrary::execWindows64Platform },
@@ -3622,6 +3660,122 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets_Statics
+	{
+		struct ESLibraryBPLibrary_eventAnimation__GetAimOffsets_Parms
+		{
+			AActor* AnimBPOwner;
+			float Pitch;
+			float Yaw;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Yaw;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Pitch;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_AnimBPOwner;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((ESLibraryBPLibrary_eventAnimation__GetAimOffsets_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ESLibraryBPLibrary_eventAnimation__GetAimOffsets_Parms), &Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets_Statics::NewProp_Yaw = { "Yaw", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventAnimation__GetAimOffsets_Parms, Yaw), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets_Statics::NewProp_Pitch = { "Pitch", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventAnimation__GetAimOffsets_Parms, Pitch), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets_Statics::NewProp_AnimBPOwner = { "AnimBPOwner", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventAnimation__GetAimOffsets_Parms, AnimBPOwner), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets_Statics::NewProp_Yaw,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets_Statics::NewProp_Pitch,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets_Statics::NewProp_AnimBPOwner,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|VictoryBP|Aim Offset" },
+		{ "Comment", "/** AnimBPOwner - Must be a Character, Conversion Internally For Convenience.\\n\\nRetrieves the Aim Offsets Pitch & Yaw Based On the Rotation of the Controller of The Character Owning The Anim Instance.\\n\\nThe Pitch and Yaw are meant to be used with a Blend Space going from -90,-90 to 90,90.\\n   Returns true if function filled the pitch and yaw vars successfully */" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+		{ "ToolTip", "AnimBPOwner - Must be a Character, Conversion Internally For Convenience.\\n\\nRetrieves the Aim Offsets Pitch & Yaw Based On the Rotation of the Controller of The Character Owning The Anim Instance.\\n\\nThe Pitch and Yaw are meant to be used with a Blend Space going from -90,-90 to 90,90.\\n   Returns true if function filled the pitch and yaw vars successfully" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "Animation__GetAimOffsets", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventAnimation__GetAimOffsets_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics
+	{
+		struct ESLibraryBPLibrary_eventAnimation__GetAimOffsetsFromRotation_Parms
+		{
+			AActor* AnimBPOwner;
+			FRotator TheRotation;
+			float Pitch;
+			float Yaw;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Yaw;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Pitch;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TheRotation_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_TheRotation;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_AnimBPOwner;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((ESLibraryBPLibrary_eventAnimation__GetAimOffsetsFromRotation_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ESLibraryBPLibrary_eventAnimation__GetAimOffsetsFromRotation_Parms), &Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::NewProp_Yaw = { "Yaw", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventAnimation__GetAimOffsetsFromRotation_Parms, Yaw), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::NewProp_Pitch = { "Pitch", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventAnimation__GetAimOffsetsFromRotation_Parms, Pitch), METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::NewProp_TheRotation_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::NewProp_TheRotation = { "TheRotation", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventAnimation__GetAimOffsetsFromRotation_Parms, TheRotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::NewProp_TheRotation_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::NewProp_TheRotation_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::NewProp_AnimBPOwner = { "AnimBPOwner", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventAnimation__GetAimOffsetsFromRotation_Parms, AnimBPOwner), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::NewProp_Yaw,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::NewProp_Pitch,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::NewProp_TheRotation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::NewProp_AnimBPOwner,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|VictoryBP|Aim Offset" },
+		{ "Comment", "/** AnimBPOwner - Must be a Character, Conversion Internally For Convenience.\\n\\nRetrieves the Aim Offsets Pitch & Yaw for the AnimBPOwner Based On the supplied Rotation.\\n\\nThe Pitch and Yaw are meant to be used with a Blend Space going from -90,-90 to 90,90.\\n    Returns true if function filled the pitch and yaw vars successfully */" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+		{ "ToolTip", "AnimBPOwner - Must be a Character, Conversion Internally For Convenience.\\n\\nRetrieves the Aim Offsets Pitch & Yaw for the AnimBPOwner Based On the supplied Rotation.\\n\\nThe Pitch and Yaw are meant to be used with a Blend Space going from -90,-90 to 90,90.\\n    Returns true if function filled the pitch and yaw vars successfully" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "Animation__GetAimOffsetsFromRotation", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventAnimation__GetAimOffsetsFromRotation_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C22401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UESLibraryBPLibrary_AreObjectsSameClass_Statics
 	{
 		struct ESLibraryBPLibrary_eventAreObjectsSameClass_Parms
@@ -3936,7 +4090,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_BoxIntersectsBox_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "DisplayName", "Box Intersects Box" },
 		{ "Keywords", "Box Intersect Box2D FBox2D" },
 		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
@@ -4000,7 +4154,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_BoxIsInsideBox_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "DisplayName", "Box Is Inside Box" },
 		{ "Keywords", "Box Inside Box2D FBox2D" },
 		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
@@ -6297,7 +6451,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_ConvertLinearColors_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "DisplayName", "Convert Linear Colors" },
 		{ "Keywords", "Color Convert Linear" },
 		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
@@ -6686,7 +6840,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_DeltaAngle_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "DisplayName", "Delta Angle" },
 		{ "Keywords", "Angle Delta" },
 		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
@@ -12302,7 +12456,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_GetActorLastRenderTime_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "DisplayName", "Get Actor Last Render Time" },
 		{ "Keywords", "Actor Render Time" },
 		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
@@ -12388,7 +12542,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_GetActorScreenBox_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "DisplayName", "Get Actor Screen Box" },
 		{ "Keywords", "Actor Screen Box FBox2D" },
 		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
@@ -12885,6 +13039,49 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_GetClosestComponentToPoint_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_GetCommandLine_Statics
+	{
+		struct ESLibraryBPLibrary_eventGetCommandLine_Parms
+		{
+			FString ReturnValue;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_GetCommandLine_Statics::NewProp_ReturnValue_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_GetCommandLine_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000582, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventGetCommandLine_Parms, ReturnValue), METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_GetCommandLine_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_GetCommandLine_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_GetCommandLine_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_GetCommandLine_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_GetCommandLine_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|System" },
+		{ "Comment", "/** Retrieves command line arguments that were passed into unreal */" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+		{ "ToolTip", "Retrieves command line arguments that were passed into unreal" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_GetCommandLine_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "GetCommandLine", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventGetCommandLine_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_GetCommandLine_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_GetCommandLine_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_GetCommandLine_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_GetCommandLine_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_GetCommandLine()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_GetCommandLine_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -15857,7 +16054,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_HasRuntimeCooking_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Testing" },
+		{ "Category", "ES|UnX|Testing" },
 		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
 	};
 #endif
@@ -16091,6 +16288,47 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_HideStreamingLevel_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_HorizontalFOV_Statics
+	{
+		struct ESLibraryBPLibrary_eventHorizontalFOV_Parms
+		{
+			float VerticalFOV;
+			float AspectRatio;
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AspectRatio;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_VerticalFOV;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_HorizontalFOV_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventHorizontalFOV_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_HorizontalFOV_Statics::NewProp_AspectRatio = { "AspectRatio", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventHorizontalFOV_Parms, AspectRatio), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_HorizontalFOV_Statics::NewProp_VerticalFOV = { "VerticalFOV", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventHorizontalFOV_Parms, VerticalFOV), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_HorizontalFOV_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_HorizontalFOV_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_HorizontalFOV_Statics::NewProp_AspectRatio,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_HorizontalFOV_Statics::NewProp_VerticalFOV,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_HorizontalFOV_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|VictoryBP|Game|Viewport" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_HorizontalFOV_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "HorizontalFOV", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventHorizontalFOV_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_HorizontalFOV_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_HorizontalFOV_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_HorizontalFOV_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_HorizontalFOV_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_HorizontalFOV()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_HorizontalFOV_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -17131,7 +17369,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_IsActorWithinFrustum_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "DisplayName", "Is Actor Within Frustum" },
 		{ "Keywords", "Actor Within Frustum" },
 		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
@@ -18317,6 +18555,121 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics
+	{
+		struct ESLibraryBPLibrary_eventLoadStringArrayFromFile_Parms
+		{
+			TArray<FString> StringArray;
+			int32 ArraySize;
+			FString FullFilePath;
+			bool ExcludeEmptyLines;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static void NewProp_ExcludeEmptyLines_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ExcludeEmptyLines;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_FullFilePath;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ArraySize;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_StringArray;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_StringArray_Inner;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((ESLibraryBPLibrary_eventLoadStringArrayFromFile_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ESLibraryBPLibrary_eventLoadStringArrayFromFile_Parms), &Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::NewProp_ExcludeEmptyLines_SetBit(void* Obj)
+	{
+		((ESLibraryBPLibrary_eventLoadStringArrayFromFile_Parms*)Obj)->ExcludeEmptyLines = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::NewProp_ExcludeEmptyLines = { "ExcludeEmptyLines", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ESLibraryBPLibrary_eventLoadStringArrayFromFile_Parms), &Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::NewProp_ExcludeEmptyLines_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::NewProp_FullFilePath = { "FullFilePath", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventLoadStringArrayFromFile_Parms, FullFilePath), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::NewProp_ArraySize = { "ArraySize", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventLoadStringArrayFromFile_Parms, ArraySize), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::NewProp_StringArray = { "StringArray", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventLoadStringArrayFromFile_Parms, StringArray), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::NewProp_StringArray_Inner = { "StringArray", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::NewProp_ExcludeEmptyLines,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::NewProp_FullFilePath,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::NewProp_ArraySize,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::NewProp_StringArray,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::NewProp_StringArray_Inner,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|VictoryBP|File IO" },
+		{ "Comment", "/** Loads a text file from hard disk and parses it into a String array, where each entry in the string array is 1 line from the text file. Option to exclude lines that are only whitespace characters or '\\n'. Returns the size of the final String Array that was created. Returns false if the file could be loaded from hard disk. */" },
+		{ "CPP_Default_ExcludeEmptyLines", "false" },
+		{ "CPP_Default_FullFilePath", "Enter Full File Path" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+		{ "ToolTip", "Loads a text file from hard disk and parses it into a String array, where each entry in the string array is 1 line from the text file. Option to exclude lines that are only whitespace characters or '\\n'. Returns the size of the final String Array that was created. Returns false if the file could be loaded from hard disk." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "LoadStringArrayFromFile", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventLoadStringArrayFromFile_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile_Statics
+	{
+		struct ESLibraryBPLibrary_eventLoadStringFromFile_Parms
+		{
+			FString Result;
+			FString FullFilePath;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_FullFilePath;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Result;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((ESLibraryBPLibrary_eventLoadStringFromFile_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ESLibraryBPLibrary_eventLoadStringFromFile_Parms), &Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile_Statics::NewProp_FullFilePath = { "FullFilePath", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventLoadStringFromFile_Parms, FullFilePath), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventLoadStringFromFile_Parms, Result), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile_Statics::NewProp_FullFilePath,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile_Statics::NewProp_Result,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|VictoryBP|File IO" },
+		{ "Comment", "/** Load a text file to a single string that you can use ParseIntoArray on newline characters if you want same format as LoadStringArrayFromFile. This version supports unicode characters! */" },
+		{ "CPP_Default_FullFilePath", "Enter Full File Path" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+		{ "ToolTip", "Load a text file to a single string that you can use ParseIntoArray on newline characters if you want same format as LoadStringArrayFromFile. This version supports unicode characters!" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "LoadStringFromFile", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventLoadStringFromFile_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UESLibraryBPLibrary_LoadTexture2D_FromDDSFile_Statics
 	{
 		struct ESLibraryBPLibrary_eventLoadTexture2D_FromDDSFile_Parms
@@ -18633,7 +18986,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_MakeLiteralFBox2D_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "DisplayName", "Make Literal Box2D" },
 		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
 	};
@@ -18785,7 +19138,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_MinAndMaxOfFloatArray_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "DisplayName", "Min and Max of Array (float)" },
 		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
 	};
@@ -18831,7 +19184,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_MoveTowards_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "DisplayName", "Move Towards (Float)" },
 		{ "Keywords", "Float Move Towards" },
 		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
@@ -18878,7 +19231,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_MoveTowardsAngle_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "DisplayName", "Move Towards (Angle)" },
 		{ "Keywords", "Angle Move Towards" },
 		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
@@ -18925,7 +19278,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_MoveTowardsRotator_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "DisplayName", "Move Towards (Rotator)" },
 		{ "Keywords", "Rotator FRotator Move Towards" },
 		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
@@ -18972,7 +19325,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_MoveTowardsVector_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "DisplayName", "Move Towards (Vector)" },
 		{ "Keywords", "Vector FVector Move Towards" },
 		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
@@ -20108,7 +20461,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_PointIsInsideBox_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "DisplayName", "Point Is Inside Box" },
 		{ "Keywords", "Point Inside Box" },
 		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
@@ -20209,6 +20562,51 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_PrintStringWithCategory_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_ProjectWorldToScreenPosition_Statics
+	{
+		struct ESLibraryBPLibrary_eventProjectWorldToScreenPosition_Parms
+		{
+			FVector WorldLocation;
+			FVector2D ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WorldLocation_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_WorldLocation;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_ProjectWorldToScreenPosition_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventProjectWorldToScreenPosition_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_ProjectWorldToScreenPosition_Statics::NewProp_WorldLocation_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_ProjectWorldToScreenPosition_Statics::NewProp_WorldLocation = { "WorldLocation", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventProjectWorldToScreenPosition_Parms, WorldLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_ProjectWorldToScreenPosition_Statics::NewProp_WorldLocation_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_ProjectWorldToScreenPosition_Statics::NewProp_WorldLocation_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_ProjectWorldToScreenPosition_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_ProjectWorldToScreenPosition_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_ProjectWorldToScreenPosition_Statics::NewProp_WorldLocation,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_ProjectWorldToScreenPosition_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|VictoryBP|Misc" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_ProjectWorldToScreenPosition_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "ProjectWorldToScreenPosition", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventProjectWorldToScreenPosition_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_ProjectWorldToScreenPosition_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_ProjectWorldToScreenPosition_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C22401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_ProjectWorldToScreenPosition_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_ProjectWorldToScreenPosition_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_ProjectWorldToScreenPosition()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_ProjectWorldToScreenPosition_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -21331,7 +21729,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_RemoveAllChildren_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "DisplayName", "Remove All Children" },
 		{ "Keywords", "Clear Destroy Remove Kill Child Children" },
 		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
@@ -21460,7 +21858,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_RepeatFloat_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "DisplayName", "Repeat Float" },
 		{ "Keywords", "Repeat Float" },
 		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
@@ -21836,6 +22234,62 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_SaveReplayCheckpoint_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics
+	{
+		struct ESLibraryBPLibrary_eventSelection_SelectionBox_Parms
+		{
+			UObject* WorldContextObject;
+			TArray<AActor*> SelectedActors;
+			FVector2D AnchorPoint;
+			FVector2D DraggedPoint;
+			TSubclassOf<AActor>  ClassFilter;
+		};
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ClassFilter;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_DraggedPoint;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_AnchorPoint;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_SelectedActors;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SelectedActors_Inner;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_WorldContextObject;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::NewProp_ClassFilter = { "ClassFilter", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventSelection_SelectionBox_Parms, ClassFilter), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::NewProp_DraggedPoint = { "DraggedPoint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventSelection_SelectionBox_Parms, DraggedPoint), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::NewProp_AnchorPoint = { "AnchorPoint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventSelection_SelectionBox_Parms, AnchorPoint), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::NewProp_SelectedActors = { "SelectedActors", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventSelection_SelectionBox_Parms, SelectedActors), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::NewProp_SelectedActors_Inner = { "SelectedActors", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventSelection_SelectionBox_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::NewProp_ClassFilter,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::NewProp_DraggedPoint,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::NewProp_AnchorPoint,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::NewProp_SelectedActors,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::NewProp_SelectedActors_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::NewProp_WorldContextObject,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|VictoryBP|Misc" },
+		{ "Comment", "/** Implementation of a Selection Marquee / Selection Box as a BP Node. AnchorPoint is the first clicked point, which user then drags from to make the box. Class filter is optional way to narrow the scope of actors that can be selected by the selection box! -Rama*/" },
+		{ "DefaultToSelf", "WorldContextObject" },
+		{ "HidePin", "WorldContextObject" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+		{ "ToolTip", "Implementation of a Selection Marquee / Selection Box as a BP Node. AnchorPoint is the first clicked point, which user then drags from to make the box. Class filter is optional way to narrow the scope of actors that can be selected by the selection box! -Rama" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "Selection_SelectionBox", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventSelection_SelectionBox_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C22401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -22663,7 +23117,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_SetMousePosition_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "Comment", "// Real implementation\n" },
 		{ "DisplayName", "Set Mouse Position" },
 		{ "Keywords", "Set Mouse Position" },
@@ -24913,7 +25367,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_VectorIsNearlyZero_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "DisplayName", "Vector is nearly zero" },
 		{ "Keywords", "Vector FVector Zero Nearly" },
 		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
@@ -25017,6 +25471,47 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_VectorToOrientationRotator_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_VerticalFOV_Statics
+	{
+		struct ESLibraryBPLibrary_eventVerticalFOV_Parms
+		{
+			float HorizontalFOV;
+			float AspectRatio;
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AspectRatio;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_HorizontalFOV;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VerticalFOV_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVerticalFOV_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VerticalFOV_Statics::NewProp_AspectRatio = { "AspectRatio", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVerticalFOV_Parms, AspectRatio), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VerticalFOV_Statics::NewProp_HorizontalFOV = { "HorizontalFOV", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVerticalFOV_Parms, HorizontalFOV), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_VerticalFOV_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VerticalFOV_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VerticalFOV_Statics::NewProp_AspectRatio,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VerticalFOV_Statics::NewProp_HorizontalFOV,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_VerticalFOV_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|VictoryBP|Game|Viewport" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_VerticalFOV_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "VerticalFOV", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventVerticalFOV_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_VerticalFOV_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VerticalFOV_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_VerticalFOV_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VerticalFOV_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VerticalFOV()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_VerticalFOV_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -25178,6 +25673,51 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_Victory_Get_Pixel_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo_Statics
+	{
+		struct ESLibraryBPLibrary_eventVictory_GetGPUInfo_Parms
+		{
+			FString DeviceDescription;
+			FString Provider;
+			FString DriverVersion;
+			FString DriverDate;
+		};
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_DriverDate;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_DriverVersion;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Provider;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_DeviceDescription;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo_Statics::NewProp_DriverDate = { "DriverDate", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictory_GetGPUInfo_Parms, DriverDate), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo_Statics::NewProp_DriverVersion = { "DriverVersion", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictory_GetGPUInfo_Parms, DriverVersion), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo_Statics::NewProp_Provider = { "Provider", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictory_GetGPUInfo_Parms, Provider), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo_Statics::NewProp_DeviceDescription = { "DeviceDescription", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictory_GetGPUInfo_Parms, DeviceDescription), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo_Statics::NewProp_DriverDate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo_Statics::NewProp_DriverVersion,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo_Statics::NewProp_Provider,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo_Statics::NewProp_DeviceDescription,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|GPU" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "Victory_GetGPUInfo", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventVictory_GetGPUInfo_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -25544,6 +26084,425 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_Victory_SavePixels_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics
+	{
+		struct ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Bool_Parms
+		{
+			FString SectionName;
+			FString VariableName;
+			bool IsValid;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static void NewProp_IsValid_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_IsValid;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_VariableName;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_SectionName;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Bool_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Bool_Parms), &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::NewProp_IsValid_SetBit(void* Obj)
+	{
+		((ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Bool_Parms*)Obj)->IsValid = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::NewProp_IsValid = { "IsValid", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Bool_Parms), &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::NewProp_IsValid_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::NewProp_VariableName = { "VariableName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Bool_Parms, VariableName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::NewProp_SectionName = { "SectionName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Bool_Parms, SectionName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::NewProp_IsValid,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::NewProp_VariableName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::NewProp_SectionName,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|VictoryBP|Custom Config Vars" },
+		{ "Comment", "/** Get Custom Config Var! These are stored in Saved/Config/Windows/Game.ini */" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+		{ "ToolTip", "Get Custom Config Var! These are stored in Saved/Config/Windows/Game.ini" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "VictoryGetCustomConfigVar_Bool", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Bool_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color_Statics
+	{
+		struct ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Color_Parms
+		{
+			FString SectionName;
+			FString VariableName;
+			bool IsValid;
+			FLinearColor ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static void NewProp_IsValid_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_IsValid;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_VariableName;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_SectionName;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Color_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color_Statics::NewProp_IsValid_SetBit(void* Obj)
+	{
+		((ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Color_Parms*)Obj)->IsValid = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color_Statics::NewProp_IsValid = { "IsValid", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Color_Parms), &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color_Statics::NewProp_IsValid_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color_Statics::NewProp_VariableName = { "VariableName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Color_Parms, VariableName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color_Statics::NewProp_SectionName = { "SectionName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Color_Parms, SectionName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color_Statics::NewProp_IsValid,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color_Statics::NewProp_VariableName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color_Statics::NewProp_SectionName,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|VictoryBP|Custom Config Vars" },
+		{ "Comment", "/** Get Custom Config Var! These are stored in Saved/Config/Windows/Game.ini */" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+		{ "ToolTip", "Get Custom Config Var! These are stored in Saved/Config/Windows/Game.ini" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "VictoryGetCustomConfigVar_Color", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Color_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C22401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float_Statics
+	{
+		struct ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Float_Parms
+		{
+			FString SectionName;
+			FString VariableName;
+			bool IsValid;
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static void NewProp_IsValid_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_IsValid;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_VariableName;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_SectionName;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Float_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float_Statics::NewProp_IsValid_SetBit(void* Obj)
+	{
+		((ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Float_Parms*)Obj)->IsValid = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float_Statics::NewProp_IsValid = { "IsValid", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Float_Parms), &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float_Statics::NewProp_IsValid_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float_Statics::NewProp_VariableName = { "VariableName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Float_Parms, VariableName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float_Statics::NewProp_SectionName = { "SectionName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Float_Parms, SectionName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float_Statics::NewProp_IsValid,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float_Statics::NewProp_VariableName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float_Statics::NewProp_SectionName,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|VictoryBP|Custom Config Vars" },
+		{ "Comment", "/** Get Custom Config Var! These are stored in Saved/Config/Windows/Game.ini */" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+		{ "ToolTip", "Get Custom Config Var! These are stored in Saved/Config/Windows/Game.ini" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "VictoryGetCustomConfigVar_Float", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Float_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int_Statics
+	{
+		struct ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Int_Parms
+		{
+			FString SectionName;
+			FString VariableName;
+			bool IsValid;
+			int32 ReturnValue;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static void NewProp_IsValid_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_IsValid;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_VariableName;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_SectionName;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Int_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int_Statics::NewProp_IsValid_SetBit(void* Obj)
+	{
+		((ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Int_Parms*)Obj)->IsValid = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int_Statics::NewProp_IsValid = { "IsValid", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Int_Parms), &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int_Statics::NewProp_IsValid_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int_Statics::NewProp_VariableName = { "VariableName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Int_Parms, VariableName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int_Statics::NewProp_SectionName = { "SectionName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Int_Parms, SectionName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int_Statics::NewProp_IsValid,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int_Statics::NewProp_VariableName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int_Statics::NewProp_SectionName,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|VictoryBP|Custom Config Vars" },
+		{ "Comment", "/** Get Custom Config Var! These are stored in Saved/Config/Windows/Game.ini */" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+		{ "ToolTip", "Get Custom Config Var! These are stored in Saved/Config/Windows/Game.ini" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "VictoryGetCustomConfigVar_Int", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Int_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator_Statics
+	{
+		struct ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Rotator_Parms
+		{
+			FString SectionName;
+			FString VariableName;
+			bool IsValid;
+			FRotator ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static void NewProp_IsValid_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_IsValid;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_VariableName;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_SectionName;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Rotator_Parms, ReturnValue), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator_Statics::NewProp_IsValid_SetBit(void* Obj)
+	{
+		((ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Rotator_Parms*)Obj)->IsValid = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator_Statics::NewProp_IsValid = { "IsValid", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Rotator_Parms), &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator_Statics::NewProp_IsValid_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator_Statics::NewProp_VariableName = { "VariableName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Rotator_Parms, VariableName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator_Statics::NewProp_SectionName = { "SectionName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Rotator_Parms, SectionName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator_Statics::NewProp_IsValid,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator_Statics::NewProp_VariableName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator_Statics::NewProp_SectionName,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|VictoryBP|Custom Config Vars" },
+		{ "Comment", "/** Get Custom Config Var! These are stored in Saved/Config/Windows/Game.ini */" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+		{ "ToolTip", "Get Custom Config Var! These are stored in Saved/Config/Windows/Game.ini" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "VictoryGetCustomConfigVar_Rotator", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Rotator_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C22401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String_Statics
+	{
+		struct ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_String_Parms
+		{
+			FString SectionName;
+			FString VariableName;
+			bool IsValid;
+			FString ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static void NewProp_IsValid_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_IsValid;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_VariableName;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_SectionName;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_String_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String_Statics::NewProp_IsValid_SetBit(void* Obj)
+	{
+		((ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_String_Parms*)Obj)->IsValid = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String_Statics::NewProp_IsValid = { "IsValid", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_String_Parms), &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String_Statics::NewProp_IsValid_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String_Statics::NewProp_VariableName = { "VariableName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_String_Parms, VariableName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String_Statics::NewProp_SectionName = { "SectionName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_String_Parms, SectionName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String_Statics::NewProp_IsValid,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String_Statics::NewProp_VariableName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String_Statics::NewProp_SectionName,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|VictoryBP|Custom Config Vars" },
+		{ "Comment", "/** Get Custom Config Var! These are stored in Saved/Config/Windows/Game.ini */" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+		{ "ToolTip", "Get Custom Config Var! These are stored in Saved/Config/Windows/Game.ini" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "VictoryGetCustomConfigVar_String", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_String_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector_Statics
+	{
+		struct ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Vector_Parms
+		{
+			FString SectionName;
+			FString VariableName;
+			bool IsValid;
+			FVector ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static void NewProp_IsValid_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_IsValid;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_VariableName;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_SectionName;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Vector_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector_Statics::NewProp_IsValid_SetBit(void* Obj)
+	{
+		((ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Vector_Parms*)Obj)->IsValid = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector_Statics::NewProp_IsValid = { "IsValid", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Vector_Parms), &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector_Statics::NewProp_IsValid_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector_Statics::NewProp_VariableName = { "VariableName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Vector_Parms, VariableName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector_Statics::NewProp_SectionName = { "SectionName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Vector_Parms, SectionName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector_Statics::NewProp_IsValid,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector_Statics::NewProp_VariableName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector_Statics::NewProp_SectionName,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|VictoryBP|Custom Config Vars" },
+		{ "Comment", "/** Get Custom Config Var! These are stored in Saved/Config/Windows/Game.ini */" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+		{ "ToolTip", "Get Custom Config Var! These are stored in Saved/Config/Windows/Game.ini" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "VictoryGetCustomConfigVar_Vector", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Vector_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C22401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D_Statics
+	{
+		struct ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Vector2D_Parms
+		{
+			FString SectionName;
+			FString VariableName;
+			bool IsValid;
+			FVector2D ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static void NewProp_IsValid_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_IsValid;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_VariableName;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_SectionName;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Vector2D_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D_Statics::NewProp_IsValid_SetBit(void* Obj)
+	{
+		((ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Vector2D_Parms*)Obj)->IsValid = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D_Statics::NewProp_IsValid = { "IsValid", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Vector2D_Parms), &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D_Statics::NewProp_IsValid_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D_Statics::NewProp_VariableName = { "VariableName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Vector2D_Parms, VariableName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D_Statics::NewProp_SectionName = { "SectionName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Vector2D_Parms, SectionName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D_Statics::NewProp_IsValid,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D_Statics::NewProp_VariableName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D_Statics::NewProp_SectionName,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|VictoryBP|Custom Config Vars" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "VictoryGetCustomConfigVar_Vector2D", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventVictoryGetCustomConfigVar_Vector2D_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C22401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -26141,6 +27100,47 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_VictorySimulateMouseWheel_Statics
+	{
+		struct ESLibraryBPLibrary_eventVictorySimulateMouseWheel_Parms
+		{
+			float Delta;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Delta_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Delta;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_VictorySimulateMouseWheel_Statics::NewProp_Delta_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_VictorySimulateMouseWheel_Statics::NewProp_Delta = { "Delta", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventVictorySimulateMouseWheel_Parms, Delta), METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_VictorySimulateMouseWheel_Statics::NewProp_Delta_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VictorySimulateMouseWheel_Statics::NewProp_Delta_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_VictorySimulateMouseWheel_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_VictorySimulateMouseWheel_Statics::NewProp_Delta,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_VictorySimulateMouseWheel_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|VictoryBP|Input" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_VictorySimulateMouseWheel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "VictorySimulateMouseWheel", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventVictorySimulateMouseWheel_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_VictorySimulateMouseWheel_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VictorySimulateMouseWheel_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_VictorySimulateMouseWheel_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_VictorySimulateMouseWheel_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_VictorySimulateMouseWheel()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_VictorySimulateMouseWheel_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UESLibraryBPLibrary_WasActorRenderedRecently_Statics
 	{
 		struct ESLibraryBPLibrary_eventWasActorRenderedRecently_Parms
@@ -26173,7 +27173,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_WasActorRenderedRecently_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "CPP_Default_MaxRecentTime", "0.100000" },
 		{ "DisplayName", "Was Actor Rendered Recently" },
 		{ "Keywords", "Actor Rendered Recently" },
@@ -26502,7 +27502,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_WorldPointIsInsideBox_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ES" },
+		{ "Category", "ES|UnX" },
 		{ "DisplayName", "Is World Point Inside Box" },
 		{ "Keywords", "World Point Inside Within Intersect Box" },
 		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
@@ -26814,12 +27814,14 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_AngleBetweenDirectionVectorsRad, "AngleBetweenDirectionVectorsRad" }, // 1311472068
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_AngleBetweenQuatsDeg, "AngleBetweenQuatsDeg" }, // 4110665461
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_AngleBetweenQuatsRad, "AngleBetweenQuatsRad" }, // 1149878797
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsets, "Animation__GetAimOffsets" }, // 2073028065
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Animation__GetAimOffsetsFromRotation, "Animation__GetAimOffsetsFromRotation" }, // 808731450
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_AreObjectsSameClass, "AreObjectsSameClass" }, // 550590510
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_AreObjectsValid, "AreObjectsValid" }, // 2665731166
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_AreQuatsEqual, "AreQuatsEqual" }, // 1856030573
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_BiLerp, "BiLerp" }, // 3330396253
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_BoxIntersectsBox, "BoxIntersectsBox" }, // 682521118
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_BoxIsInsideBox, "BoxIsInsideBox" }, // 2371453832
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_BoxIntersectsBox, "BoxIntersectsBox" }, // 1378204180
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_BoxIsInsideBox, "BoxIsInsideBox" }, // 2961380568
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Branch_AEquals, "Branch_AEquals" }, // 1982311583
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Branch_ANotEqual, "Branch_ANotEqual" }, // 2636344720
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Branch_Color, "Branch_Color" }, // 1421456712
@@ -26860,7 +27862,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Conv_CollisionChannelsToObjectTypeQuerys, "Conv_CollisionChannelsToObjectTypeQuerys" }, // 4283362966
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Conv_CollisionChannelToObjectTypeQuery, "Conv_CollisionChannelToObjectTypeQuery" }, // 3582570769
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Conv_LinearColorToSlateColor, "Conv_LinearColorToSlateColor" }, // 256366835
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_ConvertLinearColors, "ConvertLinearColors" }, // 1870388303
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_ConvertLinearColors, "ConvertLinearColors" }, // 1888158323
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_CreateObject, "CreateObject" }, // 1194571932
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_CreatePrimitiveComponent, "CreatePrimitiveComponent" }, // 2600536228
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_CreateTextureRenderTarget2D, "CreateTextureRenderTarget2D" }, // 2664209085
@@ -26868,7 +27870,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_DeleteDirectory, "DeleteDirectory" }, // 902648678
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_DeleteFile, "DeleteFile" }, // 3940303001
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_DeleteFileII, "DeleteFileII" }, // 1572080328
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_DeltaAngle, "DeltaAngle" }, // 2014890542
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_DeltaAngle, "DeltaAngle" }, // 1912128664
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_DesktopPlatform, "DesktopPlatform" }, // 763589998
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_DevelopmentBuild, "DevelopmentBuild" }, // 3751497615
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Difference_Date, "Difference_Date" }, // 547666020
@@ -26954,8 +27956,8 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_FPosIncrement, "FPosIncrement" }, // 2889701615
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_FPreDecrement, "FPreDecrement" }, // 3882816318
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_FPreIncrement, "FPreIncrement" }, // 379559396
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_GetActorLastRenderTime, "GetActorLastRenderTime" }, // 1452649596
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_GetActorScreenBox, "GetActorScreenBox" }, // 3154732834
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_GetActorLastRenderTime, "GetActorLastRenderTime" }, // 2183630621
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_GetActorScreenBox, "GetActorScreenBox" }, // 4156930441
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_GetAllLevels, "GetAllLevels" }, // 1324771027
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_GetAllSubWidgetsInParent, "GetAllSubWidgetsInParent" }, // 3981198938
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_GetAllWidgetsOfTypeInUserWidget, "GetAllWidgetsOfTypeInUserWidget" }, // 2179251105
@@ -26965,6 +27967,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_GetClassFromAssetPath, "GetClassFromAssetPath" }, // 2853993614
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_GetClosestActorToPoint, "GetClosestActorToPoint" }, // 556416416
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_GetClosestComponentToPoint, "GetClosestComponentToPoint" }, // 2122548988
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_GetCommandLine, "GetCommandLine" }, // 2561065228
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_GetConnectedClientIPs, "GetConnectedClientIPs" }, // 3637769800
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_GetCSVRowNames, "GetCSVRowNames" }, // 3140823499
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_GetCSVTableString, "GetCSVTableString" }, // 3527206458
@@ -27025,11 +28028,12 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_HasLowerBound_Date, "HasLowerBound_Date" }, // 2958643893
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_HasLowerBound_Float, "HasLowerBound_Float" }, // 2903976063
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_HasLowerBound_Int, "HasLowerBound_Int" }, // 605735707
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_HasRuntimeCooking, "HasRuntimeCooking" }, // 3517222572
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_HasRuntimeCooking, "HasRuntimeCooking" }, // 846436052
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_HasUpperBound_Date, "HasUpperBound_Date" }, // 4171190753
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_HasUpperBound_Float, "HasUpperBound_Float" }, // 1815576732
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_HasUpperBound_Int, "HasUpperBound_Int" }, // 2939027046
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_HideStreamingLevel, "HideStreamingLevel" }, // 3725601253
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_HorizontalFOV, "HorizontalFOV" }, // 4002642830
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Hull_Date, "Hull_Date" }, // 2676565692
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Hull_Float, "Hull_Float" }, // 1264697552
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Hull_Int, "Hull_Int" }, // 3896531379
@@ -27050,7 +28054,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_INTPreIncrement, "INTPreIncrement" }, // 3332755442
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Inverse, "Inverse" }, // 3367487220
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_IosPlatform, "IosPlatform" }, // 2778860053
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_IsActorWithinFrustum, "IsActorWithinFrustum" }, // 2751226277
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_IsActorWithinFrustum, "IsActorWithinFrustum" }, // 814877300
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_IsClassSameAs, "IsClassSameAs" }, // 958801601
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_IsDegenerate_Date, "IsDegenerate_Date" }, // 187242867
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_IsDegenerate_Float, "IsDegenerate_Float" }, // 3108051193
@@ -27072,20 +28076,22 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_LoadGameFromSlotCompressed, "LoadGameFromSlotCompressed" }, // 3825460799
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_LoadObjectFromAssetPath, "LoadObjectFromAssetPath" }, // 559383842
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_LoadOggDataFromFile, "LoadOggDataFromFile" }, // 1262918936
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringArrayFromFile, "LoadStringArrayFromFile" }, // 1405286756
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_LoadStringFromFile, "LoadStringFromFile" }, // 1844948167
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_LoadTexture2D_FromDDSFile, "LoadTexture2D_FromDDSFile" }, // 1384649222
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_LoadTexture2DFromFile, "LoadTexture2DFromFile" }, // 2790888598
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_LoadWaveDataFromFile, "LoadWaveDataFromFile" }, // 2358349940
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_LoopToRange_Float, "LoopToRange_Float" }, // 2748486230
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_LoopToRange_Int, "LoopToRange_Int" }, // 2014696333
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_MacPlatform, "MacPlatform" }, // 1588678093
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_MakeLiteralFBox2D, "MakeLiteralFBox2D" }, // 1097647216
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_MakeLiteralFBox2D, "MakeLiteralFBox2D" }, // 3313648152
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_MarkRenderDirty, "MarkRenderDirty" }, // 2117397124
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_MarkRenderDity_Comps, "MarkRenderDity_Comps" }, // 3057888170
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_MinAndMaxOfFloatArray, "MinAndMaxOfFloatArray" }, // 2234224471
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_MoveTowards, "MoveTowards" }, // 3334478149
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_MoveTowardsAngle, "MoveTowardsAngle" }, // 342046902
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_MoveTowardsRotator, "MoveTowardsRotator" }, // 733561722
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_MoveTowardsVector, "MoveTowardsVector" }, // 46111902
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_MinAndMaxOfFloatArray, "MinAndMaxOfFloatArray" }, // 2296335883
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_MoveTowards, "MoveTowards" }, // 1559757288
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_MoveTowardsAngle, "MoveTowardsAngle" }, // 985216566
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_MoveTowardsRotator, "MoveTowardsRotator" }, // 1646824794
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_MoveTowardsVector, "MoveTowardsVector" }, // 1924106328
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Multiply_f, "Multiply_f" }, // 748275221
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Multiply_fi, "Multiply_fi" }, // 4029473488
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Multiply_i, "Multiply_i" }, // 3983265253
@@ -27107,8 +28113,9 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_PerlinNoise2D, "PerlinNoise2D" }, // 3675965520
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_PerlinNoise3D, "PerlinNoise3D" }, // 416802147
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_PlayReplay, "PlayReplay" }, // 130104228
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_PointIsInsideBox, "PointIsInsideBox" }, // 3145224576
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_PointIsInsideBox, "PointIsInsideBox" }, // 630491090
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_PrintStringWithCategory, "PrintStringWithCategory" }, // 82220338
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_ProjectWorldToScreenPosition, "ProjectWorldToScreenPosition" }, // 1604442258
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Ps4Platform, "Ps4Platform" }, // 1174902621
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_QuatAxisAngleDeg, "QuatAxisAngleDeg" }, // 26262140
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_QuatAxisAngleRad, "QuatAxisAngleRad" }, // 1845908388
@@ -27129,10 +28136,10 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_RealWorldTime__GetCurrentOSTime, "RealWorldTime__GetCurrentOSTime" }, // 1564843030
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_RealWorldTime__GetDifferenceBetweenTimes, "RealWorldTime__GetDifferenceBetweenTimes" }, // 846548695
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_RealWorldTime__GetTimePassedSincePreviousTime, "RealWorldTime__GetTimePassedSincePreviousTime" }, // 4036730320
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_RemoveAllChildren, "RemoveAllChildren" }, // 3351828330
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_RemoveAllChildren, "RemoveAllChildren" }, // 3204951442
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_RemoveFromStreamingLevels, "RemoveFromStreamingLevels" }, // 2346510317
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_RemoveSpaces, "RemoveSpaces" }, // 1008106084
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_RepeatFloat, "RepeatFloat" }, // 3248410767
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_RepeatFloat, "RepeatFloat" }, // 1892377524
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_ReplaceUnderscore, "ReplaceUnderscore" }, // 4238974325
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_RequestExit, "RequestExit" }, // 44126192
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_RotatorDifference, "RotatorDifference" }, // 1926322986
@@ -27141,6 +28148,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_RoundVector, "RoundVector" }, // 1832554687
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_SaveGameToSlotCompressed, "SaveGameToSlotCompressed" }, // 878599010
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_SaveReplayCheckpoint, "SaveReplayCheckpoint" }, // 1946839100
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Selection_SelectionBox, "Selection_SelectionBox" }, // 1942807413
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_SetActorRelativeRotation, "SetActorRelativeRotation" }, // 3564855395
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_SetActorRotation, "SetActorRotation" }, // 2945399495
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_SetAngularVelocityInRadiansToComponentBody, "SetAngularVelocityInRadiansToComponentBody" }, // 1356869437
@@ -27155,7 +28163,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_SetGlobalVolume, "SetGlobalVolume" }, // 263141928
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_SetInputPriority, "SetInputPriority" }, // 1008316189
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_SetLinearVelocityToComponentBody, "SetLinearVelocityToComponentBody" }, // 2695411551
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_SetMousePosition, "SetMousePosition" }, // 4096899443
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_SetMousePosition, "SetMousePosition" }, // 410171615
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_SetReplayPausedState, "SetReplayPausedState" }, // 2026818487
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_SetReplayPlaybackSpeed, "SetReplayPlaybackSpeed" }, // 731654638
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_ShippingBuild, "ShippingBuild" }, // 186953771
@@ -27195,16 +28203,26 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_UnloadStreamingLevel, "UnloadStreamingLevel" }, // 2444454270
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Vector2D_Max, "Vector2D_Max" }, // 2127352547
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Vector2D_Min, "Vector2D_Min" }, // 3092026857
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VectorIsNearlyZero, "VectorIsNearlyZero" }, // 1630153549
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VectorIsNearlyZero, "VectorIsNearlyZero" }, // 3518555764
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VectorToOrientationQuat, "VectorToOrientationQuat" }, // 468138839
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VectorToOrientationRotator, "VectorToOrientationRotator" }, // 1880693315
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VerticalFOV, "VerticalFOV" }, // 1280875769
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Victory_AI_MoveToWithFilter, "Victory_AI_MoveToWithFilter" }, // 2516805607
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Victory_Get_Pixel, "Victory_Get_Pixel" }, // 3408108892
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetGPUInfo, "Victory_GetGPUInfo" }, // 1020700633
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetPixelFromT2D, "Victory_GetPixelFromT2D" }, // 3714088900
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Victory_GetPixelsArrayFromT2D, "Victory_GetPixelsArrayFromT2D" }, // 1385242430
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Victory_LoadTexture2D_FromFile, "Victory_LoadTexture2D_FromFile" }, // 85191840
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Victory_LoadTexture2D_FromFile_Pixels, "Victory_LoadTexture2D_FromFile_Pixels" }, // 9187919
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Victory_SavePixels, "Victory_SavePixels" }, // 2920271636
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Bool, "VictoryGetCustomConfigVar_Bool" }, // 3273385677
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Color, "VictoryGetCustomConfigVar_Color" }, // 735579273
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Float, "VictoryGetCustomConfigVar_Float" }, // 2791371347
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Int, "VictoryGetCustomConfigVar_Int" }, // 2612548143
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Rotator, "VictoryGetCustomConfigVar_Rotator" }, // 2486998796
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_String, "VictoryGetCustomConfigVar_String" }, // 2021822965
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector, "VictoryGetCustomConfigVar_Vector" }, // 1924867196
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryGetCustomConfigVar_Vector2D, "VictoryGetCustomConfigVar_Vector2D" }, // 132100757
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryPaths__ConfigDir, "VictoryPaths__ConfigDir" }, // 4179271237
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryPaths__GameRootDirectory, "VictoryPaths__GameRootDirectory" }, // 2034077328
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VictoryPaths__LogsDir, "VictoryPaths__LogsDir" }, // 1207689182
@@ -27220,14 +28238,15 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VictorySetCustomConfigVar_String, "VictorySetCustomConfigVar_String" }, // 4087327280
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VictorySetCustomConfigVar_Vector, "VictorySetCustomConfigVar_Vector" }, // 201257645
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VictorySetCustomConfigVar_Vector2D, "VictorySetCustomConfigVar_Vector2D" }, // 859520248
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_WasActorRenderedRecently, "WasActorRenderedRecently" }, // 736612272
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_VictorySimulateMouseWheel, "VictorySimulateMouseWheel" }, // 287310846
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_WasActorRenderedRecently, "WasActorRenderedRecently" }, // 2301216959
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Windows32Platform, "Windows32Platform" }, // 674335987
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Windows64Platform, "Windows64Platform" }, // 1020696390
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_WindowsPlatform, "WindowsPlatform" }, // 3257055814
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_WindowsRtArmPlatform, "WindowsRtArmPlatform" }, // 2948556744
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_WindowsRtPlatform, "WindowsRtPlatform" }, // 907479
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_WithEditor, "WithEditor" }, // 338388350
-		{ &Z_Construct_UFunction_UESLibraryBPLibrary_WorldPointIsInsideBox, "WorldPointIsInsideBox" }, // 2593153311
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_WorldPointIsInsideBox, "WorldPointIsInsideBox" }, // 3034838391
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_WriteConfig, "WriteConfig" }, // 2239791184
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_WriteCustomPathConfig, "WriteCustomPathConfig" }, // 2704480702
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_WriteFile, "WriteFile" }, // 2393515881
@@ -27266,7 +28285,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UESLibraryBPLibrary, 3879978257);
+	IMPLEMENT_CLASS(UESLibraryBPLibrary, 3420538782);
 	template<> ESLIBRARY_API UClass* StaticClass<UESLibraryBPLibrary>()
 	{
 		return UESLibraryBPLibrary::StaticClass();

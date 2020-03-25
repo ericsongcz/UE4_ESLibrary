@@ -33,8 +33,8 @@ void EmptyLinkFunctionForGeneratedCodeESLibrary_init() {}
 				SingletonFuncArray,
 				ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xCDE5DADC,
-				0x0316419C,
+				0x35186732,
+				0x69B71F80,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

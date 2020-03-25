@@ -13,8 +13,8 @@
 			"ESLibraryBPLibrary.cpp.obj"
 		],
 		"Module.ESLibrary.gen.1_of_2.cpp.obj": [
-			"DynamicLoader.gen.cpp.obj",
 			"DateRange.gen.cpp.obj",
+			"DynamicLoader.gen.cpp.obj",
 			"ESLibrary.init.gen.cpp.obj",
 			"ESLibraryBPLibrary.gen.cpp.obj"
 		],

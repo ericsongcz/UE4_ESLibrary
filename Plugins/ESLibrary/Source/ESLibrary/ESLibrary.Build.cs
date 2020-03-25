@@ -51,6 +51,8 @@ public class ESLibrary : ModuleRules
 				"RenderCore",
 				"AIModule",
 				"NavigationSystem",
+				"ApplicationCore",
+				"RHI",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

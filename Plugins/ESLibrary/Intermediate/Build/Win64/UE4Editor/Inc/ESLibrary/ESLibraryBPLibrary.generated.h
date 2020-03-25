@@ -25,8 +25,8 @@ struct FRotator;
 struct FLinearColor;
 struct FColor;
 class USoundWave;
-class ULevelStreamingDynamic;
 class UObject;
+class ULevelStreamingDynamic;
 struct FLevelStreamInstanceInfo;
 class UUserWidget;
 class UPrimitiveComponent;
@@ -1473,6 +1473,210 @@ static inline void FMKTweenDynamicDelegate_DelegateWrapper(const FScriptDelegate
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(USoundWave**)Z_Param__Result=UESLibraryBPLibrary::LoadOggDataFromFile(Z_Param_FilePath); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictoryGetCustomConfigVar_Vector2D) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SectionName); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_VariableName); \
+		P_GET_UBOOL_REF(Z_Param_Out_IsValid); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector2D*)Z_Param__Result=UESLibraryBPLibrary::VictoryGetCustomConfigVar_Vector2D(Z_Param_SectionName,Z_Param_VariableName,Z_Param_Out_IsValid); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictoryGetCustomConfigVar_String) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SectionName); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_VariableName); \
+		P_GET_UBOOL_REF(Z_Param_Out_IsValid); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=UESLibraryBPLibrary::VictoryGetCustomConfigVar_String(Z_Param_SectionName,Z_Param_VariableName,Z_Param_Out_IsValid); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictoryGetCustomConfigVar_Color) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SectionName); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_VariableName); \
+		P_GET_UBOOL_REF(Z_Param_Out_IsValid); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FLinearColor*)Z_Param__Result=UESLibraryBPLibrary::VictoryGetCustomConfigVar_Color(Z_Param_SectionName,Z_Param_VariableName,Z_Param_Out_IsValid); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictoryGetCustomConfigVar_Rotator) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SectionName); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_VariableName); \
+		P_GET_UBOOL_REF(Z_Param_Out_IsValid); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FRotator*)Z_Param__Result=UESLibraryBPLibrary::VictoryGetCustomConfigVar_Rotator(Z_Param_SectionName,Z_Param_VariableName,Z_Param_Out_IsValid); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictoryGetCustomConfigVar_Vector) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SectionName); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_VariableName); \
+		P_GET_UBOOL_REF(Z_Param_Out_IsValid); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::VictoryGetCustomConfigVar_Vector(Z_Param_SectionName,Z_Param_VariableName,Z_Param_Out_IsValid); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictoryGetCustomConfigVar_Float) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SectionName); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_VariableName); \
+		P_GET_UBOOL_REF(Z_Param_Out_IsValid); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::VictoryGetCustomConfigVar_Float(Z_Param_SectionName,Z_Param_VariableName,Z_Param_Out_IsValid); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictoryGetCustomConfigVar_Int) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SectionName); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_VariableName); \
+		P_GET_UBOOL_REF(Z_Param_Out_IsValid); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::VictoryGetCustomConfigVar_Int(Z_Param_SectionName,Z_Param_VariableName,Z_Param_Out_IsValid); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictoryGetCustomConfigVar_Bool) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SectionName); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_VariableName); \
+		P_GET_UBOOL_REF(Z_Param_Out_IsValid); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::VictoryGetCustomConfigVar_Bool(Z_Param_SectionName,Z_Param_VariableName,Z_Param_Out_IsValid); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAnimation__GetAimOffsetsFromRotation) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_AnimBPOwner); \
+		P_GET_STRUCT_REF(FRotator,Z_Param_Out_TheRotation); \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_Pitch); \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_Yaw); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::Animation__GetAimOffsetsFromRotation(Z_Param_AnimBPOwner,Z_Param_Out_TheRotation,Z_Param_Out_Pitch,Z_Param_Out_Yaw); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAnimation__GetAimOffsets) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_AnimBPOwner); \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_Pitch); \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_Yaw); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::Animation__GetAimOffsets(Z_Param_AnimBPOwner,Z_Param_Out_Pitch,Z_Param_Out_Yaw); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execLoadStringFromFile) \
+	{ \
+		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_Result); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_FullFilePath); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::LoadStringFromFile(Z_Param_Out_Result,Z_Param_FullFilePath); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execLoadStringArrayFromFile) \
+	{ \
+		P_GET_TARRAY_REF(FString,Z_Param_Out_StringArray); \
+		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_ArraySize); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_FullFilePath); \
+		P_GET_UBOOL(Z_Param_ExcludeEmptyLines); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::LoadStringArrayFromFile(Z_Param_Out_StringArray,Z_Param_Out_ArraySize,Z_Param_FullFilePath,Z_Param_ExcludeEmptyLines); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictorySimulateMouseWheel) \
+	{ \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_Delta); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UESLibraryBPLibrary::VictorySimulateMouseWheel(Z_Param_Out_Delta); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVerticalFOV) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_HorizontalFOV); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_AspectRatio); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::VerticalFOV(Z_Param_HorizontalFOV,Z_Param_AspectRatio); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHorizontalFOV) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_VerticalFOV); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_AspectRatio); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::HorizontalFOV(Z_Param_VerticalFOV,Z_Param_AspectRatio); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCommandLine) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=UESLibraryBPLibrary::GetCommandLine(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictory_GetGPUInfo) \
+	{ \
+		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_DeviceDescription); \
+		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_Provider); \
+		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_DriverVersion); \
+		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_DriverDate); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UESLibraryBPLibrary::Victory_GetGPUInfo(Z_Param_Out_DeviceDescription,Z_Param_Out_Provider,Z_Param_Out_DriverVersion,Z_Param_Out_DriverDate); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execProjectWorldToScreenPosition) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_WorldLocation); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector2D*)Z_Param__Result=UESLibraryBPLibrary::ProjectWorldToScreenPosition(Z_Param_Out_WorldLocation); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSelection_SelectionBox) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
+		P_GET_TARRAY_REF(AActor*,Z_Param_Out_SelectedActors); \
+		P_GET_STRUCT(FVector2D,Z_Param_AnchorPoint); \
+		P_GET_STRUCT(FVector2D,Z_Param_DraggedPoint); \
+		P_GET_OBJECT(UClass,Z_Param_ClassFilter); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UESLibraryBPLibrary::Selection_SelectionBox(Z_Param_WorldContextObject,Z_Param_Out_SelectedActors,Z_Param_AnchorPoint,Z_Param_DraggedPoint,Z_Param_ClassFilter); \
 		P_NATIVE_END; \
 	} \
  \
@@ -6060,6 +6264,210 @@ static inline void FMKTweenDynamicDelegate_DelegateWrapper(const FScriptDelegate
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(USoundWave**)Z_Param__Result=UESLibraryBPLibrary::LoadOggDataFromFile(Z_Param_FilePath); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictoryGetCustomConfigVar_Vector2D) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SectionName); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_VariableName); \
+		P_GET_UBOOL_REF(Z_Param_Out_IsValid); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector2D*)Z_Param__Result=UESLibraryBPLibrary::VictoryGetCustomConfigVar_Vector2D(Z_Param_SectionName,Z_Param_VariableName,Z_Param_Out_IsValid); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictoryGetCustomConfigVar_String) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SectionName); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_VariableName); \
+		P_GET_UBOOL_REF(Z_Param_Out_IsValid); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=UESLibraryBPLibrary::VictoryGetCustomConfigVar_String(Z_Param_SectionName,Z_Param_VariableName,Z_Param_Out_IsValid); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictoryGetCustomConfigVar_Color) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SectionName); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_VariableName); \
+		P_GET_UBOOL_REF(Z_Param_Out_IsValid); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FLinearColor*)Z_Param__Result=UESLibraryBPLibrary::VictoryGetCustomConfigVar_Color(Z_Param_SectionName,Z_Param_VariableName,Z_Param_Out_IsValid); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictoryGetCustomConfigVar_Rotator) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SectionName); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_VariableName); \
+		P_GET_UBOOL_REF(Z_Param_Out_IsValid); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FRotator*)Z_Param__Result=UESLibraryBPLibrary::VictoryGetCustomConfigVar_Rotator(Z_Param_SectionName,Z_Param_VariableName,Z_Param_Out_IsValid); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictoryGetCustomConfigVar_Vector) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SectionName); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_VariableName); \
+		P_GET_UBOOL_REF(Z_Param_Out_IsValid); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::VictoryGetCustomConfigVar_Vector(Z_Param_SectionName,Z_Param_VariableName,Z_Param_Out_IsValid); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictoryGetCustomConfigVar_Float) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SectionName); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_VariableName); \
+		P_GET_UBOOL_REF(Z_Param_Out_IsValid); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::VictoryGetCustomConfigVar_Float(Z_Param_SectionName,Z_Param_VariableName,Z_Param_Out_IsValid); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictoryGetCustomConfigVar_Int) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SectionName); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_VariableName); \
+		P_GET_UBOOL_REF(Z_Param_Out_IsValid); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::VictoryGetCustomConfigVar_Int(Z_Param_SectionName,Z_Param_VariableName,Z_Param_Out_IsValid); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictoryGetCustomConfigVar_Bool) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SectionName); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_VariableName); \
+		P_GET_UBOOL_REF(Z_Param_Out_IsValid); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::VictoryGetCustomConfigVar_Bool(Z_Param_SectionName,Z_Param_VariableName,Z_Param_Out_IsValid); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAnimation__GetAimOffsetsFromRotation) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_AnimBPOwner); \
+		P_GET_STRUCT_REF(FRotator,Z_Param_Out_TheRotation); \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_Pitch); \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_Yaw); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::Animation__GetAimOffsetsFromRotation(Z_Param_AnimBPOwner,Z_Param_Out_TheRotation,Z_Param_Out_Pitch,Z_Param_Out_Yaw); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAnimation__GetAimOffsets) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_AnimBPOwner); \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_Pitch); \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_Yaw); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::Animation__GetAimOffsets(Z_Param_AnimBPOwner,Z_Param_Out_Pitch,Z_Param_Out_Yaw); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execLoadStringFromFile) \
+	{ \
+		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_Result); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_FullFilePath); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::LoadStringFromFile(Z_Param_Out_Result,Z_Param_FullFilePath); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execLoadStringArrayFromFile) \
+	{ \
+		P_GET_TARRAY_REF(FString,Z_Param_Out_StringArray); \
+		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_ArraySize); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_FullFilePath); \
+		P_GET_UBOOL(Z_Param_ExcludeEmptyLines); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::LoadStringArrayFromFile(Z_Param_Out_StringArray,Z_Param_Out_ArraySize,Z_Param_FullFilePath,Z_Param_ExcludeEmptyLines); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictorySimulateMouseWheel) \
+	{ \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_Delta); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UESLibraryBPLibrary::VictorySimulateMouseWheel(Z_Param_Out_Delta); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVerticalFOV) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_HorizontalFOV); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_AspectRatio); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::VerticalFOV(Z_Param_HorizontalFOV,Z_Param_AspectRatio); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHorizontalFOV) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_VerticalFOV); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_AspectRatio); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::HorizontalFOV(Z_Param_VerticalFOV,Z_Param_AspectRatio); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCommandLine) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=UESLibraryBPLibrary::GetCommandLine(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execVictory_GetGPUInfo) \
+	{ \
+		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_DeviceDescription); \
+		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_Provider); \
+		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_DriverVersion); \
+		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_DriverDate); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UESLibraryBPLibrary::Victory_GetGPUInfo(Z_Param_Out_DeviceDescription,Z_Param_Out_Provider,Z_Param_Out_DriverVersion,Z_Param_Out_DriverDate); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execProjectWorldToScreenPosition) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_WorldLocation); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector2D*)Z_Param__Result=UESLibraryBPLibrary::ProjectWorldToScreenPosition(Z_Param_Out_WorldLocation); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSelection_SelectionBox) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
+		P_GET_TARRAY_REF(AActor*,Z_Param_Out_SelectedActors); \
+		P_GET_STRUCT(FVector2D,Z_Param_AnchorPoint); \
+		P_GET_STRUCT(FVector2D,Z_Param_DraggedPoint); \
+		P_GET_OBJECT(UClass,Z_Param_ClassFilter); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UESLibraryBPLibrary::Selection_SelectionBox(Z_Param_WorldContextObject,Z_Param_Out_SelectedActors,Z_Param_AnchorPoint,Z_Param_DraggedPoint,Z_Param_ClassFilter); \
 		P_NATIVE_END; \
 	} \
  \
