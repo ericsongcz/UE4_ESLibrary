@@ -63,7 +63,7 @@ void EmptyLinkFunctionForGeneratedCodeDateRange() {}
 		{ "ToolTip", "Holds the range's upper bound." },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FDateRange_Statics::NewProp_UpperBound = { "UpperBound", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDateRange, UpperBound), Z_Construct_UScriptStruct_FDateRangeBound, METADATA_PARAMS(Z_Construct_UScriptStruct_FDateRange_Statics::NewProp_UpperBound_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDateRange_Statics::NewProp_UpperBound_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FDateRange_Statics::NewProp_UpperBound = { "UpperBound", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDateRange, UpperBound), Z_Construct_UScriptStruct_FDateRangeBound, METADATA_PARAMS(Z_Construct_UScriptStruct_FDateRange_Statics::NewProp_UpperBound_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDateRange_Statics::NewProp_UpperBound_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDateRange_Statics::NewProp_LowerBound_MetaData[] = {
 		{ "Category", "Range" },
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeDateRange() {}
 		{ "ToolTip", "Holds the range's lower bound." },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FDateRange_Statics::NewProp_LowerBound = { "LowerBound", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDateRange, LowerBound), Z_Construct_UScriptStruct_FDateRangeBound, METADATA_PARAMS(Z_Construct_UScriptStruct_FDateRange_Statics::NewProp_LowerBound_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDateRange_Statics::NewProp_LowerBound_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FDateRange_Statics::NewProp_LowerBound = { "LowerBound", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDateRange, LowerBound), Z_Construct_UScriptStruct_FDateRangeBound, METADATA_PARAMS(Z_Construct_UScriptStruct_FDateRange_Statics::NewProp_LowerBound_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDateRange_Statics::NewProp_LowerBound_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FDateRange_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDateRange_Statics::NewProp_UpperBound,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDateRange_Statics::NewProp_LowerBound,
@@ -85,10 +85,10 @@ void EmptyLinkFunctionForGeneratedCodeDateRange() {}
 		sizeof(FDateRange),
 		alignof(FDateRange),
 		Z_Construct_UScriptStruct_FDateRange_Statics::PropPointers,
-		ARRAY_COUNT(Z_Construct_UScriptStruct_FDateRange_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDateRange_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000008),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FDateRange_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FDateRange_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FDateRange_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDateRange_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FDateRange()
 	{
@@ -105,7 +105,7 @@ void EmptyLinkFunctionForGeneratedCodeDateRange() {}
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDateRange_Hash() { return 2300482041U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDateRange_Hash() { return 267161069U; }
 	struct Z_Construct_UScriptStruct_FDateRangeBound_Statics
 	{
 		struct FDateRangeBound
@@ -144,7 +144,7 @@ void EmptyLinkFunctionForGeneratedCodeDateRange() {}
 		{ "ToolTip", "Holds the bound's value." },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FDateRangeBound_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDateRangeBound, Value), Z_Construct_UScriptStruct_FDateTime, METADATA_PARAMS(Z_Construct_UScriptStruct_FDateRangeBound_Statics::NewProp_Value_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDateRangeBound_Statics::NewProp_Value_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FDateRangeBound_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDateRangeBound, Value), Z_Construct_UScriptStruct_FDateTime, METADATA_PARAMS(Z_Construct_UScriptStruct_FDateRangeBound_Statics::NewProp_Value_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDateRangeBound_Statics::NewProp_Value_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDateRangeBound_Statics::NewProp_Type_MetaData[] = {
 		{ "Category", "Range" },
@@ -153,7 +153,7 @@ void EmptyLinkFunctionForGeneratedCodeDateRange() {}
 		{ "ToolTip", "Holds the type of the bound." },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FDateRangeBound_Statics::NewProp_Type = { "Type", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDateRangeBound, Type), Z_Construct_UEnum_CoreUObject_ERangeBoundTypes, METADATA_PARAMS(Z_Construct_UScriptStruct_FDateRangeBound_Statics::NewProp_Type_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDateRangeBound_Statics::NewProp_Type_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FDateRangeBound_Statics::NewProp_Type = { "Type", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDateRangeBound, Type), Z_Construct_UEnum_CoreUObject_ERangeBoundTypes, METADATA_PARAMS(Z_Construct_UScriptStruct_FDateRangeBound_Statics::NewProp_Type_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDateRangeBound_Statics::NewProp_Type_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FDateRangeBound_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDateRangeBound_Statics::NewProp_Value,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDateRangeBound_Statics::NewProp_Type,
@@ -166,10 +166,10 @@ void EmptyLinkFunctionForGeneratedCodeDateRange() {}
 		sizeof(FDateRangeBound),
 		alignof(FDateRangeBound),
 		Z_Construct_UScriptStruct_FDateRangeBound_Statics::PropPointers,
-		ARRAY_COUNT(Z_Construct_UScriptStruct_FDateRangeBound_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDateRangeBound_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000008),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FDateRangeBound_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FDateRangeBound_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FDateRangeBound_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDateRangeBound_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FDateRangeBound()
 	{
@@ -186,7 +186,7 @@ void EmptyLinkFunctionForGeneratedCodeDateRange() {}
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDateRangeBound_Hash() { return 2958890361U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDateRangeBound_Hash() { return 2642219494U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

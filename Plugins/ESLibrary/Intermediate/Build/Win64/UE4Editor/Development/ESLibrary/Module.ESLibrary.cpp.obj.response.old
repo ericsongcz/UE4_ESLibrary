@@ -512,6 +512,8 @@
 /I ..\Plugins\2D\Paper2D\Source\Paper2D\Classes
 /I ..\Plugins\2D\Paper2D\Source\Paper2D\Public
 /I ..\Plugins\2D\Paper2D\Source\Paper2D
+/I E:\UE4_ESLibrary\Plugins\ESLibrary\Source\ThirdParty
+/I E:\UE4_ESLibrary\Plugins\ESLibrary\Source\ThirdParty\MariaDBConnectorLibs\MariaDB_Connector_C_64-bit\include
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf

@@ -31,9 +31,9 @@ void EmptyLinkFunctionForGeneratedCodeESLibrary_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/ESLibrary",
 				SingletonFuncArray,
-				ARRAY_COUNT(SingletonFuncArray),
+				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x35186732,
+				0xF709C42B,
 				0x69B71F80,
 				METADATA_PARAMS(nullptr, 0)
 			};

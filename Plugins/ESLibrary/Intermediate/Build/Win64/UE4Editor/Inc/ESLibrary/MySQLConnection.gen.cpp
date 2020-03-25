@@ -27,7 +27,7 @@ void EmptyLinkFunctionForGeneratedCodeMySQLConnection() {}
 			{ "MySQLCheckConnection", &UMySQLConnection::execMySQLCheckConnection },
 			{ "MySQLCloseConnection", &UMySQLConnection::execMySQLCloseConnection },
 		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
 	struct Z_Construct_UFunction_UMySQLConnection_MySQLCheckConnection_Statics
 	{
@@ -57,7 +57,7 @@ void EmptyLinkFunctionForGeneratedCodeMySQLConnection() {}
 		{ "ModuleRelativePath", "Public/MySQLConnection.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLConnection_MySQLCheckConnection_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLConnection, nullptr, "MySQLCheckConnection", nullptr, nullptr, sizeof(MySQLConnection_eventMySQLCheckConnection_Parms), Z_Construct_UFunction_UMySQLConnection_MySQLCheckConnection_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UMySQLConnection_MySQLCheckConnection_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLConnection_MySQLCheckConnection_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UMySQLConnection_MySQLCheckConnection_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLConnection_MySQLCheckConnection_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLConnection, nullptr, "MySQLCheckConnection", nullptr, nullptr, sizeof(MySQLConnection_eventMySQLCheckConnection_Parms), Z_Construct_UFunction_UMySQLConnection_MySQLCheckConnection_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLConnection_MySQLCheckConnection_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLConnection_MySQLCheckConnection_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLConnection_MySQLCheckConnection_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UMySQLConnection_MySQLCheckConnection()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -101,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeMySQLConnection() {}
 		{ "ToolTip", "checks if the connection is valid and closes it, resets the pointers to nullptr on success\ntrue on success, false in case the connection is not established or the argument is nullptr" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLConnection_MySQLCloseConnection_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLConnection, nullptr, "MySQLCloseConnection", nullptr, nullptr, sizeof(MySQLConnection_eventMySQLCloseConnection_Parms), Z_Construct_UFunction_UMySQLConnection_MySQLCloseConnection_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UMySQLConnection_MySQLCloseConnection_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLConnection_MySQLCloseConnection_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UMySQLConnection_MySQLCloseConnection_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLConnection_MySQLCloseConnection_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLConnection, nullptr, "MySQLCloseConnection", nullptr, nullptr, sizeof(MySQLConnection_eventMySQLCloseConnection_Parms), Z_Construct_UFunction_UMySQLConnection_MySQLCloseConnection_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLConnection_MySQLCloseConnection_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLConnection_MySQLCloseConnection_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLConnection_MySQLCloseConnection_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UMySQLConnection_MySQLCloseConnection()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -130,8 +130,8 @@ void EmptyLinkFunctionForGeneratedCodeMySQLConnection() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_ESLibrary,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UMySQLConnection_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UMySQLConnection_MySQLCheckConnection, "MySQLCheckConnection" }, // 476352610
-		{ &Z_Construct_UFunction_UMySQLConnection_MySQLCloseConnection, "MySQLCloseConnection" }, // 3554587452
+		{ &Z_Construct_UFunction_UMySQLConnection_MySQLCheckConnection, "MySQLCheckConnection" }, // 2101243151
+		{ &Z_Construct_UFunction_UMySQLConnection_MySQLCloseConnection, "MySQLCloseConnection" }, // 3504915326
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMySQLConnection_Statics::Class_MetaDataParams[] = {
@@ -152,12 +152,12 @@ void EmptyLinkFunctionForGeneratedCodeMySQLConnection() {}
 		FuncInfo,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
-		ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x000000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UMySQLConnection_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UMySQLConnection_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UMySQLConnection_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UMySQLConnection_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UMySQLConnection()
 	{
@@ -168,7 +168,7 @@ void EmptyLinkFunctionForGeneratedCodeMySQLConnection() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UMySQLConnection, 197090106);
+	IMPLEMENT_CLASS(UMySQLConnection, 304501982);
 	template<> ESLIBRARY_API UClass* StaticClass<UMySQLConnection>()
 	{
 		return UMySQLConnection::StaticClass();

@@ -40,6 +40,7 @@
 /I Runtime\CoreUObject\Public\Serialization\Formatters
 /I Runtime\CoreUObject\Public\Templates
 /I Runtime\CoreUObject\Public\UObject
+/I Runtime\TraceLog\Public
 /I Runtime\Core\Public
 /I Runtime\Core
 /I Runtime\Core\Public\Algo
@@ -56,12 +57,15 @@
 /I Runtime\Core\Public\HAL\Allocators
 /I Runtime\Core\Public\Hash
 /I Runtime\Core\Public\Internationalization
+/I Runtime\Core\Public\IO
 /I Runtime\Core\Public\Logging
 /I Runtime\Core\Public\Math
+/I Runtime\Core\Public\Memory
 /I Runtime\Core\Public\MemPro
 /I Runtime\Core\Public\Misc
 /I Runtime\Core\Public\Modules
 /I Runtime\Core\Public\Modules\Boilerplate
+/I Runtime\Core\Public\MSVC
 /I Runtime\Core\Public\ProfilingDebugging
 /I Runtime\Core\Public\Serialization
 /I Runtime\Core\Public\Serialization\Csv
@@ -71,10 +75,9 @@
 /I Runtime\Core\Public\Traits
 /I Runtime\Core\Public\UObject
 /I Runtime\Core\Public\Windows
-/I Runtime\TraceLog\Public
 /I Runtime\TraceLog
 /I Runtime\TraceLog\Public\Trace
-/I Runtime\TraceLog\Public\Trace\Private
+/I Runtime\TraceLog\Public\Trace\Detail
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
 /I Runtime\Engine\Classes
 /I Runtime\Engine\Public
@@ -84,6 +87,7 @@
 /I Runtime\Engine\Public\Analytics
 /I Runtime\Engine\Public\Animation
 /I Runtime\Engine\Public\Audio
+/I Runtime\Engine\Public\Blueprint
 /I Runtime\Engine\Public\Curves
 /I Runtime\Engine\Public\EdGraph
 /I Runtime\Engine\Public\Internationalization
@@ -94,6 +98,10 @@
 /I Runtime\Engine\Public\Physics
 /I Runtime\Engine\Public\Physics\Experimental
 /I Runtime\Engine\Public\Physics\ImmediatePhysics
+/I Runtime\Engine\Public\Physics\ImmediatePhysics\ImmediatePhysicsChaos
+/I Runtime\Engine\Public\Physics\ImmediatePhysics\ImmediatePhysicsPhysX
+/I Runtime\Engine\Public\Physics\ImmediatePhysics\ImmediatePhysicsShared
+/I Runtime\Engine\Public\Physics\Tests
 /I Runtime\Engine\Public\ProfilingDebugging
 /I Runtime\Engine\Public\Rendering
 /I Runtime\Engine\Public\Slate
@@ -101,6 +109,15 @@
 /I Runtime\Engine\Public\Tests
 /I Runtime\Engine\Public\VisualLogger
 /I Runtime\Engine\Public\VT
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\NetCore
+/I Runtime\Net
+/I Runtime\Net\Core\Classes
+/I Runtime\Net\Core\Public
+/I Runtime\Net\Core
+/I Runtime\Net\Core\Public\Net
+/I Runtime\Net\Core\Public\Net\Core
+/I Runtime\Net\Core\Public\Net\Core\Analytics
+/I Runtime\Net\Core\Public\Net\Core\Misc
 /I Runtime\ApplicationCore\Public
 /I Runtime\ApplicationCore
 /I Runtime\ApplicationCore\Public\GenericPlatform
@@ -121,6 +138,7 @@
 /I Runtime\SlateCore\Public\Application
 /I Runtime\SlateCore\Public\Brushes
 /I Runtime\SlateCore\Public\Debugging
+/I Runtime\SlateCore\Public\FastUpdate
 /I Runtime\SlateCore\Public\Fonts
 /I Runtime\SlateCore\Public\Input
 /I Runtime\SlateCore\Public\Layout
@@ -152,6 +170,7 @@
 /I Runtime\Slate\Public\Framework\Notifications
 /I Runtime\Slate\Public\Framework\Styling
 /I Runtime\Slate\Public\Framework\Text
+/I Runtime\Slate\Public\Framework\Text\Windows
 /I Runtime\Slate\Public\Framework\Views
 /I Runtime\Slate\Public\Widgets
 /I Runtime\Slate\Public\Widgets\Accessibility
@@ -177,8 +196,6 @@
 /I Runtime\RenderCore\Public\ProfilingDebugging
 /I Runtime\Sockets\Public
 /I Runtime\Sockets
-/I Runtime\UtilityShaders\Public
-/I Runtime\UtilityShaders
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AssetRegistry
 /I Runtime\AssetRegistry\Public
 /I Runtime\AssetRegistry
@@ -194,6 +211,7 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\Renderer
 /I Runtime\Renderer\Public
 /I Runtime\Renderer
+/I Runtime\Renderer\Public\VT
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTags
 /I Runtime\GameplayTags\Classes
 /I Runtime\GameplayTags\Public
@@ -211,6 +229,9 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\MeshDescription
 /I Runtime\MeshDescription\Public
 /I Runtime\MeshDescription
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\StaticMeshDescription
+/I Runtime\StaticMeshDescription\Public
+/I Runtime\StaticMeshDescription
 /I Runtime\PakFile\Public
 /I Runtime\PakFile
 /I Runtime\RSA\Public
@@ -221,15 +242,7 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\PhysicsCore
 /I Runtime\PhysicsCore\Public
 /I Runtime\PhysicsCore
-/I ThirdParty
-/I Runtime\PhysicsSQ\Public
-/I Runtime\PhysicsSQ
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\ChaosSolvers
 /I Runtime\Experimental
-/I Runtime\Experimental\ChaosSolvers\Public
-/I Runtime\Experimental\ChaosSolvers
-/I Runtime\Experimental\ChaosSolvers\Public\Framework
-/I Runtime\Experimental\ChaosSolvers\Public\SolverObjects
 /I Runtime\Experimental\Chaos\Public
 /I Runtime\Experimental\Chaos
 /I Runtime\Experimental\Chaos\Public\Chaos
@@ -237,6 +250,7 @@
 /I Runtime\Experimental\ChaosCore\Public
 /I Runtime\Experimental\ChaosCore
 /I Runtime\Experimental\ChaosCore\Public\Chaos
+/I ThirdParty
 /I Runtime\Experimental\Voronoi\Public
 /I Runtime\Experimental\Voronoi
 /I Runtime\Experimental\Voronoi\Public\Voronoi
@@ -245,14 +259,10 @@
 /I Runtime\Experimental\FieldSystem\Source\FieldSystemCore\Public
 /I Runtime\Experimental\FieldSystem\Source\FieldSystemCore
 /I Runtime\Experimental\FieldSystem\Source\FieldSystemCore\Public\Field
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\GeometryCollectionCore
-/I Runtime\Experimental\GeometryCollectionCore\Public
-/I Runtime\Experimental\GeometryCollectionCore
-/I Runtime\Experimental\GeometryCollectionCore\Public\GeometryCollection
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\GeometryCollectionSimulationCore
-/I Runtime\Experimental\GeometryCollectionSimulationCore\Public
-/I Runtime\Experimental\GeometryCollectionSimulationCore
-/I Runtime\Experimental\GeometryCollectionSimulationCore\Public\GeometryCollection
+/I Runtime\SignalProcessing\Public
+/I Runtime\SignalProcessing
+/I Runtime\SignalProcessing\Public\DSP
+/I Runtime\SignalProcessing\Public\DSP\Encoders
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd
 /I Editor
 /I Programs\UnrealLightmass\Public
@@ -272,6 +282,7 @@
 /I Editor\UnrealEd\Public\Subsystems
 /I Editor\UnrealEd\Public\Tests
 /I Editor\UnrealEd\Public\Toolkits
+/I Editor\UnrealEd\Public\Tools
 /I Editor\BspMode\Public
 /I Editor\BspMode
 /I Developer
@@ -332,12 +343,12 @@
 /I Editor\AudioEditor
 /I Editor\AudioEditor\Public\AssetTypeActions
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AudioMixer
+/I Runtime\AudioMixer\Private
 /I Runtime\AudioMixer\Classes
 /I Runtime\AudioMixer\Public
 /I Runtime\AudioMixer
 /I Runtime\AudioMixer\Public\Components
 /I Runtime\AudioMixer\Public\DSP
-/I Runtime\AudioMixer\Public\DSP\Encoders
 /I Runtime\AudioMixer\Public\SoundFileIO
 /I Developer\TargetPlatform\Public
 /I Developer\TargetPlatform
@@ -345,6 +356,7 @@
 /I Developer\TargetPlatform\Public\Interfaces
 /I ThirdParty\libSampleRate\Public
 /I ThirdParty\libSampleRate
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\LevelEditor
 /I Editor\LevelEditor\Public
 /I Editor\LevelEditor
 /I Developer\Settings\Public
@@ -435,21 +447,6 @@
 /I Runtime\NavigationSystem\Public\NavFilters
 /I Runtime\NavigationSystem\Public\NavGraph
 /I Runtime\NavigationSystem\Public\NavMesh
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\GeometryCollectionEngine
-/I Runtime\Experimental\GeometryCollectionEngine\Public
-/I Runtime\Experimental\GeometryCollectionEngine
-/I Runtime\Experimental\GeometryCollectionEngine\Public\GeometryCollection
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\FieldSystemEngine
-/I Runtime\Experimental\FieldSystem\Source\FieldSystemEngine\Public
-/I Runtime\Experimental\FieldSystem\Source\FieldSystemEngine
-/I Runtime\Experimental\FieldSystem\Source\FieldSystemEngine\Public\Field
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\ChaosSolverEngine
-/I Runtime\Experimental\ChaosSolverEngine\Public
-/I Runtime\Experimental\ChaosSolverEngine
-/I Runtime\Experimental\ChaosSolverEngine\Public\Chaos
-/I Runtime\Experimental\FieldSystem\Source\FieldSystemSimulationCore\Public
-/I Runtime\Experimental\FieldSystem\Source\FieldSystemSimulationCore
-/I Runtime\Experimental\FieldSystem\Source\FieldSystemSimulationCore\Public\Field
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\MeshDescriptionOperations
 /I Developer\MeshDescriptionOperations\Public
 /I Developer\MeshDescriptionOperations
@@ -458,10 +455,22 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\MaterialShaderQualitySettings
 /I Runtime\MaterialShaderQualitySettings\Classes
 /I Runtime\MaterialShaderQualitySettings
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\InteractiveToolsFramework
+/I Runtime\Experimental\InteractiveToolsFramework\Public
+/I Runtime\Experimental\InteractiveToolsFramework
+/I Runtime\Experimental\InteractiveToolsFramework\Public\BaseBehaviors
+/I Runtime\Experimental\InteractiveToolsFramework\Public\BaseGizmos
+/I Runtime\Experimental\InteractiveToolsFramework\Public\BaseTools
+/I Runtime\Experimental\InteractiveToolsFramework\Public\Changes
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\ToolMenusEditor
+/I Editor\ToolMenusEditor\Public
+/I Editor\ToolMenusEditor
 /I Runtime\Windows
 /I Runtime\Windows\XAudio2\Public
 /I Runtime\Windows\XAudio2
 /I Runtime\Windows\AudioMixerXAudio2
+/I Editor\AssetTagsEditor\Public
+/I Editor\AssetTagsEditor
 /I Developer\CollectionManager\Public
 /I Developer\CollectionManager
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AddContentDialog
@@ -496,9 +505,26 @@
 /I Editor\Kismet
 /I Editor\Kismet\Public\Nodes
 /I Editor\Kismet\Public\WorkflowOrientedApp
+/I Runtime\PhysicsSQ\Public
+/I Runtime\PhysicsSQ
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\ChaosSolvers
+/I Runtime\Experimental\ChaosSolvers\Public
+/I Runtime\Experimental\ChaosSolvers
+/I Runtime\Experimental\ChaosSolvers\Public\Framework
+/I Runtime\Experimental\ChaosSolvers\Public\PhysicsProxy
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\GeometryCollectionCore
+/I Runtime\Experimental\GeometryCollectionCore\Public
+/I Runtime\Experimental\GeometryCollectionCore
+/I Runtime\Experimental\GeometryCollectionCore\Public\GeometryCollection
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\GeometryCollectionSimulationCore
+/I Runtime\Experimental\GeometryCollectionSimulationCore\Public
+/I Runtime\Experimental\GeometryCollectionSimulationCore
+/I Runtime\Experimental\GeometryCollectionSimulationCore\Public\GeometryCollection
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
 /I Runtime\ClothingSystemRuntimeInterface
+/I Runtime\AudioMixerCore\Public
+/I Runtime\AudioMixerCore
 /I E:\UE4_ESLibrary\Plugins\ESLibrary\Intermediate\Build\Win64\UE4Editor\Inc\ESLibrary
 /I E:\UE4_ESLibrary\Plugins\ESLibrary\Source
 /I E:\UE4_ESLibrary\Plugins\ESLibrary\Source\ESLibrary\Public
@@ -538,6 +564,7 @@
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include
 /I ThirdParty\PhysX3\APEX_1.4\shared\internal\include
 /I "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\INCLUDE"
+/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"

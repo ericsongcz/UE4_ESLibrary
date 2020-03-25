@@ -77,6 +77,7 @@
 "D:\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Development\AIModule\UE4Editor-AIModule.lib"
 "D:\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Development\NavigationSystem\UE4Editor-NavigationSystem.lib"
 "D:\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Development\ApplicationCore\UE4Editor-ApplicationCore.lib"
+"D:\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Development\RHI\UE4Editor-RHI.lib"
 "D:\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Development\Core\UE4Editor-Core.lib"
 "D:\Epic Games\UE_4.23\Engine\Plugins\Runtime\ProceduralMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\ProceduralMeshComponent\UE4Editor-ProceduralMeshComponent.lib"
 "D:\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Development\InputCore\UE4Editor-InputCore.lib"

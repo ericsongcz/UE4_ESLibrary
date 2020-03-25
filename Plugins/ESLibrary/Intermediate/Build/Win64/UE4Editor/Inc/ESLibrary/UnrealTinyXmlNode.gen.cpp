@@ -39,7 +39,7 @@ void EmptyLinkFunctionForGeneratedCodeUnrealTinyXmlNode() {}
 			{ "GetParentNode", &UUnrealTinyXmlNode::execGetParentNode },
 			{ "GetPreviousNode", &UUnrealTinyXmlNode::execGetPreviousNode },
 		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
 	struct Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics
 	{
@@ -70,13 +70,13 @@ void EmptyLinkFunctionForGeneratedCodeUnrealTinyXmlNode() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::NewProp_loc = { "loc", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UnrealTinyXmlNode_eventFindChildNodeByName_Parms, loc), METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::NewProp_loc_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::NewProp_loc_MetaData)) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::NewProp_loc = { "loc", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UnrealTinyXmlNode_eventFindChildNodeByName_Parms, loc), METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::NewProp_loc_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::NewProp_loc_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::NewProp_NameToSearch_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::NewProp_NameToSearch = { "NameToSearch", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UnrealTinyXmlNode_eventFindChildNodeByName_Parms, NameToSearch), METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::NewProp_NameToSearch_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::NewProp_NameToSearch_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::NewProp_NameToSearch = { "NameToSearch", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UnrealTinyXmlNode_eventFindChildNodeByName_Parms, NameToSearch), METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::NewProp_NameToSearch_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::NewProp_NameToSearch_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::NewProp_loc,
@@ -91,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeUnrealTinyXmlNode() {}
 		{ "ToolTip", "Find first(or \"loc\") child  node of this node which has the same name as \"NameToSearch\",Will return Null if can't find." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UUnrealTinyXmlNode, nullptr, "FindChildNodeByName", nullptr, nullptr, sizeof(UnrealTinyXmlNode_eventFindChildNodeByName_Parms), Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UUnrealTinyXmlNode, nullptr, "FindChildNodeByName", nullptr, nullptr, sizeof(UnrealTinyXmlNode_eventFindChildNodeByName_Parms), Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -125,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeUnrealTinyXmlNode() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue_Statics::NewProp_AttributeName = { "AttributeName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UnrealTinyXmlNode_eventGetAttributeValue_Parms, AttributeName), METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue_Statics::NewProp_AttributeName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue_Statics::NewProp_AttributeName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue_Statics::NewProp_AttributeName = { "AttributeName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UnrealTinyXmlNode_eventGetAttributeValue_Parms, AttributeName), METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue_Statics::NewProp_AttributeName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue_Statics::NewProp_AttributeName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue_Statics::NewProp_AttributeName,
@@ -138,7 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeUnrealTinyXmlNode() {}
 		{ "ToolTip", "Given an attribute name,returns the value\n               for the attribute of that name, or null if none\n               exists" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UUnrealTinyXmlNode, nullptr, "GetAttributeValue", nullptr, nullptr, sizeof(UnrealTinyXmlNode_eventGetAttributeValue_Parms), Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UUnrealTinyXmlNode, nullptr, "GetAttributeValue", nullptr, nullptr, sizeof(UnrealTinyXmlNode_eventGetAttributeValue_Parms), Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -172,7 +172,7 @@ void EmptyLinkFunctionForGeneratedCodeUnrealTinyXmlNode() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode_Statics::NewProp_SearchDeep = { "SearchDeep", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UnrealTinyXmlNode_eventGetFirstChildNode_Parms, SearchDeep), METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode_Statics::NewProp_SearchDeep_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode_Statics::NewProp_SearchDeep_MetaData)) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode_Statics::NewProp_SearchDeep = { "SearchDeep", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UnrealTinyXmlNode_eventGetFirstChildNode_Parms, SearchDeep), METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode_Statics::NewProp_SearchDeep_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode_Statics::NewProp_SearchDeep_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode_Statics::NewProp_SearchDeep,
@@ -186,7 +186,7 @@ void EmptyLinkFunctionForGeneratedCodeUnrealTinyXmlNode() {}
 		{ "ToolTip", "Gets the first child of this node which can be iterated into with GetNextNode, can return NULL." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UUnrealTinyXmlNode, nullptr, "GetFirstChildNode", nullptr, nullptr, sizeof(UnrealTinyXmlNode_eventGetFirstChildNode_Parms), Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UUnrealTinyXmlNode, nullptr, "GetFirstChildNode", nullptr, nullptr, sizeof(UnrealTinyXmlNode_eventGetFirstChildNode_Parms), Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -226,7 +226,7 @@ void EmptyLinkFunctionForGeneratedCodeUnrealTinyXmlNode() {}
 		{ "ToolTip", "Gets next (Step) node in a list of nodes, can return NULL.if exceeded,return last one." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UUnrealTinyXmlNode_GetNextNode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UUnrealTinyXmlNode, nullptr, "GetNextNode", nullptr, nullptr, sizeof(UnrealTinyXmlNode_eventGetNextNode_Parms), Z_Construct_UFunction_UUnrealTinyXmlNode_GetNextNode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetNextNode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_GetNextNode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetNextNode_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UUnrealTinyXmlNode_GetNextNode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UUnrealTinyXmlNode, nullptr, "GetNextNode", nullptr, nullptr, sizeof(UnrealTinyXmlNode_eventGetNextNode_Parms), Z_Construct_UFunction_UUnrealTinyXmlNode_GetNextNode_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetNextNode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_GetNextNode_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetNextNode_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UUnrealTinyXmlNode_GetNextNode()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -261,7 +261,7 @@ void EmptyLinkFunctionForGeneratedCodeUnrealTinyXmlNode() {}
 		{ "ToolTip", "Gets the name of current node, can return NULL." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UUnrealTinyXmlNode, nullptr, "GetNodeName", nullptr, nullptr, sizeof(UnrealTinyXmlNode_eventGetNodeName_Parms), Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeName_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UUnrealTinyXmlNode, nullptr, "GetNodeName", nullptr, nullptr, sizeof(UnrealTinyXmlNode_eventGetNodeName_Parms), Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeName_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeName_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeName_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeName()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -296,7 +296,7 @@ void EmptyLinkFunctionForGeneratedCodeUnrealTinyXmlNode() {}
 		{ "ToolTip", "Gets the value of the node." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeValue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UUnrealTinyXmlNode, nullptr, "GetNodeValue", nullptr, nullptr, sizeof(UnrealTinyXmlNode_eventGetNodeValue_Parms), Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeValue_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeValue_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeValue_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeValue_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeValue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UUnrealTinyXmlNode, nullptr, "GetNodeValue", nullptr, nullptr, sizeof(UnrealTinyXmlNode_eventGetNodeValue_Parms), Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeValue_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeValue_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeValue_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeValue_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeValue()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -331,7 +331,7 @@ void EmptyLinkFunctionForGeneratedCodeUnrealTinyXmlNode() {}
 		{ "ToolTip", "Gets the next node in a list of nodes, can return NULL." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UUnrealTinyXmlNode_GetParentNode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UUnrealTinyXmlNode, nullptr, "GetParentNode", nullptr, nullptr, sizeof(UnrealTinyXmlNode_eventGetParentNode_Parms), Z_Construct_UFunction_UUnrealTinyXmlNode_GetParentNode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetParentNode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_GetParentNode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetParentNode_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UUnrealTinyXmlNode_GetParentNode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UUnrealTinyXmlNode, nullptr, "GetParentNode", nullptr, nullptr, sizeof(UnrealTinyXmlNode_eventGetParentNode_Parms), Z_Construct_UFunction_UUnrealTinyXmlNode_GetParentNode_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetParentNode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_GetParentNode_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetParentNode_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UUnrealTinyXmlNode_GetParentNode()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -371,7 +371,7 @@ void EmptyLinkFunctionForGeneratedCodeUnrealTinyXmlNode() {}
 		{ "ToolTip", "Gets previous (Step) node in a list of nodes, can return NULL.if exceeded,return last one." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UUnrealTinyXmlNode_GetPreviousNode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UUnrealTinyXmlNode, nullptr, "GetPreviousNode", nullptr, nullptr, sizeof(UnrealTinyXmlNode_eventGetPreviousNode_Parms), Z_Construct_UFunction_UUnrealTinyXmlNode_GetPreviousNode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetPreviousNode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_GetPreviousNode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetPreviousNode_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UUnrealTinyXmlNode_GetPreviousNode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UUnrealTinyXmlNode, nullptr, "GetPreviousNode", nullptr, nullptr, sizeof(UnrealTinyXmlNode_eventGetPreviousNode_Parms), Z_Construct_UFunction_UUnrealTinyXmlNode_GetPreviousNode_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetPreviousNode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UUnrealTinyXmlNode_GetPreviousNode_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UUnrealTinyXmlNode_GetPreviousNode_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UUnrealTinyXmlNode_GetPreviousNode()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -400,14 +400,14 @@ void EmptyLinkFunctionForGeneratedCodeUnrealTinyXmlNode() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_ESLibrary,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UUnrealTinyXmlNode_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName, "FindChildNodeByName" }, // 674790309
-		{ &Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue, "GetAttributeValue" }, // 2789695276
-		{ &Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode, "GetFirstChildNode" }, // 2094157219
-		{ &Z_Construct_UFunction_UUnrealTinyXmlNode_GetNextNode, "GetNextNode" }, // 3523846226
-		{ &Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeName, "GetNodeName" }, // 1544602624
-		{ &Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeValue, "GetNodeValue" }, // 2248599408
-		{ &Z_Construct_UFunction_UUnrealTinyXmlNode_GetParentNode, "GetParentNode" }, // 359452880
-		{ &Z_Construct_UFunction_UUnrealTinyXmlNode_GetPreviousNode, "GetPreviousNode" }, // 3360602567
+		{ &Z_Construct_UFunction_UUnrealTinyXmlNode_FindChildNodeByName, "FindChildNodeByName" }, // 242286444
+		{ &Z_Construct_UFunction_UUnrealTinyXmlNode_GetAttributeValue, "GetAttributeValue" }, // 3064342815
+		{ &Z_Construct_UFunction_UUnrealTinyXmlNode_GetFirstChildNode, "GetFirstChildNode" }, // 2695194890
+		{ &Z_Construct_UFunction_UUnrealTinyXmlNode_GetNextNode, "GetNextNode" }, // 52425310
+		{ &Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeName, "GetNodeName" }, // 3145714703
+		{ &Z_Construct_UFunction_UUnrealTinyXmlNode_GetNodeValue, "GetNodeValue" }, // 1551635386
+		{ &Z_Construct_UFunction_UUnrealTinyXmlNode_GetParentNode, "GetParentNode" }, // 2061651708
+		{ &Z_Construct_UFunction_UUnrealTinyXmlNode_GetPreviousNode, "GetPreviousNode" }, // 3404780051
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UUnrealTinyXmlNode_Statics::Class_MetaDataParams[] = {
@@ -428,12 +428,12 @@ void EmptyLinkFunctionForGeneratedCodeUnrealTinyXmlNode() {}
 		FuncInfo,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
-		ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x000000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UUnrealTinyXmlNode_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UUnrealTinyXmlNode_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UUnrealTinyXmlNode_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UUnrealTinyXmlNode_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UUnrealTinyXmlNode()
 	{
@@ -444,7 +444,7 @@ void EmptyLinkFunctionForGeneratedCodeUnrealTinyXmlNode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UUnrealTinyXmlNode, 1188376332);
+	IMPLEMENT_CLASS(UUnrealTinyXmlNode, 2542174866);
 	template<> ESLIBRARY_API UClass* StaticClass<UUnrealTinyXmlNode>()
 	{
 		return UUnrealTinyXmlNode::StaticClass();

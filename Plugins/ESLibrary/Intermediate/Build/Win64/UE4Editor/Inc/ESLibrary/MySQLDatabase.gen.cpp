@@ -98,7 +98,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectoreQuery
 		{ "ToolTip", "If the query was unsuccessful a human readable error message will be populated here" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_ErrorMessage = { "ErrorMessage", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMySQLConnectoreQueryResult, ErrorMessage), METADATA_PARAMS(Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_ErrorMessage_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_ErrorMessage_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_ErrorMessage = { "ErrorMessage", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMySQLConnectoreQueryResult, ErrorMessage), METADATA_PARAMS(Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_ErrorMessage_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_ErrorMessage_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_Success_MetaData[] = {
 		{ "Category", "ES|MySQLConnector Query Result" },
@@ -111,7 +111,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectoreQuery
 	{
 		((FMySQLConnectoreQueryResult*)Obj)->Success = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FMySQLConnectoreQueryResult), &Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_Success_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_Success_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_Success_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FMySQLConnectoreQueryResult), &Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_Success_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_Success_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_Success_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_ResultRows_MetaData[] = {
 		{ "Category", "ES|MySQLConnector Query Result" },
@@ -120,7 +120,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectoreQuery
 		{ "ToolTip", "The resulting rows from the query" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_ResultRows = { "ResultRows", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMySQLConnectoreQueryResult, ResultRows), METADATA_PARAMS(Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_ResultRows_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_ResultRows_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_ResultRows = { "ResultRows", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMySQLConnectoreQueryResult, ResultRows), METADATA_PARAMS(Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_ResultRows_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_ResultRows_MetaData)) };
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_ResultRows_Inner = { "ResultRows", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::NewProp_ErrorMessage,
@@ -136,10 +136,10 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectoreQuery
 		sizeof(FMySQLConnectoreQueryResult),
 		alignof(FMySQLConnectoreQueryResult),
 		Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::PropPointers,
-		ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000001),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult()
 	{
@@ -156,7 +156,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectoreQuery
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Hash() { return 434561714U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMySQLConnectoreQueryResult_Hash() { return 3199932310U; }
 class UScriptStruct* FMySQLConnectorQueryResultRow::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -211,7 +211,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorQueryR
 		{ "ToolTip", "A list of field name, field value pairs" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow_Statics::NewProp_Fields = { "Fields", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMySQLConnectorQueryResultRow, Fields), METADATA_PARAMS(Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow_Statics::NewProp_Fields_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow_Statics::NewProp_Fields_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow_Statics::NewProp_Fields = { "Fields", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMySQLConnectorQueryResultRow, Fields), METADATA_PARAMS(Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow_Statics::NewProp_Fields_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow_Statics::NewProp_Fields_MetaData)) };
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow_Statics::NewProp_Fields_Inner = { "Fields", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow_Statics::NewProp_Fields,
@@ -225,10 +225,10 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorQueryR
 		sizeof(FMySQLConnectorQueryResultRow),
 		alignof(FMySQLConnectorQueryResultRow),
 		Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow_Statics::PropPointers,
-		ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000001),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow()
 	{
@@ -245,7 +245,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorQueryR
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow_Hash() { return 2199365757U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMySQLConnectorQueryResultRow_Hash() { return 3052210587U; }
 class UScriptStruct* FMySQLConnectorKeyValuePair::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -303,7 +303,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		{ "ToolTip", "The value of the field" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMySQLConnectorKeyValuePair, Value), METADATA_PARAMS(Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::NewProp_Value_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::NewProp_Value_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMySQLConnectorKeyValuePair, Value), METADATA_PARAMS(Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::NewProp_Value_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::NewProp_Value_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::NewProp_Key_MetaData[] = {
 		{ "Category", "ES|MySQLConnector Key Value Pair" },
@@ -312,7 +312,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		{ "ToolTip", "The database table field name" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::NewProp_Key = { "Key", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMySQLConnectorKeyValuePair, Key), METADATA_PARAMS(Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::NewProp_Key_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::NewProp_Key_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::NewProp_Key = { "Key", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMySQLConnectorKeyValuePair, Key), METADATA_PARAMS(Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::NewProp_Key_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::NewProp_Key_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::NewProp_Value,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::NewProp_Key,
@@ -325,10 +325,10 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		sizeof(FMySQLConnectorKeyValuePair),
 		alignof(FMySQLConnectorKeyValuePair),
 		Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::PropPointers,
-		ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000001),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair()
 	{
@@ -345,7 +345,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Hash() { return 4060989687U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMySQLConnectorKeyValuePair_Hash() { return 3144250909U; }
 	void UMySQLDatabase::StaticRegisterNativesUMySQLDatabase()
 	{
 		UClass* Class = UMySQLDatabase::StaticClass();
@@ -361,7 +361,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 			{ "MySQLInitConnection", &UMySQLDatabase::execMySQLInitConnection },
 			{ "TruncateTable", &UMySQLDatabase::execTruncateTable },
 		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
 	struct Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics
 	{
@@ -396,14 +396,14 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::NewProp_Fields = { "Fields", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MySQLDatabase_eventCreateTable_Parms, Fields), METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::NewProp_Fields_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::NewProp_Fields_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::NewProp_Fields = { "Fields", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MySQLDatabase_eventCreateTable_Parms, Fields), METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::NewProp_Fields_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::NewProp_Fields_MetaData)) };
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::NewProp_Fields_Inner = { "Fields", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FMySQLConnectorTableField, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::NewProp_TableName_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::NewProp_TableName = { "TableName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MySQLDatabase_eventCreateTable_Parms, TableName), METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::NewProp_TableName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::NewProp_TableName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::NewProp_TableName = { "TableName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MySQLDatabase_eventCreateTable_Parms, TableName), METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::NewProp_TableName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::NewProp_TableName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::NewProp_Connection,
@@ -420,7 +420,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		{ "ToolTip", "Create table in the database." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "CreateTable", nullptr, nullptr, sizeof(MySQLDatabase_eventCreateTable_Parms), Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "CreateTable", nullptr, nullptr, sizeof(MySQLDatabase_eventCreateTable_Parms), Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_CreateTable_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UMySQLDatabase_CreateTable()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -462,7 +462,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UMySQLDatabase_DropTable_Statics::NewProp_TableName = { "TableName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MySQLDatabase_eventDropTable_Parms, TableName), METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_DropTable_Statics::NewProp_TableName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_DropTable_Statics::NewProp_TableName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UMySQLDatabase_DropTable_Statics::NewProp_TableName = { "TableName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MySQLDatabase_eventDropTable_Parms, TableName), METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_DropTable_Statics::NewProp_TableName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_DropTable_Statics::NewProp_TableName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMySQLDatabase_DropTable_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMySQLDatabase_DropTable_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMySQLDatabase_DropTable_Statics::NewProp_Connection,
@@ -477,7 +477,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		{ "ToolTip", "Drop Table" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_DropTable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "DropTable", nullptr, nullptr, sizeof(MySQLDatabase_eventDropTable_Parms), Z_Construct_UFunction_UMySQLDatabase_DropTable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_DropTable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_DropTable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_DropTable_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_DropTable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "DropTable", nullptr, nullptr, sizeof(MySQLDatabase_eventDropTable_Parms), Z_Construct_UFunction_UMySQLDatabase_DropTable_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_DropTable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_DropTable_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_DropTable_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UMySQLDatabase_DropTable()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -523,7 +523,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		{ "ModuleRelativePath", "Public/MySQLDatabase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorExecuteQuery_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "MySQLConnectorExecuteQuery", nullptr, nullptr, sizeof(MySQLDatabase_eventMySQLConnectorExecuteQuery_Parms), Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorExecuteQuery_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorExecuteQuery_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorExecuteQuery_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorExecuteQuery_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorExecuteQuery_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "MySQLConnectorExecuteQuery", nullptr, nullptr, sizeof(MySQLDatabase_eventMySQLConnectorExecuteQuery_Parms), Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorExecuteQuery_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorExecuteQuery_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorExecuteQuery_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorExecuteQuery_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorExecuteQuery()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -560,7 +560,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData_Statics::NewProp_Query = { "Query", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MySQLDatabase_eventMySQLConnectorGetData_Parms, Query), METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData_Statics::NewProp_Query_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData_Statics::NewProp_Query_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData_Statics::NewProp_Query = { "Query", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MySQLDatabase_eventMySQLConnectorGetData_Parms, Query), METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData_Statics::NewProp_Query_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData_Statics::NewProp_Query_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData_Statics::NewProp_Connection,
@@ -575,7 +575,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		{ "ToolTip", "Get data from the database using a select statement and return the rows." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "MySQLConnectorGetData", nullptr, nullptr, sizeof(MySQLDatabase_eventMySQLConnectorGetData_Parms), Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "MySQLConnectorGetData", nullptr, nullptr, sizeof(MySQLDatabase_eventMySQLConnectorGetData_Parms), Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -628,7 +628,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		{ "ToolTip", "returns the address or empty String on error, returns address as Integer or -1 on error" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetPlayerControllerIP_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "MySQLConnectorGetPlayerControllerIP", nullptr, nullptr, sizeof(MySQLDatabase_eventMySQLConnectorGetPlayerControllerIP_Parms), Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetPlayerControllerIP_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetPlayerControllerIP_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetPlayerControllerIP_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetPlayerControllerIP_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetPlayerControllerIP_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "MySQLConnectorGetPlayerControllerIP", nullptr, nullptr, sizeof(MySQLDatabase_eventMySQLConnectorGetPlayerControllerIP_Parms), Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetPlayerControllerIP_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetPlayerControllerIP_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetPlayerControllerIP_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetPlayerControllerIP_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetPlayerControllerIP()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -670,7 +670,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest_Statics::NewProp_Query = { "Query", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MySQLDatabase_eventMySQLConnectorInsertTest_Parms, Query), METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest_Statics::NewProp_Query_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest_Statics::NewProp_Query_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest_Statics::NewProp_Query = { "Query", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MySQLDatabase_eventMySQLConnectorInsertTest_Parms, Query), METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest_Statics::NewProp_Query_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest_Statics::NewProp_Query_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest_Statics::NewProp_Connection,
@@ -683,7 +683,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		{ "ModuleRelativePath", "Public/MySQLDatabase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "MySQLConnectorInsertTest", nullptr, nullptr, sizeof(MySQLDatabase_eventMySQLConnectorInsertTest_Parms), Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "MySQLConnectorInsertTest", nullptr, nullptr, sizeof(MySQLDatabase_eventMySQLConnectorInsertTest_Parms), Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -730,7 +730,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 	{
 		((MySQLDatabase_eventMySQLConnectorINT_Parms*)Obj)->AI = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::NewProp_AI = { "AI", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(MySQLDatabase_eventMySQLConnectorINT_Parms), &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::NewProp_AI_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::NewProp_AI_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::NewProp_AI_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::NewProp_AI = { "AI", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(MySQLDatabase_eventMySQLConnectorINT_Parms), &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::NewProp_AI_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::NewProp_AI_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::NewProp_AI_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::NewProp_PK_MetaData[] = {
 		{ "NativeConst", "" },
@@ -740,7 +740,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 	{
 		((MySQLDatabase_eventMySQLConnectorINT_Parms*)Obj)->PK = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::NewProp_PK = { "PK", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(MySQLDatabase_eventMySQLConnectorINT_Parms), &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::NewProp_PK_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::NewProp_PK_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::NewProp_PK_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::NewProp_PK = { "PK", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(MySQLDatabase_eventMySQLConnectorINT_Parms), &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::NewProp_PK_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::NewProp_PK_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::NewProp_PK_MetaData)) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::NewProp_FieldName = { "FieldName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MySQLDatabase_eventMySQLConnectorINT_Parms, FieldName), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::NewProp_ReturnValue,
@@ -755,7 +755,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		{ "ModuleRelativePath", "Public/MySQLDatabase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "MySQLConnectorINT", nullptr, nullptr, sizeof(MySQLDatabase_eventMySQLConnectorINT_Parms), Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "MySQLConnectorINT", nullptr, nullptr, sizeof(MySQLDatabase_eventMySQLConnectorINT_Parms), Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -816,7 +816,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 	{
 		((MySQLDatabase_eventMySQLConnectorVARCHAR_Parms*)Obj)->NotNull = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_NotNull = { "NotNull", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(MySQLDatabase_eventMySQLConnectorVARCHAR_Parms), &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_NotNull_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_NotNull_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_NotNull_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_NotNull = { "NotNull", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(MySQLDatabase_eventMySQLConnectorVARCHAR_Parms), &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_NotNull_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_NotNull_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_NotNull_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_Unique_MetaData[] = {
 		{ "NativeConst", "" },
@@ -826,7 +826,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 	{
 		((MySQLDatabase_eventMySQLConnectorVARCHAR_Parms*)Obj)->Unique = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_Unique = { "Unique", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(MySQLDatabase_eventMySQLConnectorVARCHAR_Parms), &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_Unique_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_Unique_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_Unique_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_Unique = { "Unique", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(MySQLDatabase_eventMySQLConnectorVARCHAR_Parms), &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_Unique_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_Unique_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_Unique_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_PK_MetaData[] = {
 		{ "NativeConst", "" },
@@ -836,19 +836,19 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 	{
 		((MySQLDatabase_eventMySQLConnectorVARCHAR_Parms*)Obj)->PK = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_PK = { "PK", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(MySQLDatabase_eventMySQLConnectorVARCHAR_Parms), &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_PK_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_PK_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_PK_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_PK = { "PK", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(MySQLDatabase_eventMySQLConnectorVARCHAR_Parms), &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_PK_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_PK_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_PK_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_FieldLength_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_FieldLength = { "FieldLength", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MySQLDatabase_eventMySQLConnectorVARCHAR_Parms, FieldLength), METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_FieldLength_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_FieldLength_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_FieldLength = { "FieldLength", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MySQLDatabase_eventMySQLConnectorVARCHAR_Parms, FieldLength), METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_FieldLength_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_FieldLength_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_FieldName_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_FieldName = { "FieldName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MySQLDatabase_eventMySQLConnectorVARCHAR_Parms, FieldName), METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_FieldName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_FieldName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_FieldName = { "FieldName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MySQLDatabase_eventMySQLConnectorVARCHAR_Parms, FieldName), METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_FieldName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_FieldName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::NewProp_NotNull,
@@ -864,7 +864,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		{ "ModuleRelativePath", "Public/MySQLDatabase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "MySQLConnectorVARCHAR", nullptr, nullptr, sizeof(MySQLDatabase_eventMySQLConnectorVARCHAR_Parms), Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "MySQLConnectorVARCHAR", nullptr, nullptr, sizeof(MySQLDatabase_eventMySQLConnectorVARCHAR_Parms), Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -913,7 +913,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		{ "ModuleRelativePath", "Public/MySQLDatabase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_MySQLInitConnection_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "MySQLInitConnection", nullptr, nullptr, sizeof(MySQLDatabase_eventMySQLInitConnection_Parms), Z_Construct_UFunction_UMySQLDatabase_MySQLInitConnection_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLInitConnection_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLInitConnection_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLInitConnection_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_MySQLInitConnection_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "MySQLInitConnection", nullptr, nullptr, sizeof(MySQLDatabase_eventMySQLInitConnection_Parms), Z_Construct_UFunction_UMySQLDatabase_MySQLInitConnection_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLInitConnection_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_MySQLInitConnection_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_MySQLInitConnection_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UMySQLDatabase_MySQLInitConnection()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -955,7 +955,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UMySQLDatabase_TruncateTable_Statics::NewProp_TableName = { "TableName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MySQLDatabase_eventTruncateTable_Parms, TableName), METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_TruncateTable_Statics::NewProp_TableName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_TruncateTable_Statics::NewProp_TableName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UMySQLDatabase_TruncateTable_Statics::NewProp_TableName = { "TableName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MySQLDatabase_eventTruncateTable_Parms, TableName), METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_TruncateTable_Statics::NewProp_TableName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_TruncateTable_Statics::NewProp_TableName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMySQLDatabase_TruncateTable_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMySQLDatabase_TruncateTable_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMySQLDatabase_TruncateTable_Statics::NewProp_Connection,
@@ -970,7 +970,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		{ "ToolTip", "Truncate Table" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_TruncateTable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "TruncateTable", nullptr, nullptr, sizeof(MySQLDatabase_eventTruncateTable_Parms), Z_Construct_UFunction_UMySQLDatabase_TruncateTable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_TruncateTable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_TruncateTable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_TruncateTable_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySQLDatabase_TruncateTable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySQLDatabase, nullptr, "TruncateTable", nullptr, nullptr, sizeof(MySQLDatabase_eventTruncateTable_Parms), Z_Construct_UFunction_UMySQLDatabase_TruncateTable_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_TruncateTable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySQLDatabase_TruncateTable_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySQLDatabase_TruncateTable_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UMySQLDatabase_TruncateTable()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -999,16 +999,16 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		(UObject* (*)())Z_Construct_UPackage__Script_ESLibrary,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UMySQLDatabase_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UMySQLDatabase_CreateTable, "CreateTable" }, // 1703069590
-		{ &Z_Construct_UFunction_UMySQLDatabase_DropTable, "DropTable" }, // 3937026008
-		{ &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorExecuteQuery, "MySQLConnectorExecuteQuery" }, // 409575001
-		{ &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData, "MySQLConnectorGetData" }, // 428371308
-		{ &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetPlayerControllerIP, "MySQLConnectorGetPlayerControllerIP" }, // 2325778953
-		{ &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest, "MySQLConnectorInsertTest" }, // 1290112087
-		{ &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT, "MySQLConnectorINT" }, // 4166642848
-		{ &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR, "MySQLConnectorVARCHAR" }, // 2330699799
-		{ &Z_Construct_UFunction_UMySQLDatabase_MySQLInitConnection, "MySQLInitConnection" }, // 962017231
-		{ &Z_Construct_UFunction_UMySQLDatabase_TruncateTable, "TruncateTable" }, // 1554742204
+		{ &Z_Construct_UFunction_UMySQLDatabase_CreateTable, "CreateTable" }, // 4068720113
+		{ &Z_Construct_UFunction_UMySQLDatabase_DropTable, "DropTable" }, // 3353505605
+		{ &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorExecuteQuery, "MySQLConnectorExecuteQuery" }, // 67753587
+		{ &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetData, "MySQLConnectorGetData" }, // 1122075881
+		{ &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorGetPlayerControllerIP, "MySQLConnectorGetPlayerControllerIP" }, // 3684372166
+		{ &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorInsertTest, "MySQLConnectorInsertTest" }, // 1013187637
+		{ &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorINT, "MySQLConnectorINT" }, // 853050704
+		{ &Z_Construct_UFunction_UMySQLDatabase_MySQLConnectorVARCHAR, "MySQLConnectorVARCHAR" }, // 3862250830
+		{ &Z_Construct_UFunction_UMySQLDatabase_MySQLInitConnection, "MySQLInitConnection" }, // 195346187
+		{ &Z_Construct_UFunction_UMySQLDatabase_TruncateTable, "TruncateTable" }, // 3958153981
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMySQLDatabase_Statics::Class_MetaDataParams[] = {
@@ -1029,12 +1029,12 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		FuncInfo,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
-		ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x000000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UMySQLDatabase_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UMySQLDatabase_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UMySQLDatabase_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UMySQLDatabase_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UMySQLDatabase()
 	{
@@ -1045,7 +1045,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFMySQLConnectorKeyVal
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UMySQLDatabase, 4114595552);
+	IMPLEMENT_CLASS(UMySQLDatabase, 2475429395);
 	template<> ESLIBRARY_API UClass* StaticClass<UMySQLDatabase>()
 	{
 		return UMySQLDatabase::StaticClass();

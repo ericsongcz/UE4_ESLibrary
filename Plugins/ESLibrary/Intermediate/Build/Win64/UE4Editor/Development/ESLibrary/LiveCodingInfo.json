@@ -4,13 +4,13 @@
 		"Module.ESLibrary.cpp.obj": [
 			"DynamicLoader.cpp.obj",
 			"ESLibrary.cpp.obj",
+			"ESLibraryBPLibrary.cpp.obj",
 			"FileHelper.cpp.obj",
 			"MySQLConnection.cpp.obj",
 			"MySQLDatabase.cpp.obj",
 			"tinyxml2.cpp.obj",
 			"UnrealTinyXmlDocument.cpp.obj",
-			"UnrealTinyXmlNode.cpp.obj",
-			"ESLibraryBPLibrary.cpp.obj"
+			"UnrealTinyXmlNode.cpp.obj"
 		],
 		"Module.ESLibrary.gen.1_of_2.cpp.obj": [
 			"DateRange.gen.cpp.obj",
