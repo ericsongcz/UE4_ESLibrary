@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+Ôªø// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 
 #include "ESLibraryBPLibrary.h"
 #include "Engine/StreamableManager.h"
@@ -49,6 +49,7 @@
 #include "AIController.h"
 #include "Blueprint/WidgetLayoutLibrary.h"
 #include "Styling/SlateBrush.h"
+#include "UnrealTinyXmlPrivatePCH.h"
 
 namespace
 {
@@ -1480,7 +1481,7 @@ FRotator UESLibraryBPLibrary::GridSnapRotation(FRotator Rotator, float GridDeg)
 	return out;
 }
 
-//--------------------PlatformType°¢ArraySqrt°¢ServerIP°¢Audio°¢physics°¢UMG lib--------------------
+//--------------------PlatformType„ÄÅArraySqrt„ÄÅServerIP„ÄÅAudio„ÄÅphysics„ÄÅUMG lib--------------------
 #pragma region Platform Checks
 
 void UESLibraryBPLibrary::SwitchOnPlatformType(EPlatformType& Result)
@@ -5533,5 +5534,10 @@ bool UESLibraryBPLibrary::ReadCustomPathConfig(const FString&FilePath, const FSt
 	 return NormalizedTime < 0.5f ? EaseBounceOut(NormalizedTime * 2, From, FMath::Lerp(From, To, 0.5f)) : EaseBounceIn((NormalizedTime - 0.5f) * 2, FMath::Lerp(From, To, 0.5f), To);
  }
 
-
+ UUnrealTinyXmlDocument* UESLibraryBPLibrary::NewXmlDocument()
+ {
+	 UUnrealTinyXmlDocument* TXMLInstance = NewObject<UUnrealTinyXmlDocument>();
+	 TXMLInstance->XmlFilePtr = new tinyxml2::TinyXMLDocument();
+	 return TXMLInstance;
+ }
  

@@ -22,9 +22,12 @@
 #include "Engine/LevelStreamingDynamic.h"
 #include "Engine/LevelStreaming.h"
 #include "SlateCore\Public\Styling\SlateBrush.h"
+#include "tinyxml2.h"
 
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "ESLibraryBPLibrary.generated.h"
+
+using namespace tinyxml2;
 
 UENUM(BlueprintType)
 enum class EN_IsValid : uint8 
@@ -2104,4 +2107,10 @@ public:
 			: TEXT("<invalid>");
 	}
 
+	/**
+	* Create a instance of TinyXmlDocument which can load xml,or close xml.
+	*/
+	UFUNCTION(BlueprintCallable, Category = "ES|TinyXml", Meta = (DisplayName = "Create New XmlDocument"))
+		static UUnrealTinyXmlDocument* NewXmlDocument();
+	
 };

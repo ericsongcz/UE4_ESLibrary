@@ -707,4 +707,9 @@ D:\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIT
 D:\Epic Games\UE_4.23\Engine\Source\Runtime\AIModule\Classes\AIResourceInterface.h
 D:\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIResourceInterface.generated.h
 D:\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\PathFollowingComponent.generated.h
+E:\UE4_ESLibrary\Plugins\ESLibrary\Source\ESLibrary\Public\tinyxml2.h
+D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\INCLUDE\cctype
+D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\INCLUDE\climits
+D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\INCLUDE\cstdio
+D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\INCLUDE\cstring
 E:\UE4_ESLibrary\Plugins\ESLibrary\Intermediate\Build\Win64\UE4Editor\Inc\ESLibrary\ESLibraryBPLibrary.generated.h

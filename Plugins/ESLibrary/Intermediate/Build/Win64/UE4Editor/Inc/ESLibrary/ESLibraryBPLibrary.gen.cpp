@@ -331,6 +331,8 @@ void EmptyLinkFunctionForGeneratedCodeESLibraryBPLibrary() {}
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_MoveTowardsVector();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Negate_Float();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_Negate_Int();
+	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_NewXmlDocument();
+	ESLIBRARY_API UClass* Z_Construct_UClass_UUnrealTinyXmlDocument_NoRegister();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_OctavePerlinNoise1D();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_OctavePerlinNoise2D();
 	ESLIBRARY_API UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_OctavePerlinNoise3D();
@@ -1704,6 +1706,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 			{ "MoveTowardsVector", &UESLibraryBPLibrary::execMoveTowardsVector },
 			{ "Negate_Float", &UESLibraryBPLibrary::execNegate_Float },
 			{ "Negate_Int", &UESLibraryBPLibrary::execNegate_Int },
+			{ "NewXmlDocument", &UESLibraryBPLibrary::execNewXmlDocument },
 			{ "OctavePerlinNoise1D", &UESLibraryBPLibrary::execOctavePerlinNoise1D },
 			{ "OctavePerlinNoise2D", &UESLibraryBPLibrary::execOctavePerlinNoise2D },
 			{ "OctavePerlinNoise3D", &UESLibraryBPLibrary::execOctavePerlinNoise3D },
@@ -16236,6 +16239,42 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UESLibraryBPLibrary_NewXmlDocument_Statics
+	{
+		struct ESLibraryBPLibrary_eventNewXmlDocument_Parms
+		{
+			UUnrealTinyXmlDocument* ReturnValue;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UESLibraryBPLibrary_NewXmlDocument_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ESLibraryBPLibrary_eventNewXmlDocument_Parms, ReturnValue), Z_Construct_UClass_UUnrealTinyXmlDocument_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UESLibraryBPLibrary_NewXmlDocument_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UESLibraryBPLibrary_NewXmlDocument_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UESLibraryBPLibrary_NewXmlDocument_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ES|TinyXml" },
+		{ "Comment", "/**\n\x09* Create a instance of TinyXmlDocument which can load xml,or close xml.\n\x09*/" },
+		{ "DisplayName", "Create New XmlDocument" },
+		{ "ModuleRelativePath", "Public/ESLibraryBPLibrary.h" },
+		{ "ToolTip", "Create a instance of TinyXmlDocument which can load xml,or close xml." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UESLibraryBPLibrary_NewXmlDocument_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UESLibraryBPLibrary, nullptr, "NewXmlDocument", nullptr, nullptr, sizeof(ESLibraryBPLibrary_eventNewXmlDocument_Parms), Z_Construct_UFunction_UESLibraryBPLibrary_NewXmlDocument_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_NewXmlDocument_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UESLibraryBPLibrary_NewXmlDocument_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UESLibraryBPLibrary_NewXmlDocument_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UESLibraryBPLibrary_NewXmlDocument()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UESLibraryBPLibrary_NewXmlDocument_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UESLibraryBPLibrary_OctavePerlinNoise1D_Statics
 	{
 		struct ESLibraryBPLibrary_eventOctavePerlinNoise1D_Parms
@@ -23005,6 +23044,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_MoveTowardsVector, "MoveTowardsVector" }, // 46111902
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Negate_Float, "Negate_Float" }, // 168349174
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_Negate_Int, "Negate_Int" }, // 4066842899
+		{ &Z_Construct_UFunction_UESLibraryBPLibrary_NewXmlDocument, "NewXmlDocument" }, // 2192458874
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_OctavePerlinNoise1D, "OctavePerlinNoise1D" }, // 2240978318
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_OctavePerlinNoise2D, "OctavePerlinNoise2D" }, // 1940387516
 		{ &Z_Construct_UFunction_UESLibraryBPLibrary_OctavePerlinNoise3D, "OctavePerlinNoise3D" }, // 882152709
@@ -23159,7 +23199,7 @@ static struct FScriptStruct_ESLibrary_StaticRegisterNativesFLevelStreamInstanceI
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UESLibraryBPLibrary, 541891673);
+	IMPLEMENT_CLASS(UESLibraryBPLibrary, 1961310985);
 	template<> ESLIBRARY_API UClass* StaticClass<UESLibraryBPLibrary>()
 	{
 		return UESLibraryBPLibrary::StaticClass();
