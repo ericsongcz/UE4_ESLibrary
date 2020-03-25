@@ -134,28 +134,28 @@ struct FLevelStreamInstanceInfo
 {
 	GENERATED_USTRUCT_BODY()
 
-		UPROPERTY(Category = "LevelStreaming", BlueprintReadWrite)
+		UPROPERTY(Category = "ES|LevelStreaming", BlueprintReadWrite)
 		FName PackageName;
 
-	UPROPERTY(Category = "LevelStreaming", BlueprintReadWrite)
+	UPROPERTY(Category = "ES|LevelStreaming", BlueprintReadWrite)
 		FName PackageNameToLoad;
 
-	UPROPERTY(Category = "LevelStreaming", BlueprintReadWrite)
+	UPROPERTY(Category = "ES|LevelStreaming", BlueprintReadWrite)
 		FVector Location;
 
-	UPROPERTY(Category = "LevelStreaming", BlueprintReadWrite)
+	UPROPERTY(Category = "ES|LevelStreaming", BlueprintReadWrite)
 		FRotator Rotation;
 
-	UPROPERTY(Category = "LevelStreaming", BlueprintReadWrite)
+	UPROPERTY(Category = "ES|LevelStreaming", BlueprintReadWrite)
 		uint8 bShouldBeLoaded : 1;
 
-	UPROPERTY(Category = "LevelStreaming", BlueprintReadWrite)
+	UPROPERTY(Category = "ES|LevelStreaming", BlueprintReadWrite)
 		uint8 bShouldBeVisible : 1;
 
-	UPROPERTY(Category = "LevelStreaming", BlueprintReadWrite)
+	UPROPERTY(Category = "ES|LevelStreaming", BlueprintReadWrite)
 		uint8 bShouldBlockOnLoad : 1;
 
-	UPROPERTY(Category = "LevelStreaming", BlueprintReadWrite)
+	UPROPERTY(Category = "ES|LevelStreaming", BlueprintReadWrite)
 		int32 LODIndex;
 
 	FLevelStreamInstanceInfo() {}
@@ -2113,4 +2113,190 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "ES|TinyXml", Meta = (DisplayName = "Create New XmlDocument"))
 		static UUnrealTinyXmlDocument* NewXmlDocument();
 	
+	//Math compute
+	// Integer
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Integer", meta = (DisplayName = "integer += integer", CompactNodeTitle = "+="))
+		static int32& Add_i(UPARAM(ref) int32& In, int32 Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Integer", meta = (DisplayName = "integer -= integer", CompactNodeTitle = "-="))
+		static int32& Subtract_i(UPARAM(ref)int32& In, int32 Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Integer", meta = (DisplayName = "integer *= integer", CompactNodeTitle = "*="))
+		static int32& Multiply_i(UPARAM(ref)int32& In, int32 Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Integer", meta = (DisplayName = "integer /= integer", CompactNodeTitle = "/="))
+		static int32& Divide_i(UPARAM(ref)int32& In, int32 Value);
+
+	// Integer & Float
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Integer", meta = (DisplayName = "integer += float", CompactNodeTitle = "+="))
+		static int32& Add_if(UPARAM(ref) int32& In, float Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Integer", meta = (DisplayName = "integer -= float", CompactNodeTitle = "-="))
+		static int32& Subtract_if(UPARAM(ref)int32& In, float Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Integer", meta = (DisplayName = "integer *= float", CompactNodeTitle = "*="))
+		static int32& Multiply_if(UPARAM(ref)int32& In, float Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Integer", meta = (DisplayName = "integer /= float", CompactNodeTitle = "/="))
+		static int32& Divide_if(UPARAM(ref)int32& In, float Value);
+
+	// Float
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Float", meta = (DisplayName = "float += float", CompactNodeTitle = "+="))
+		static float& Add_f(UPARAM(ref)float& In, float Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Float", meta = (DisplayName = "float -= float", CompactNodeTitle = "-="))
+		static float& Subtract_f(UPARAM(ref)float& In, float Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Float", meta = (DisplayName = "float *= float", CompactNodeTitle = "*="))
+		static float& Multiply_f(UPARAM(ref)float& In, float Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Float", meta = (DisplayName = "float /= float", CompactNodeTitle = "/="))
+		static float& Divide_f(UPARAM(ref)float& In, float Value);
+
+	// Float & Integer
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Float", meta = (DisplayName = "float += integer", CompactNodeTitle = "+="))
+		static float& Add_fi(UPARAM(ref)float& In, int32 Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Float", meta = (DisplayName = "float -= integer", CompactNodeTitle = "-="))
+		static float& Subtract_fi(UPARAM(ref)float& In, int32 Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Float", meta = (DisplayName = "float *= integer", CompactNodeTitle = "*="))
+		static float& Multiply_fi(UPARAM(ref)float& In, int32 Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Float", meta = (DisplayName = "float /= integer", CompactNodeTitle = "/="))
+		static float& Divide_fi(UPARAM(ref)float& In, int32 Value);
+
+	// Vector
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Vector", meta = (DisplayName = "Vector += Vector", CompactNodeTitle = "+="))
+		static FVector& Add_v(UPARAM(ref)FVector& In, FVector Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Vector", meta = (DisplayName = "Vector -= Vector", CompactNodeTitle = "-="))
+		static FVector& Subtract_v(UPARAM(ref)FVector& In, FVector Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Vector", meta = (DisplayName = "Vector *= Vector", CompactNodeTitle = "*="))
+		static FVector& Multiply_v(UPARAM(ref)FVector& In, FVector Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Vector", meta = (DisplayName = "Vector /= Vector", CompactNodeTitle = "/="))
+		static FVector& Divide_v(UPARAM(ref)FVector& In, FVector Value);
+
+	// Vector & Integer
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Vector", meta = (DisplayName = "Vector += integer", CompactNodeTitle = "+="))
+		static FVector& Add_vi(UPARAM(ref)FVector& In, int32 Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Vector", meta = (DisplayName = "Vector -= integer", CompactNodeTitle = "-="))
+		static FVector& Subtract_vi(UPARAM(ref)FVector& In, int32 Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Vector", meta = (DisplayName = "Vector *= integer", CompactNodeTitle = "*="))
+		static FVector& Multiply_vi(UPARAM(ref)FVector& In, int32 Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Vector", meta = (DisplayName = "Vector /= integer", CompactNodeTitle = "/="))
+		static FVector& Divide_vi(UPARAM(ref)FVector& In, int32 Value);
+
+	// Vector & Float
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Vector", meta = (DisplayName = "Vector += float", CompactNodeTitle = "+="))
+		static FVector& Add_vf(UPARAM(ref)FVector& In, float Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Vector", meta = (DisplayName = "Vector -= float", CompactNodeTitle = "-="))
+		static FVector& Subtract_vf(UPARAM(ref)FVector& In, float Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Vector", meta = (DisplayName = "Vector *= float", CompactNodeTitle = "*="))
+		static FVector& Multiply_vf(UPARAM(ref)FVector& In, float Value);
+
+	UFUNCTION(BlueprintCallable, Category = "ES|Math|Vector", meta = (DisplayName = "Vector /= float", CompactNodeTitle = "/="))
+		static FVector& Divide_vf(UPARAM(ref)FVector& In, float Value);
+
+	//range lib
+#pragma region Float
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Float", meta = (DisplayName = "Get Lower Bound Value (Float)"))
+		static float GetLowerBoundValue_Float(FFloatRange const& Range) { return Range.GetLowerBoundValue(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Float", meta = (DisplayName = "Get Upper Bound Value (Float)"))
+		static float GetUpperBoundValue_Float(FFloatRange const& Range) { return Range.GetUpperBoundValue(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Float", meta = (DisplayName = "Contains (Float)"))
+		static bool Contains_Float(FFloatRange const& Range, FFloatRange OtherRange) { return Range.Contains(OtherRange); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Float", meta = (DisplayName = "Contigous (Float)"))
+		static bool Contiguous_Float(FFloatRange const& Range, FFloatRange OtherRange) { return Range.Contiguous(OtherRange); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Float", meta = (DisplayName = "Has Lower Bound (Float)"))
+		static bool HasLowerBound_Float(FFloatRange const& Range) { return Range.HasLowerBound(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Float", meta = (DisplayName = "Has Upper Bound (Float)"))
+		static bool HasUpperBound_Float(FFloatRange const& Range) { return Range.HasUpperBound(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Float", meta = (DisplayName = "Is Degenerate (Float)"))
+		static bool IsDegenerate_Float(FFloatRange const& Range) { return Range.IsDegenerate(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Float", meta = (DisplayName = "Is Empty (Float)"))
+		static bool IsEmpty_Float(FFloatRange const& Range) { return Range.IsEmpty(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Float", meta = (DisplayName = "Size (Float)"))
+		static float Size_Float(FFloatRange const& Range) { return Range.Size<float>(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Float", meta = (DisplayName = "Split (Float)"))
+		static TArray<FFloatRange> Split_Float(FFloatRange const& Range, float InElement) { return Range.Split(InElement); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Float", meta = (DisplayName = "Difference( Float)"))
+		static TArray<FFloatRange> Difference_Float(FFloatRange const& Range, FFloatRange OtherRange) { return FFloatRange::Difference(Range, OtherRange); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Float", meta = (DisplayName = "Hull (Float)"))
+		static FFloatRange Hull_Float(FFloatRange const& Range, FFloatRange OtherRange) { return FFloatRange::Hull(Range, OtherRange); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Float", meta = (DisplayName = "Intersection (Float)"))
+		static FFloatRange Intersection_Float(TArray<FFloatRange> const& Ranges) { return FFloatRange::Intersection(Ranges); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Float", meta = (DisplayName = "Union (Float)"))
+		static TArray<FFloatRange> Union_Float(FFloatRange const& Range, FFloatRange OtherRange) { return FFloatRange::Union(Range, OtherRange); }
+#pragma endregion 
+#pragma region int32
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Int", meta = (DisplayName = "Get Lower Bound Value (Int)"))
+		static int32 GetLowerBoundValue_Int(FInt32Range const& Range) { return Range.GetLowerBoundValue(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Int", meta = (DisplayName = "Get Upper Bound Value (Int)"))
+		static int32 GetUpperBoundValue_Int(FInt32Range const& Range) { return Range.GetUpperBoundValue(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Int", meta = (DisplayName = "Contains (Int)"))
+		static bool Contains_Int(FInt32Range const& Range, FInt32Range OtherRange) { return Range.Contains(OtherRange); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Int", meta = (DisplayName = "Contigous (Int)"))
+		static bool Contiguous_Int(FInt32Range const& Range, FInt32Range OtherRange) { return Range.Contiguous(OtherRange); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Int", meta = (DisplayName = "Has Lower Bound (Int)"))
+		static bool HasLowerBound_Int(FInt32Range const& Range) { return Range.HasLowerBound(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Int", meta = (DisplayName = "Has Upper Bound (Int)"))
+		static bool HasUpperBound_Int(FInt32Range const& Range) { return Range.HasUpperBound(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Int", meta = (DisplayName = "Is Degenerate (Int)"))
+		static bool IsDegenerate_Int(FInt32Range const& Range) { return Range.IsDegenerate(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Int", meta = (DisplayName = "Is Empty (Int)"))
+		static bool IsEmpty_Int(FInt32Range const& Range) { return Range.IsEmpty(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Int", meta = (DisplayName = "Size (Int)"))
+		static int32 Size_Int(FInt32Range const& Range) { return Range.Size<int32>(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Int", meta = (DisplayName = "Split (Int)"))
+		static TArray<FInt32Range> Split_Int(FInt32Range const& Range, int32 InElement) { return Range.Split(InElement); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Int", meta = (DisplayName = "Difference (Int)"))
+		static TArray<FInt32Range> Difference_Int(FInt32Range const& Range, FInt32Range OtherRange) { return FInt32Range::Difference(Range, OtherRange); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Int", meta = (DisplayName = "Hull (Int)"))
+		static FInt32Range Hull_Int(FInt32Range const& Range, FInt32Range OtherRange) { return FInt32Range::Hull(Range, OtherRange); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Int", meta = (DisplayName = "Intersection (Int)"))
+		static FInt32Range Intersection_Int(TArray<FInt32Range> const& Ranges) { return FInt32Range::Intersection(Ranges); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Int", meta = (DisplayName = "Union (Int)"))
+		static TArray<FInt32Range> Union_Int(FInt32Range const& Range, FInt32Range OtherRange) { return FInt32Range::Union(Range, OtherRange); }
+#pragma endregion 
+#pragma region FDateTime
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Date", meta = (DisplayName = "Get Lower Bound Value (Date)"))
+		static FDateTime GetLowerBoundValue_Date(FDateRange const& Range) { return Range.GetLowerBoundValue(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Date", meta = (DisplayName = "Get Upper Bound Value (Date)"))
+		static FDateTime GetUpperBoundValue_Date(FDateRange const& Range) { return Range.GetUpperBoundValue(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Date", meta = (DisplayName = "Contains (Date)"))
+		static bool Contains_Date(FDateRange const& Range, FDateRange OtherRange) { return Range.Contains(OtherRange); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Date", meta = (DisplayName = "Contigous (Date)"))
+		static bool Contiguous_Date(FDateRange const& Range, FDateRange OtherRange) { return Range.Contiguous(OtherRange); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Date", meta = (DisplayName = "Has Lower Bound (Date)"))
+		static bool HasLowerBound_Date(FDateRange const& Range) { return Range.HasLowerBound(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Date", meta = (DisplayName = "Has Upper Bound (Date)"))
+		static bool HasUpperBound_Date(FDateRange const& Range) { return Range.HasUpperBound(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Date", meta = (DisplayName = "Is Degenerate (Date)"))
+		static bool IsDegenerate_Date(FDateRange const& Range) { return Range.IsDegenerate(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Date", meta = (DisplayName = "Is Empty (Date)"))
+		static bool IsEmpty_Date(FDateRange const& Range) { return Range.IsEmpty(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Date", meta = (DisplayName = "Size (Date)"))
+		static FTimespan Size_Date(FDateRange const& Range) { return Range.Size<FTimespan>(); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Date", meta = (DisplayName = "Split (Date)"))
+		static TArray<FDateRange> Split_Date(FDateRange const& Range, FDateTime InElement) { return Range.Split(InElement); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Date", meta = (DisplayName = "Difference (Date)"))
+		static TArray<FDateRange> Difference_Date(FDateRange const& Range, FDateRange OtherRange) { return FDateRange::Difference(Range, OtherRange); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Date", meta = (DisplayName = "Hull (Date)"))
+		static FDateRange Hull_Date(FDateRange const& Range, FDateRange OtherRange) { return FDateRange::Hull(Range, OtherRange); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Date", meta = (DisplayName = "Intersection (Date)"))
+		static FDateRange Intersection_Date(TArray<FDateRange> const& Ranges) { return FDateRange::Intersection(Ranges); }
+	UFUNCTION(BlueprintPure, Category = "ES|Utils|Range|Date", meta = (DisplayName = "Union (Date)"))
+		static TArray<FDateRange> Union_Date(FDateRange const& Range, FDateRange OtherRange) { return FDateRange::Union(Range, OtherRange); }
+#pragma endregion 
+
+
+
 };

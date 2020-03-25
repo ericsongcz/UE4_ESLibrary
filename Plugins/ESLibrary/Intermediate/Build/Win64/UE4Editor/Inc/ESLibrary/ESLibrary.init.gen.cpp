@@ -11,6 +11,8 @@
 #endif
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeESLibrary_init() {}
+	ESLIBRARY_API UScriptStruct* Z_Construct_UScriptStruct_FDateRangeBound();
+	ESLIBRARY_API UScriptStruct* Z_Construct_UScriptStruct_FDateRange();
 	ESLIBRARY_API UFunction* Z_Construct_UDelegateFunction_UImageLoader_OnImageLoadCompleted__DelegateSignature();
 	ESLIBRARY_API UFunction* Z_Construct_UDelegateFunction_AExeActor_OnProcShutdown__DelegateSignature();
 	ESLIBRARY_API UFunction* Z_Construct_UDelegateFunction_ESLibrary_MKTweenDynamicDelegate__DelegateSignature();
@@ -20,6 +22,8 @@ void EmptyLinkFunctionForGeneratedCodeESLibrary_init() {}
 		if (!ReturnPackage)
 		{
 			static UObject* (*const SingletonFuncArray[])() = {
+				(UObject* (*)())Z_Construct_UScriptStruct_FDateRangeBound,
+				(UObject* (*)())Z_Construct_UScriptStruct_FDateRange,
 				(UObject* (*)())Z_Construct_UDelegateFunction_UImageLoader_OnImageLoadCompleted__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_AExeActor_OnProcShutdown__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_ESLibrary_MKTweenDynamicDelegate__DelegateSignature,
@@ -29,8 +33,8 @@ void EmptyLinkFunctionForGeneratedCodeESLibrary_init() {}
 				SingletonFuncArray,
 				ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x98B94E26,
-				0xD2298BE8,
+				0xCDE5DADC,
+				0x0316419C,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

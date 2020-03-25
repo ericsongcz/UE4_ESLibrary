@@ -4,3 +4,6 @@
 #include "E:/UE4_ESLibrary/Plugins/ESLibrary/Source/ESLibrary/Private/FileHelper.cpp"
 #include "E:/UE4_ESLibrary/Plugins/ESLibrary/Source/ESLibrary/Private/MySQLConnection.cpp"
 #include "E:/UE4_ESLibrary/Plugins/ESLibrary/Source/ESLibrary/Private/MySQLDatabase.cpp"
+#include "E:/UE4_ESLibrary/Plugins/ESLibrary/Source/ESLibrary/Private/tinyxml2.cpp"
+#include "E:/UE4_ESLibrary/Plugins/ESLibrary/Source/ESLibrary/Private/UnrealTinyXmlDocument.cpp"
+#include "E:/UE4_ESLibrary/Plugins/ESLibrary/Source/ESLibrary/Private/UnrealTinyXmlNode.cpp"

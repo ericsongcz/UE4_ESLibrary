@@ -228,7 +228,18 @@ namespace
 DEFINE_LOG_CATEGORY(LogESLibraryBPLibrary);
 
 DECLARE_LOG_CATEGORY_EXTERN(LogCustomBlueprintCategory, Log, All);
+
 DEFINE_LOG_CATEGORY(LogCustomBlueprintCategory);
+
+#define BODY(Operator)	\
+In Operator Value;		\
+return In;																		
+
+#define vBODY(Operator)	\
+In.X Operator Value;	\
+In.Y Operator Value;	\
+In.Z Operator Value;	\
+return In;
 
 UESLibraryBPLibrary::UESLibraryBPLibrary(const FObjectInitializer& ObjectInitializer)
 : Super(ObjectInitializer)
@@ -5541,3 +5552,34 @@ bool UESLibraryBPLibrary::ReadCustomPathConfig(const FString&FilePath, const FSt
 	 return TXMLInstance;
  }
  
+ int32& UESLibraryBPLibrary::Add_i(int32& In, int32 Value) { BODY(+= ) }
+ int32& UESLibraryBPLibrary::Add_if(int32& In, float Value) { BODY(+= ) }
+ float& UESLibraryBPLibrary::Add_f(float& In, float Value) { BODY(+= ) }
+ float& UESLibraryBPLibrary::Add_fi(float& In, int32 Value) { BODY(+= ) }
+ FVector& UESLibraryBPLibrary::Add_v(FVector& In, FVector Value) { BODY(+= ) }
+ FVector& UESLibraryBPLibrary::Add_vi(FVector& In, int32 Value) { vBODY(+= ) }
+ FVector& UESLibraryBPLibrary::Add_vf(FVector& In, float Value) { vBODY(+= ) }
+
+ int32& UESLibraryBPLibrary::Subtract_i(int32& In, int32 Value) { BODY(-= ) }
+ int32& UESLibraryBPLibrary::Subtract_if(int32& In, float Value) { BODY(-= ) }
+ float& UESLibraryBPLibrary::Subtract_f(float& In, float Value) { BODY(-= ) }
+ float& UESLibraryBPLibrary::Subtract_fi(float& In, int32 Value) { BODY(-= ) }
+ FVector& UESLibraryBPLibrary::Subtract_v(FVector& In, FVector Value) { BODY(-= ) }
+ FVector& UESLibraryBPLibrary::Subtract_vi(FVector& In, int32 Value) { vBODY(-= ) }
+ FVector& UESLibraryBPLibrary::Subtract_vf(FVector& In, float Value) { vBODY(-= ) }
+
+ int32& UESLibraryBPLibrary::Multiply_i(int32& In, int32 Value) { BODY(*= ) }
+ int32& UESLibraryBPLibrary::Multiply_if(int32& In, float Value) { BODY(*= ) }
+ float& UESLibraryBPLibrary::Multiply_f(float& In, float Value) { BODY(*= ) }
+ float& UESLibraryBPLibrary::Multiply_fi(float& In, int32 Value) { BODY(*= ) }
+ FVector& UESLibraryBPLibrary::Multiply_v(FVector& In, FVector Value) { BODY(*= ) }
+ FVector& UESLibraryBPLibrary::Multiply_vi(FVector& In, int32 Value) { BODY(*= ) }
+ FVector& UESLibraryBPLibrary::Multiply_vf(FVector& In, float Value) { BODY(*= ) }
+
+ int32& UESLibraryBPLibrary::Divide_i(int32& In, int32 Value) { BODY(/= ) }
+ int32& UESLibraryBPLibrary::Divide_if(int32& In, float Value) { BODY(/= ) }
+ float& UESLibraryBPLibrary::Divide_f(float& In, float Value) { BODY(/= ) }
+ float& UESLibraryBPLibrary::Divide_fi(float& In, int32 Value) { BODY(/= ) }
+ FVector& UESLibraryBPLibrary::Divide_v(FVector& In, FVector Value) { BODY(/= ) }
+ FVector& UESLibraryBPLibrary::Divide_vi(FVector& In, int32 Value) { BODY(/= ) }
+ FVector& UESLibraryBPLibrary::Divide_vf(FVector& In, float Value) { BODY(/= ) }

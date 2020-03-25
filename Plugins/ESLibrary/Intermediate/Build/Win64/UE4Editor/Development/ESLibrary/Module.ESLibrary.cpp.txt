@@ -1010,3 +1010,14 @@ D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.2
 D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\INCLUDE\cfloat
 D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\INCLUDE\xutility
 D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\INCLUDE\utility
+E:/UE4_ESLibrary/Plugins/ESLibrary/Source/ESLibrary/Private/tinyxml2.cpp
+E:\UE4_ESLibrary\Plugins\ESLibrary\Source\ESLibrary\Private\UnrealTinyXmlPrivatePCH.h
+E:\UE4_ESLibrary\Plugins\ESLibrary\Source\ESLibrary\Public\UnrealTinyXmlNode.h
+E:\UE4_ESLibrary\Plugins\ESLibrary\Intermediate\Build\Win64\UE4Editor\Inc\ESLibrary\UnrealTinyXmlNode.generated.h
+E:\UE4_ESLibrary\Plugins\ESLibrary\Source\ESLibrary\Public\UnrealTinyXmlDocument.h
+E:\UE4_ESLibrary\Plugins\ESLibrary\Intermediate\Build\Win64\UE4Editor\Inc\ESLibrary\UnrealTinyXmlDocument.generated.h
+D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\INCLUDE\cstdarg
+E:/UE4_ESLibrary/Plugins/ESLibrary/Source/ESLibrary/Private/UnrealTinyXmlDocument.cpp
+E:\UE4_ESLibrary\Plugins\ESLibrary\Source\ESLibrary\Private\UnrealTinyXmlPrivatePCH.h
+E:/UE4_ESLibrary/Plugins/ESLibrary/Source/ESLibrary/Private/UnrealTinyXmlNode.cpp
+E:\UE4_ESLibrary\Plugins\ESLibrary\Source\ESLibrary\Private\UnrealTinyXmlPrivatePCH.h

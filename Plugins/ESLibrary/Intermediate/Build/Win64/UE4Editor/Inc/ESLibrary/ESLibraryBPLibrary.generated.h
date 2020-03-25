@@ -8,9 +8,14 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FDateRange;
+struct FDateTime;
+struct FTimespan;
+struct FInt32Range;
+struct FFloatRange;
+struct FVector;
 class UUnrealTinyXmlDocument;
 enum class EEasingType : uint8;
-struct FVector;
 class USceneComponent;
 class APlayerController;
 class AActor;
@@ -91,6 +96,682 @@ static inline void FMKTweenDynamicDelegate_DelegateWrapper(const FScriptDelegate
 
 
 #define UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_277_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execUnion_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FDateRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FDateRange>*)Z_Param__Result=UESLibraryBPLibrary::Union_Date(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIntersection_Date) \
+	{ \
+		P_GET_TARRAY_REF(FDateRange,Z_Param_Out_Ranges); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FDateRange*)Z_Param__Result=UESLibraryBPLibrary::Intersection_Date(Z_Param_Out_Ranges); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHull_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FDateRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FDateRange*)Z_Param__Result=UESLibraryBPLibrary::Hull_Date(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDifference_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FDateRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FDateRange>*)Z_Param__Result=UESLibraryBPLibrary::Difference_Date(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSplit_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FDateTime,Z_Param_InElement); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FDateRange>*)Z_Param__Result=UESLibraryBPLibrary::Split_Date(Z_Param_Out_Range,Z_Param_InElement); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSize_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FTimespan*)Z_Param__Result=UESLibraryBPLibrary::Size_Date(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsEmpty_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::IsEmpty_Date(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsDegenerate_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::IsDegenerate_Date(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasUpperBound_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::HasUpperBound_Date(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasLowerBound_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::HasLowerBound_Date(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execContiguous_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FDateRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::Contiguous_Date(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execContains_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FDateRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::Contains_Date(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetUpperBoundValue_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FDateTime*)Z_Param__Result=UESLibraryBPLibrary::GetUpperBoundValue_Date(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetLowerBoundValue_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FDateTime*)Z_Param__Result=UESLibraryBPLibrary::GetLowerBoundValue_Date(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execUnion_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_GET_STRUCT(FInt32Range,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FInt32Range>*)Z_Param__Result=UESLibraryBPLibrary::Union_Int(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIntersection_Int) \
+	{ \
+		P_GET_TARRAY_REF(FInt32Range,Z_Param_Out_Ranges); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FInt32Range*)Z_Param__Result=UESLibraryBPLibrary::Intersection_Int(Z_Param_Out_Ranges); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHull_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_GET_STRUCT(FInt32Range,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FInt32Range*)Z_Param__Result=UESLibraryBPLibrary::Hull_Int(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDifference_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_GET_STRUCT(FInt32Range,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FInt32Range>*)Z_Param__Result=UESLibraryBPLibrary::Difference_Int(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSplit_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_InElement); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FInt32Range>*)Z_Param__Result=UESLibraryBPLibrary::Split_Int(Z_Param_Out_Range,Z_Param_InElement); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSize_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::Size_Int(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsEmpty_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::IsEmpty_Int(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsDegenerate_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::IsDegenerate_Int(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasUpperBound_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::HasUpperBound_Int(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasLowerBound_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::HasLowerBound_Int(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execContiguous_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_GET_STRUCT(FInt32Range,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::Contiguous_Int(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execContains_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_GET_STRUCT(FInt32Range,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::Contains_Int(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetUpperBoundValue_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::GetUpperBoundValue_Int(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetLowerBoundValue_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::GetLowerBoundValue_Int(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execUnion_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FFloatRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FFloatRange>*)Z_Param__Result=UESLibraryBPLibrary::Union_Float(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIntersection_Float) \
+	{ \
+		P_GET_TARRAY_REF(FFloatRange,Z_Param_Out_Ranges); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FFloatRange*)Z_Param__Result=UESLibraryBPLibrary::Intersection_Float(Z_Param_Out_Ranges); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHull_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FFloatRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FFloatRange*)Z_Param__Result=UESLibraryBPLibrary::Hull_Float(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDifference_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FFloatRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FFloatRange>*)Z_Param__Result=UESLibraryBPLibrary::Difference_Float(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSplit_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_InElement); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FFloatRange>*)Z_Param__Result=UESLibraryBPLibrary::Split_Float(Z_Param_Out_Range,Z_Param_InElement); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSize_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::Size_Float(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsEmpty_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::IsEmpty_Float(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsDegenerate_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::IsDegenerate_Float(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasUpperBound_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::HasUpperBound_Float(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasLowerBound_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::HasLowerBound_Float(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execContiguous_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FFloatRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::Contiguous_Float(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execContains_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FFloatRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::Contains_Float(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetUpperBoundValue_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::GetUpperBoundValue_Float(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetLowerBoundValue_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::GetLowerBoundValue_Float(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDivide_vf) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Divide_vf(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMultiply_vf) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Multiply_vf(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSubtract_vf) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Subtract_vf(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAdd_vf) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Add_vf(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDivide_vi) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Divide_vi(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMultiply_vi) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Multiply_vi(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSubtract_vi) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Subtract_vi(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAdd_vi) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Add_vi(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDivide_v) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_STRUCT(FVector,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Divide_v(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMultiply_v) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_STRUCT(FVector,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Multiply_v(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSubtract_v) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_STRUCT(FVector,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Subtract_v(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAdd_v) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_STRUCT(FVector,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Add_v(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDivide_fi) \
+	{ \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::Divide_fi(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMultiply_fi) \
+	{ \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::Multiply_fi(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSubtract_fi) \
+	{ \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::Subtract_fi(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAdd_fi) \
+	{ \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::Add_fi(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDivide_f) \
+	{ \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::Divide_f(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMultiply_f) \
+	{ \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::Multiply_f(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSubtract_f) \
+	{ \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::Subtract_f(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAdd_f) \
+	{ \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::Add_f(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDivide_if) \
+	{ \
+		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::Divide_if(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMultiply_if) \
+	{ \
+		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::Multiply_if(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSubtract_if) \
+	{ \
+		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::Subtract_if(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAdd_if) \
+	{ \
+		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::Add_if(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDivide_i) \
+	{ \
+		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::Divide_i(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMultiply_i) \
+	{ \
+		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::Multiply_i(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSubtract_i) \
+	{ \
+		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::Subtract_i(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAdd_i) \
+	{ \
+		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::Add_i(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execNewXmlDocument) \
 	{ \
@@ -4002,6 +4683,682 @@ static inline void FMKTweenDynamicDelegate_DelegateWrapper(const FScriptDelegate
 
 
 #define UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_277_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execUnion_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FDateRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FDateRange>*)Z_Param__Result=UESLibraryBPLibrary::Union_Date(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIntersection_Date) \
+	{ \
+		P_GET_TARRAY_REF(FDateRange,Z_Param_Out_Ranges); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FDateRange*)Z_Param__Result=UESLibraryBPLibrary::Intersection_Date(Z_Param_Out_Ranges); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHull_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FDateRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FDateRange*)Z_Param__Result=UESLibraryBPLibrary::Hull_Date(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDifference_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FDateRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FDateRange>*)Z_Param__Result=UESLibraryBPLibrary::Difference_Date(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSplit_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FDateTime,Z_Param_InElement); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FDateRange>*)Z_Param__Result=UESLibraryBPLibrary::Split_Date(Z_Param_Out_Range,Z_Param_InElement); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSize_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FTimespan*)Z_Param__Result=UESLibraryBPLibrary::Size_Date(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsEmpty_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::IsEmpty_Date(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsDegenerate_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::IsDegenerate_Date(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasUpperBound_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::HasUpperBound_Date(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasLowerBound_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::HasLowerBound_Date(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execContiguous_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FDateRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::Contiguous_Date(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execContains_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FDateRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::Contains_Date(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetUpperBoundValue_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FDateTime*)Z_Param__Result=UESLibraryBPLibrary::GetUpperBoundValue_Date(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetLowerBoundValue_Date) \
+	{ \
+		P_GET_STRUCT_REF(FDateRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FDateTime*)Z_Param__Result=UESLibraryBPLibrary::GetLowerBoundValue_Date(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execUnion_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_GET_STRUCT(FInt32Range,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FInt32Range>*)Z_Param__Result=UESLibraryBPLibrary::Union_Int(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIntersection_Int) \
+	{ \
+		P_GET_TARRAY_REF(FInt32Range,Z_Param_Out_Ranges); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FInt32Range*)Z_Param__Result=UESLibraryBPLibrary::Intersection_Int(Z_Param_Out_Ranges); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHull_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_GET_STRUCT(FInt32Range,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FInt32Range*)Z_Param__Result=UESLibraryBPLibrary::Hull_Int(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDifference_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_GET_STRUCT(FInt32Range,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FInt32Range>*)Z_Param__Result=UESLibraryBPLibrary::Difference_Int(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSplit_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_InElement); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FInt32Range>*)Z_Param__Result=UESLibraryBPLibrary::Split_Int(Z_Param_Out_Range,Z_Param_InElement); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSize_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::Size_Int(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsEmpty_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::IsEmpty_Int(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsDegenerate_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::IsDegenerate_Int(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasUpperBound_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::HasUpperBound_Int(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasLowerBound_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::HasLowerBound_Int(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execContiguous_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_GET_STRUCT(FInt32Range,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::Contiguous_Int(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execContains_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_GET_STRUCT(FInt32Range,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::Contains_Int(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetUpperBoundValue_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::GetUpperBoundValue_Int(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetLowerBoundValue_Int) \
+	{ \
+		P_GET_STRUCT_REF(FInt32Range,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::GetLowerBoundValue_Int(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execUnion_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FFloatRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FFloatRange>*)Z_Param__Result=UESLibraryBPLibrary::Union_Float(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIntersection_Float) \
+	{ \
+		P_GET_TARRAY_REF(FFloatRange,Z_Param_Out_Ranges); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FFloatRange*)Z_Param__Result=UESLibraryBPLibrary::Intersection_Float(Z_Param_Out_Ranges); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHull_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FFloatRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FFloatRange*)Z_Param__Result=UESLibraryBPLibrary::Hull_Float(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDifference_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FFloatRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FFloatRange>*)Z_Param__Result=UESLibraryBPLibrary::Difference_Float(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSplit_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_InElement); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FFloatRange>*)Z_Param__Result=UESLibraryBPLibrary::Split_Float(Z_Param_Out_Range,Z_Param_InElement); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSize_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::Size_Float(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsEmpty_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::IsEmpty_Float(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsDegenerate_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::IsDegenerate_Float(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasUpperBound_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::HasUpperBound_Float(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasLowerBound_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::HasLowerBound_Float(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execContiguous_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FFloatRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::Contiguous_Float(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execContains_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_GET_STRUCT(FFloatRange,Z_Param_OtherRange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UESLibraryBPLibrary::Contains_Float(Z_Param_Out_Range,Z_Param_OtherRange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetUpperBoundValue_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::GetUpperBoundValue_Float(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetLowerBoundValue_Float) \
+	{ \
+		P_GET_STRUCT_REF(FFloatRange,Z_Param_Out_Range); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::GetLowerBoundValue_Float(Z_Param_Out_Range); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDivide_vf) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Divide_vf(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMultiply_vf) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Multiply_vf(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSubtract_vf) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Subtract_vf(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAdd_vf) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Add_vf(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDivide_vi) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Divide_vi(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMultiply_vi) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Multiply_vi(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSubtract_vi) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Subtract_vi(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAdd_vi) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Add_vi(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDivide_v) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_STRUCT(FVector,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Divide_v(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMultiply_v) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_STRUCT(FVector,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Multiply_v(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSubtract_v) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_STRUCT(FVector,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Subtract_v(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAdd_v) \
+	{ \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_In); \
+		P_GET_STRUCT(FVector,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=UESLibraryBPLibrary::Add_v(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDivide_fi) \
+	{ \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::Divide_fi(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMultiply_fi) \
+	{ \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::Multiply_fi(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSubtract_fi) \
+	{ \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::Subtract_fi(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAdd_fi) \
+	{ \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::Add_fi(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDivide_f) \
+	{ \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::Divide_f(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMultiply_f) \
+	{ \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::Multiply_f(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSubtract_f) \
+	{ \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::Subtract_f(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAdd_f) \
+	{ \
+		P_GET_PROPERTY_REF(UFloatProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UESLibraryBPLibrary::Add_f(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDivide_if) \
+	{ \
+		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::Divide_if(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMultiply_if) \
+	{ \
+		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::Multiply_if(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSubtract_if) \
+	{ \
+		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::Subtract_if(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAdd_if) \
+	{ \
+		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::Add_if(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDivide_i) \
+	{ \
+		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::Divide_i(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMultiply_i) \
+	{ \
+		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::Multiply_i(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSubtract_i) \
+	{ \
+		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::Subtract_i(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAdd_i) \
+	{ \
+		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_In); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=UESLibraryBPLibrary::Add_i(Z_Param_Out_In,Z_Param_Value); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execNewXmlDocument) \
 	{ \
