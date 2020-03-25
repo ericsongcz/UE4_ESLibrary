@@ -1,12 +1,12 @@
 // Some copyright should be here...
 
 using UnrealBuildTool;
+using System.IO;
 
 public class ESLibrary : ModuleRules
 {
 	public ESLibrary(ReadOnlyTargetRules Target) : base(Target)
 	{
-		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		
 		PublicIncludePaths.AddRange(
 			new string[] {
@@ -31,7 +31,8 @@ public class ESLibrary : ModuleRules
 				"ProceduralMeshComponent",
 				"InputCore",
 				"UMG",
-				"Paper2D"
+				"Paper2D",
+				"MariaDBConnectorLibs",
 		// ... add other public dependencies that you statically link with here ...
 	}
 			);

@@ -4,6 +4,8 @@
 
 #include "Modules/ModuleManager.h"
 
+DECLARE_LOG_CATEGORY_EXTERN(LogMySQL_Database, All, All);
+
 class FESLibraryModule : public IModuleInterface
 {
 public:

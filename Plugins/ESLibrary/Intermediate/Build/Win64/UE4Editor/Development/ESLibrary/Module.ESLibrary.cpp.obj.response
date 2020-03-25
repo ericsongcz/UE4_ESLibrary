@@ -28,7 +28,7 @@
 /wd4838
 /we4668
 /I .
-/I "E:\Unreal Projects\ES_BPLibrary\Plugins\ESLibrary\Source\ESLibrary\Private"
+/I E:\UE4_ESLibrary\Plugins\ESLibrary\Source\ESLibrary\Private
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\CoreUObject
 /I Runtime
 /I Runtime\CoreUObject\Public
@@ -499,10 +499,10 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
 /I Runtime\ClothingSystemRuntimeInterface
-/I "E:\Unreal Projects\ES_BPLibrary\Plugins\ESLibrary\Intermediate\Build\Win64\UE4Editor\Inc\ESLibrary"
-/I "E:\Unreal Projects\ES_BPLibrary\Plugins\ESLibrary\Source"
-/I "E:\Unreal Projects\ES_BPLibrary\Plugins\ESLibrary\Source\ESLibrary\Public"
-/I "E:\Unreal Projects\ES_BPLibrary\Plugins\ESLibrary\Source\ESLibrary"
+/I E:\UE4_ESLibrary\Plugins\ESLibrary\Intermediate\Build\Win64\UE4Editor\Inc\ESLibrary
+/I E:\UE4_ESLibrary\Plugins\ESLibrary\Source
+/I E:\UE4_ESLibrary\Plugins\ESLibrary\Source\ESLibrary\Public
+/I E:\UE4_ESLibrary\Plugins\ESLibrary\Source\ESLibrary
 /I ..\Plugins\Runtime\ProceduralMeshComponent\Intermediate\Build\Win64\UE4Editor\Inc\ProceduralMeshComponent
 /I ..\Plugins\Runtime\ProceduralMeshComponent\Source
 /I ..\Plugins\Runtime\ProceduralMeshComponent\Source\ProceduralMeshComponent\Public
@@ -512,6 +512,8 @@
 /I ..\Plugins\2D\Paper2D\Source\Paper2D\Classes
 /I ..\Plugins\2D\Paper2D\Source\Paper2D\Public
 /I ..\Plugins\2D\Paper2D\Source\Paper2D
+/I E:\UE4_ESLibrary\Plugins\ESLibrary\Source\ThirdParty
+/I E:\UE4_ESLibrary\Plugins\ESLibrary\Source\ThirdParty\MariaDBConnectorLibs\MariaDB_Connector_C_64-bit\include
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -540,12 +542,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"E:\Unreal Projects\ES_BPLibrary\Intermediate\Build\Win64\ES_BPLibraryEditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"E:\Unreal Projects\ES_BPLibrary\Intermediate\Build\Win64\ES_BPLibraryEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"E:\Unreal Projects\ES_BPLibrary\Intermediate\Build\Win64\ES_BPLibraryEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"E:\Unreal Projects\ES_BPLibrary\Plugins\ESLibrary\Intermediate\Build\Win64\UE4Editor\Development\ESLibrary\Module.ESLibrary.cpp"
-/FI"E:\Unreal Projects\ES_BPLibrary\Plugins\ESLibrary\Intermediate\Build\Win64\UE4Editor\Development\ESLibrary\Definitions.ESLibrary.h"
-/Fo"E:\Unreal Projects\ES_BPLibrary\Plugins\ESLibrary\Intermediate\Build\Win64\UE4Editor\Development\ESLibrary\Module.ESLibrary.cpp.obj"
+/FI"E:\UE4_ESLibrary\Intermediate\Build\Win64\ES_BPLibraryEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"E:\UE4_ESLibrary\Intermediate\Build\Win64\ES_BPLibraryEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"E:\UE4_ESLibrary\Intermediate\Build\Win64\ES_BPLibraryEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"E:\UE4_ESLibrary\Plugins\ESLibrary\Intermediate\Build\Win64\UE4Editor\Development\ESLibrary\Module.ESLibrary.cpp"
+/FI"E:\UE4_ESLibrary\Plugins\ESLibrary\Intermediate\Build\Win64\UE4Editor\Development\ESLibrary\Definitions.ESLibrary.h"
+/Fo"E:\UE4_ESLibrary\Plugins\ESLibrary\Intermediate\Build\Win64\UE4Editor\Development\ESLibrary\Module.ESLibrary.cpp.obj"
 /TP
 /GR-
 /W4

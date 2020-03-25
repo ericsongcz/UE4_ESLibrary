@@ -3,9 +3,11 @@
 	{
 		"Module.ESLibrary.cpp.obj": [
 			"DynamicLoader.cpp.obj",
-			"ESLibrary.cpp.obj",
 			"ESLibraryBPLibrary.cpp.obj",
-			"FileHelper.cpp.obj"
+			"FileHelper.cpp.obj",
+			"ESLibrary.cpp.obj",
+			"MySQLConnection.cpp.obj",
+			"MySQLDatabase.cpp.obj"
 		],
 		"Module.ESLibrary.gen.cpp.obj": [
 			"DynamicLoader.gen.cpp.obj",

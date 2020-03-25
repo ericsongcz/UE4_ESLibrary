@@ -4,6 +4,8 @@
 
 #define LOCTEXT_NAMESPACE "FESLibraryModule"
 
+DEFINE_LOG_CATEGORY(LogMySQL_Database)
+
 void FESLibraryModule::StartupModule()
 {
 	// This code will execute after your module is loaded into memory; the exact timing is specified in the .uplugin file per-module

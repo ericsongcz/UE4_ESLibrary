@@ -69,14 +69,14 @@ class UTexture;
 #endif
 #define ESLIBRARY_ESLibraryBPLibrary_generated_h
 
-#define ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_132_GENERATED_BODY \
+#define UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_132_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FLevelStreamInstanceInfo_Statics; \
 	ESLIBRARY_API static class UScriptStruct* StaticStruct();
 
 
 template<> ESLIBRARY_API UScriptStruct* StaticStruct<struct FLevelStreamInstanceInfo>();
 
-#define ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_224_DELEGATE \
+#define UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_224_DELEGATE \
 struct _Script_ESLibrary_eventMKTweenDynamicDelegate_Parms \
 { \
 	float TweenedValue; \
@@ -89,7 +89,7 @@ static inline void FMKTweenDynamicDelegate_DelegateWrapper(const FScriptDelegate
 }
 
 
-#define ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_RPC_WRAPPERS \
+#define UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execEaseBounceOutIn) \
 	{ \
@@ -3992,7 +3992,7 @@ static inline void FMKTweenDynamicDelegate_DelegateWrapper(const FScriptDelegate
 	}
 
 
-#define ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_RPC_WRAPPERS_NO_PURE_DECLS \
+#define UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execEaseBounceOutIn) \
 	{ \
@@ -7895,7 +7895,7 @@ static inline void FMKTweenDynamicDelegate_DelegateWrapper(const FScriptDelegate
 	}
 
 
-#define ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_INCLASS_NO_PURE_DECLS \
+#define UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUESLibraryBPLibrary(); \
 	friend struct Z_Construct_UClass_UESLibraryBPLibrary_Statics; \
@@ -7904,7 +7904,7 @@ public: \
 	DECLARE_SERIALIZER(UESLibraryBPLibrary)
 
 
-#define ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_INCLASS \
+#define UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_INCLASS \
 private: \
 	static void StaticRegisterNativesUESLibraryBPLibrary(); \
 	friend struct Z_Construct_UClass_UESLibraryBPLibrary_Statics; \
@@ -7913,7 +7913,7 @@ public: \
 	DECLARE_SERIALIZER(UESLibraryBPLibrary)
 
 
-#define ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_STANDARD_CONSTRUCTORS \
+#define UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UESLibraryBPLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UESLibraryBPLibrary) \
@@ -7926,7 +7926,7 @@ private: \
 public:
 
 
-#define ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_ENHANCED_CONSTRUCTORS \
+#define UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UESLibraryBPLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -7939,26 +7939,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UESLibraryBPLibrary); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UESLibraryBPLibrary)
 
 
-#define ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_PRIVATE_PROPERTY_OFFSET
-#define ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_271_PROLOG
-#define ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_GENERATED_BODY_LEGACY \
+#define UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_PRIVATE_PROPERTY_OFFSET
+#define UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_271_PROLOG
+#define UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_PRIVATE_PROPERTY_OFFSET \
-	ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_RPC_WRAPPERS \
-	ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_INCLASS \
-	ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_STANDARD_CONSTRUCTORS \
+	UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_PRIVATE_PROPERTY_OFFSET \
+	UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_RPC_WRAPPERS \
+	UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_INCLASS \
+	UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_GENERATED_BODY \
+#define UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_PRIVATE_PROPERTY_OFFSET \
-	ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_RPC_WRAPPERS_NO_PURE_DECLS \
-	ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_INCLASS_NO_PURE_DECLS \
-	ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_ENHANCED_CONSTRUCTORS \
+	UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_PRIVATE_PROPERTY_OFFSET \
+	UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_RPC_WRAPPERS_NO_PURE_DECLS \
+	UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_INCLASS_NO_PURE_DECLS \
+	UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h_274_ENHANCED_CONSTRUCTORS \
 static_assert(false, "Unknown access specifier for GENERATED_BODY() macro in class ESLibraryBPLibrary."); \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -7966,7 +7966,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> ESLIBRARY_API UClass* StaticClass<class UESLibraryBPLibrary>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID ES_BPLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h
+#define CURRENT_FILE_ID UE4_ESLibrary_Plugins_ESLibrary_Source_ESLibrary_Public_ESLibraryBPLibrary_h
 
 
 #define FOREACH_ENUM_EEASINGTYPE(op) \
