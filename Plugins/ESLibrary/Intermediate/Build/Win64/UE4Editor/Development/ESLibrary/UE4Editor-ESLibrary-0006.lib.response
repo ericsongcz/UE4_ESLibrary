@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-ESLibrary-0006.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\Unreal Projects\ES_BPLibrary\Intermediate\Build\Win64\ES_BPLibraryEditor\Development\Engine\SharedPCH.Engine.h.obj"
+"E:\Unreal Projects\ES_BPLibrary\Plugins\ESLibrary\Intermediate\Build\Win64\UE4Editor\Development\ESLibrary\Module.ESLibrary.cpp.obj"
+"E:\Unreal Projects\ES_BPLibrary\Plugins\ESLibrary\Intermediate\Build\Win64\UE4Editor\Development\ESLibrary\Module.ESLibrary.gen.cpp.obj"
+"E:\Unreal Projects\ES_BPLibrary\Plugins\ESLibrary\Intermediate\Build\Win64\UE4Editor\Development\ESLibrary\Default.rc2.res"
+/OUT:"E:\Unreal Projects\ES_BPLibrary\Plugins\ESLibrary\Intermediate\Build\Win64\UE4Editor\Development\ESLibrary\UE4Editor-ESLibrary-0006.lib"
+/INCLUDE:IMPLEMENT_MODULE_ESLibrary

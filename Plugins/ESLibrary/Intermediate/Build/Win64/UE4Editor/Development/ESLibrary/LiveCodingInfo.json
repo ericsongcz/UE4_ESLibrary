@@ -1,0 +1,16 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.ESLibrary.cpp.obj": [
+			"DynamicLoader.cpp.obj",
+			"ESLibrary.cpp.obj",
+			"ESLibraryBPLibrary.cpp.obj",
+			"FileHelper.cpp.obj"
+		],
+		"Module.ESLibrary.gen.cpp.obj": [
+			"DynamicLoader.gen.cpp.obj",
+			"ESLibrary.init.gen.cpp.obj",
+			"ESLibraryBPLibrary.gen.cpp.obj"
+		]
+	}
+}
