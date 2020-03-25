@@ -1076,7 +1076,7 @@ public:
 #pragma region String Stuff
 
 	/** Handles sorting an array of strings to be alphabetical */
-	UFUNCTION(BlueprintPure, Category = "ES|Strings")
+	UFUNCTION(BlueprintPure, Category = "ES|String|Strings")
 		static TArray<FString> SortStrings(const TArray<FString> UnSortedStrings);
 
 	/**
@@ -1632,7 +1632,7 @@ public:
 	/** Load Texture2D */
 	UFUNCTION(BlueprintPure, Category = "ES|Loader", meta = (Keywords = "image png jpg jpeg bmp bitmap ico icon exr icns"))
 		static UTexture2D* LoadTexture2DFromFile(const FString& FilePath, bool& IsValid, int32& Width, int32& Height);
-	UFUNCTION(BlueprintPure, Category = "ES|File", meta = (Keywords = ""))
+	UFUNCTION(BlueprintPure, Category = "ES|Files", meta = (Keywords = ""))
 		static bool IsVaildPath(const FString FilePath);
 	static FString GetFullPath(FString FilePath);
 
@@ -1653,17 +1653,17 @@ public:
 	/**                   File                           */
 
 	/** Read Or Write Custom Text */
-	UFUNCTION(BlueprintCallable, Category = "ES|File", meta = (Keywords = ""))
+	UFUNCTION(BlueprintCallable, Category = "ES|Files", meta = (Keywords = ""))
 		static bool ReadFile(const FString FilePath, FString& ReturnString);
 
-	UFUNCTION(BlueprintCallable, Category = "ES|File", meta = (Keywords = ""))
+	UFUNCTION(BlueprintCallable, Category = "ES|Files", meta = (Keywords = ""))
 		static bool WriteFile(const FString FilePath, const FString ReturnString);
 
-	UFUNCTION(BlueprintCallable, Category = "ES|File", meta = (Keywords = ""))
+	UFUNCTION(BlueprintCallable, Category = "ES|Files", meta = (Keywords = ""))
 		static bool DeleteFileII(const FString FilePath);
 
 	/** Get Path */
-	UFUNCTION(BlueprintPure, Category = "ES|File", meta = (Keywords = ""))
+	UFUNCTION(BlueprintPure, Category = "ES|Files", meta = (Keywords = ""))
 		static FString GetGamePath(DirType E);
 
 	UFUNCTION(BlueprintCallable, Category = "ES|OS", meta = (Keywords = "exe"))
@@ -1981,67 +1981,67 @@ public:
 	/** bp ux  */
 	static void ShuffleArrayWithStream_impl(void* TargetArray, const UArrayProperty* ArrayProperty, const FRandomStream& Stream); // Real implementation
 
-	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Set Mouse Position", Keywords = "Set Mouse Position"), Category = "ES|UnX")
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Set Mouse Position", Keywords = "Set Mouse Position"), Category = "ES|Utilities")
 		static bool SetMousePosition(APlayerController* PC, const float& PosX, const float& PosY);
 
-	UFUNCTION(BlueprintPure, meta = (DisplayName = "Get Actor Last Render Time", Keywords = "Actor Render Time"), Category = "ES|UnX")
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Get Actor Last Render Time", Keywords = "Actor Render Time"), Category = "ES|Utilities")
 		static float GetActorLastRenderTime(AActor* RefActor);
 
-	UFUNCTION(BlueprintPure, meta = (DisplayName = "Was Actor Rendered Recently", Keywords = "Actor Rendered Recently"), Category = "ES|UnX")
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Was Actor Rendered Recently", Keywords = "Actor Rendered Recently"), Category = "ES|Utilities")
 		static bool WasActorRenderedRecently(AActor* RefActor, float MaxRecentTime = 0.1f);
 
-	UFUNCTION(BlueprintPure, meta = (DisplayName = "Is Actor Within Frustum", Keywords = "Actor Within Frustum"), Category = "ES|UnX")
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Is Actor Within Frustum", Keywords = "Actor Within Frustum"), Category = "ES|Utilities")
 		static bool IsActorWithinFrustum(AActor* RefActor);
 
-	UFUNCTION(BlueprintPure, meta = (DisplayName = "Convert Linear Colors", Keywords = "Color Convert Linear"), Category = "ES|UnX")
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Convert Linear Colors", Keywords = "Color Convert Linear"), Category = "ES|Utilities")
 		static TArray<FColor> ConvertLinearColors(const TArray<FLinearColor>& LinearColors);
 
-	UFUNCTION(BlueprintPure, Category = "ES|UnX|Testing")
+	UFUNCTION(BlueprintPure, Category = "ES|Utilities|Testing")
 		static bool HasRuntimeCooking();
 
-	UFUNCTION(BlueprintPure, meta = (DisplayName = "Move Towards (Vector)", Keywords = "Vector FVector Move Towards"), Category = "ES|UnX")
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Move Towards (Vector)", Keywords = "Vector FVector Move Towards"), Category = "ES|Utilities")
 		static FVector MoveTowardsVector(FVector From, FVector To, float MaxDistanceDelta);
 
-	UFUNCTION(BlueprintPure, meta = (DisplayName = "Move Towards (Rotator)", Keywords = "Rotator FRotator Move Towards"), Category = "ES|UnX")
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Move Towards (Rotator)", Keywords = "Rotator FRotator Move Towards"), Category = "ES|Utilities")
 		static FRotator MoveTowardsRotator(FRotator From, FRotator To, float MaxDistanceDelta);
 
-	UFUNCTION(BlueprintPure, meta = (DisplayName = "Move Towards (Angle)", Keywords = "Angle Move Towards"), Category = "ES|UnX")
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Move Towards (Angle)", Keywords = "Angle Move Towards"), Category = "ES|Utilities")
 		static float MoveTowardsAngle(float From, float To, float MaxDelta);
 
-	UFUNCTION(BlueprintPure, meta = (DisplayName = "Move Towards (Float)", Keywords = "Float Move Towards"), Category = "ES|UnX")
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Move Towards (Float)", Keywords = "Float Move Towards"), Category = "ES|Utilities")
 		static float MoveTowards(float From, float To, float MaxDelta);
 
-	UFUNCTION(BlueprintPure, meta = (DisplayName = "Delta Angle", Keywords = "Angle Delta"), Category = "ES|UnX")
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Delta Angle", Keywords = "Angle Delta"), Category = "ES|Utilities")
 		static float DeltaAngle(float From, float To);
 
-	UFUNCTION(BlueprintPure, meta = (DisplayName = "Repeat Float", Keywords = "Repeat Float"), Category = "ES|UnX")
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Repeat Float", Keywords = "Repeat Float"), Category = "ES|Utilities")
 		static float RepeatFloat(float T, float Length);
 
-	UFUNCTION(BluePrintPure, meta = (DisplayName = "Point Is Inside Box", Keywords = "Point Inside Box"), Category = "ES|UnX")
+	UFUNCTION(BluePrintPure, meta = (DisplayName = "Point Is Inside Box", Keywords = "Point Inside Box"), Category = "ES|Utilities")
 		static bool PointIsInsideBox(const FBox2D& Box, const FVector2D& Point);
 
-	UFUNCTION(BluePrintPure, meta = (DisplayName = "Box Is Inside Box", Keywords = "Box Inside Box2D FBox2D"), Category = "ES|UnX")
+	UFUNCTION(BluePrintPure, meta = (DisplayName = "Box Is Inside Box", Keywords = "Box Inside Box2D FBox2D"), Category = "ES|Utilities")
 		static bool BoxIsInsideBox(const FBox2D& Box, const FBox2D& OtherBox);
 
-	UFUNCTION(BluePrintPure, meta = (DisplayName = "Box Intersects Box", Keywords = "Box Intersect Box2D FBox2D"), Category = "ES|UnX")
+	UFUNCTION(BluePrintPure, meta = (DisplayName = "Box Intersects Box", Keywords = "Box Intersect Box2D FBox2D"), Category = "ES|Utilities")
 		static bool BoxIntersectsBox(const FBox2D& Box, const FBox2D& OtherBox);
 
-	UFUNCTION(BlueprintPure, meta = (DisplayName = "Min and Max of Array (float)"), Category = "ES|UnX")
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Min and Max of Array (float)"), Category = "ES|Utilities")
 		static void MinAndMaxOfFloatArray(const TArray<float>& Floats, float& Min, float& Max);
 
-	UFUNCTION(BlueprintPure, meta = (DisplayName = "Make Literal Box2D"), Category = "ES|UnX")
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Make Literal Box2D"), Category = "ES|Utilities")
 		static FBox2D MakeLiteralFBox2D(FVector2D Min, FVector2D Max);
 
-	UFUNCTION(BlueprintPure, meta = (DisplayName = "Vector is nearly zero", Keywords = "Vector FVector Zero Nearly"), Category = "ES|UnX")
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Vector is nearly zero", Keywords = "Vector FVector Zero Nearly"), Category = "ES|Utilities")
 		static bool VectorIsNearlyZero(const FVector& Vector);
 
-	UFUNCTION(BluePrintPure, meta = (DisplayName = "Get Actor Screen Box", Keywords = "Actor Screen Box FBox2D"), Category = "ES|UnX")
+	UFUNCTION(BluePrintPure, meta = (DisplayName = "Get Actor Screen Box", Keywords = "Actor Screen Box FBox2D"), Category = "ES|Utilities")
 		static void GetActorScreenBox(const APlayerController* Controller, const AActor* TargetActor, bool bOnlyCollidingComponents, bool bScaleByDPI, FBox2D& Box, bool& bAllProjectedSuccessfully);
 
-	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Remove All Children", Keywords = "Clear Destroy Remove Kill Child Children"), Category = "ES|UnX")
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Remove All Children", Keywords = "Clear Destroy Remove Kill Child Children"), Category = "ES|Utilities")
 		static void RemoveAllChildren(USceneComponent* parentComp);
 
-	UFUNCTION(BlueprintPure, meta = (DisplayName = "Is World Point Inside Box", Keywords = "World Point Inside Within Intersect Box"), Category = "ES|UnX")
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Is World Point Inside Box", Keywords = "World Point Inside Within Intersect Box"), Category = "ES|Utilities")
 		static bool WorldPointIsInsideBox(const FVector& WorldPoint, const FVector& BoxCenter, const FVector& BoxExtents);
 
 
